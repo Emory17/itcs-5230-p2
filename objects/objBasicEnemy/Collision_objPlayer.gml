@@ -1,0 +1,1 @@
+damagePlayer(10)
