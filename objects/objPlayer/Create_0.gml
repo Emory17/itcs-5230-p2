@@ -1,6 +1,9 @@
 atkangle = 0
 atkObj = objSlash
 
+hchange = 0
+vchange = 0
+
 alarm[1] = atkcooldown
 
 if(!variable_global_exists("character"))
