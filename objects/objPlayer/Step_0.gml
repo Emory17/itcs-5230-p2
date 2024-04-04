@@ -1,52 +1,63 @@
-//Up
-if(keyboard_check(ord("W")) and !instance_place(x, y-mspeed, objWall))
-{
-	vchange += -mspeed
-}
+atkangle = point_direction(x,y,mouse_x,mouse_y)
 
-//Down
-if(keyboard_check(ord("S")) and !instance_place(x, y+mspeed, objWall))
-{
-	vchange += mspeed
-}
+//increments each step to keep track of if sword should slash up or down
+comboCooldown++;
 
-//Left
-if(keyboard_check(ord("A")) and !instance_place(x-mspeed, y, objWall))
+if(!attacking)
 {
-	hchange += -mspeed
-	image_xscale = -1
-}
-
-//Right
-if(keyboard_check(ord("D")) and !instance_place(x+mspeed, y, objWall))
-{
-	hchange += mspeed
-	image_xscale = 1
-}
-
-if(vchange != 0){
-	if(hchange != 0){
-		vchange *= sqrt(0.5)
+	//Up
+	if(keyboard_check(ord("W")) and !instance_place(x, y-mspeed, objWall))
+	{
+		vchange += -mspeed
 	}
 	
-	y += vchange
-}
-
-if(hchange != 0){
+	//Down
+	if(keyboard_check(ord("S")) and !instance_place(x, y+mspeed, objWall))
+	{
+		vchange += mspeed
+	}
+	
+	//Left
+	if(keyboard_check(ord("A")) and !instance_place(x-mspeed, y, objWall))
+	{
+		hchange += -mspeed
+		image_xscale = -1
+	}
+	
+	//Right
+	if(keyboard_check(ord("D")) and !instance_place(x+mspeed, y, objWall))
+	{
+		hchange += mspeed
+		image_xscale = 1
+	}
+	
 	if(vchange != 0){
-		hchange *= sqrt(0.5)
+		if(hchange != 0){
+			vchange *= sqrt(0.5)
+		}
+		
+		y += vchange
 	}
 	
-	x += hchange
-}
-
-vchange = 0
-hchange = 0
-
-if(mouse_check_button(mb_left) and canAttack){
-	atkangle = point_direction(x,y,mouse_x,mouse_y)
+	if(hchange != 0){
+		if(vchange != 0){
+			hchange *= sqrt(0.5)
+		}
+		
+		x += hchange
+	}
 	
-	instance_create_layer(x + (dcos(atkangle) * 75), y - (dsin(atkangle) * 75), "Instances", atkObj)
+	vchange = 0
+	hchange = 0
+	
+}
+if(mouse_check_button(mb_left) and canAttack){
+	
+	direction = atkangle;
+	//slash object turns speed and attacking back to zero and false respectivly
+	speed = 5
+	attacking = true
+	instance_create_layer(x + (dcos(atkangle) * 120), y - (dsin(atkangle) * 120), "Instances", atkObj)
 	
 	canAttack = false
 	alarm[1] = atkcooldown

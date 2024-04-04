@@ -1,5 +1,7 @@
 atkangle = 0
 atkObj = objSlash
+comboCooldown = 0;
+attacking = false;
 
 hchange = 0
 vchange = 0
