@@ -36,7 +36,7 @@
     {"$GMObjectProperty":"","%Name":"iframes","filters":[],"listItems":[],"multiselect":false,"name":"iframes","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"45","varType":1,},
     {"$GMObjectProperty":"","%Name":"totalHealth","filters":[],"listItems":[],"multiselect":false,"name":"totalHealth","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"100","varType":1,},
     {"$GMObjectProperty":"","%Name":"canAttack","filters":[],"listItems":[],"multiselect":false,"name":"canAttack","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"False","varType":3,},
-    {"$GMObjectProperty":"","%Name":"atkcooldown","filters":[],"listItems":[],"multiselect":false,"name":"atkcooldown","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"30","varType":0,},
+    {"$GMObjectProperty":"","%Name":"atkcooldown","filters":[],"listItems":[],"multiselect":false,"name":"atkcooldown","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"20","varType":0,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
