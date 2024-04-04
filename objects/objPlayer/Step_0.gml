@@ -1,7 +1,8 @@
 atkangle = point_direction(x,y,mouse_x,mouse_y)
 
 //increments each step to keep track of if sword should slash up or down
-comboCooldown++;
+if(comboCooldown > 0)
+	comboCooldown++;
 
 if(!attacking)
 {
@@ -51,13 +52,18 @@ if(!attacking)
 	hchange = 0
 	
 }
-if(mouse_check_button(mb_left) and canAttack){
+if(mouse_check_button(mb_left) and canAttack ){
 	
 	direction = atkangle;
-	//slash object turns speed and attacking back to zero and false respectivly
-	speed = 5
-	attacking = true
-	instance_create_layer(x + (dcos(atkangle) * 120), y - (dsin(atkangle) * 120), "Instances", atkObj)
+	
+	if(global.character == pChar.knight)
+	{
+		
+		//slash object turns speed and attacking back to zero and false respectivly
+		speed = 5
+		attacking = true
+		instance_create_layer(x + (dcos(atkangle) * 110), y - (dsin(atkangle) * 110), "Instances", atkObj)
+	}
 	
 	canAttack = false
 	alarm[1] = atkcooldown

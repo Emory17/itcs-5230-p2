@@ -1,31 +1,37 @@
 atkangle = point_direction(x,y,mouse_x,mouse_y)
 
 
-image_xscale = 5
+if(global.primaryUpgrade1 = true)
+	sizeModifier = 1
+else
+	sizeModifier = 0
 
-if(objPlayer.comboCooldown > 60)
+
+image_xscale = 2.5 + sizeModifier
+
+if(objPlayer.comboCooldown > 60 || objPlayer.comboCooldown = 0)
 {
 	if(atkangle < 90 || atkangle > 270)
 	{
-		image_yscale = 5
+		image_yscale = 3 + sizeModifier
 	}
 	else
 	{
-		image_yscale = -5
+		image_yscale = -3 - sizeModifier
 	}
-	objPlayer.comboCooldown = 0;
+	objPlayer.comboCooldown = 1;
 }
 else
 {
 	if(atkangle < 90 || atkangle > 270)
 	{
-		image_yscale = -5
+		image_yscale = -3 - sizeModifier
 	}
 	else
 	{
-		image_yscale = 5
+		image_yscale = 3 + sizeModifier
 	}
-	
+	objPlayer.comboCooldown = 0;
 }
 
 

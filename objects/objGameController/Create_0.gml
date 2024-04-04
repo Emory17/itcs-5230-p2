@@ -3,3 +3,27 @@ enum pChar{
 	archer,
 	mage
 }
+
+
+//declare every varaible that can be changed
+global.maxHPMultiplier = 100
+global.damageMultiplier = 1;
+global.speedMultiplier = 1;
+global.critChanceMultiplier = 1;
+
+global.knockbackMultiplier = 1;
+global.chargeMultiplier = 1;
+global.maxManaMultiplier= 1;
+
+global.hasMoreHealing = false;
+global.critsHeal = false;
+global.enemiesExplode = false;
+
+//controls if player has greatsword, stormarrow or spellcasting focus
+global.primaryUpgrade1 = false;
+//controls if player has tripower blade, magic tipped arrows or death seeking flame
+global.primaryUpgrade2 = false;
+//controls if player has shield of bashing, trick bomb or cone of cold
+global.secondaryUpgrade1 = false;
+//controls if player has mirror shield, boots of quickness or winter's embrace
+global.secondaryUpgrade2 = false;
