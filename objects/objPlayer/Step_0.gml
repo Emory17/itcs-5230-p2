@@ -52,7 +52,7 @@ if(!attacking)
 	hchange = 0
 	
 }
-if(mouse_check_button(mb_left) and canAttack ){
+if(mouse_check_button(mb_left) and canAttack){
 	
 	direction = atkangle;
 	
@@ -62,9 +62,33 @@ if(mouse_check_button(mb_left) and canAttack ){
 		//slash object turns speed and attacking back to zero and false respectivly
 		speed = 5
 		attacking = true
+		canAttack = false
+		alarm[1] = atkcooldown
 		instance_create_layer(x + (dcos(atkangle) * 110), y - (dsin(atkangle) * 110), "Instances", atkObj)
 	}
 	
-	canAttack = false
-	alarm[1] = atkcooldown
+	if(global.character == pChar.mage)
+	{
+		
+		//slash object turns speed and attacking back to zero and false respectivly
+		canAttack = false
+		alarm[1] = atkcooldown
+		instance_create_layer(x + (dcos(atkangle) * 50), y - (dsin(atkangle) * 50), "Instances", atkObj)
+	}
+	
+	
+}
+
+if(global.character == pChar.archer)
+{
+	if(mouse_check_button(mb_left))
+	{
+		objBow.bowCharge++
+		attacking = true
+	}
+	else
+	{
+		objBow.bowCharge = 0;
+		attacking = false;
+	}
 }

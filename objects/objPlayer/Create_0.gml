@@ -25,3 +25,5 @@ else if(global.character == pChar.mage){
 	sprite_index = sprMage
 	atkObj = objFireball
 }
+
+instance_create_depth(x,y,-1,objBow)

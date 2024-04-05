@@ -12,7 +12,7 @@ global.speedMultiplier = 1;
 global.critChanceMultiplier = 1;
 
 global.knockbackMultiplier = 1;
-global.chargeMultiplier = 1;
+global.bowChargeMultiplier = 1;
 global.maxManaMultiplier= 1;
 
 global.hasMoreHealing = false;

@@ -13,9 +13,10 @@ if(instance_exists(objPlayer))
 		{
 			image_xscale = -1
 		}
-		direction = point_direction(x, y, objPlayer.x, objPlayer.y)
+		direction = point_direction(x,y,objPlayer.x, objPlayer.y)
+		speed = defaultSpeed
 		
-		speed = 5
 	}
 }
 alarm[0] = 180
+

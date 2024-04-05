@@ -1,2 +1,3 @@
-damageEnemy(other, 10, self)
+
+damageEnemy(other, arrowDamage, self)
 instance_destroy()
