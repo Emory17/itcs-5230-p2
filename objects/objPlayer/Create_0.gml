@@ -2,6 +2,8 @@ atkangle = 0
 atkObj = objSlash
 comboCooldown = 0;
 attacking = false;
+mana = 100
+alarm[2] = 3
 
 hchange = 0
 vchange = 0
@@ -27,3 +29,4 @@ else if(global.character == pChar.mage){
 }
 
 instance_create_depth(x,y,-1,objBow)
+instance_create_depth(x,y,-1,objWand)

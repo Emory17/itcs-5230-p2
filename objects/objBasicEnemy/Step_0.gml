@@ -20,3 +20,8 @@ if(instance_exists(objPlayer))
 }
 alarm[0] = 180
 
+if(knockedBack)
+{
+	x += (dcos(hitAngle) * (knockbackPerTick))
+	y += -(dsin(hitAngle) * (knockbackPerTick))
+}

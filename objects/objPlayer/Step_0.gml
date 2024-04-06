@@ -70,10 +70,10 @@ if(mouse_check_button(mb_left) and canAttack){
 	if(global.character == pChar.mage)
 	{
 		
-		//slash object turns speed and attacking back to zero and false respectivly
+		attacking = true
 		canAttack = false
-		alarm[1] = atkcooldown
-		instance_create_layer(x + (dcos(atkangle) * 50), y - (dsin(atkangle) * 50), "Instances", atkObj)
+		objWand.image_speed = 1.5
+		
 	}
 	
 	

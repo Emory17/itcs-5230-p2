@@ -1,4 +1,5 @@
 atkangle = point_direction(x,y,mouse_x,mouse_y)
+knockbackAmt = 6 * global.knockbackMultiplier
 
 
 if(global.primaryUpgrade1 = true)
@@ -39,4 +40,4 @@ image_angle = atkangle
 image_speed = 1.5
 
 alarm[0] = atime
-alarm[1] = 8
+alarm[1] = 5
