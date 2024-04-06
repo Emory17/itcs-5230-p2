@@ -1,6 +1,6 @@
 {
   "$GMObject":"",
-  "%Name":"objBasicEnemy",
+  "%Name":"objBat",
   "eventList":[
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"","%Name":"","collisionObjectId":{"name":"objPlayer","path":"objects/objPlayer/objPlayer.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
@@ -12,7 +12,7 @@
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":10,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"objBasicEnemy",
+  "name":"objBat",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -44,8 +44,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sprBasicEnemy",
-    "path":"sprites/sprBasicEnemy/sprBasicEnemy.yy",
+    "name":"sprBat",
+    "path":"sprites/sprBat/sprBat.yy",
   },
   "spriteMaskId":null,
   "visible":true,

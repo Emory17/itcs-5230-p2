@@ -40,8 +40,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sprBasicEnemy",
-    "path":"sprites/sprBasicEnemy/sprBasicEnemy.yy",
+    "name":"sprBat",
+    "path":"sprites/sprBat/sprBat.yy",
   },
   "spriteMaskId":null,
   "visible":true,
