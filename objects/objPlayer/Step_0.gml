@@ -108,6 +108,7 @@ if(global.character == pChar.archer)
 	{
 		objBow.bowCharge++
 		attacking = true
+		
 	}
 	else
 	{
@@ -116,6 +117,7 @@ if(global.character == pChar.archer)
 	}
 }
 
+//this is mess but sprites are annoying
 if(moving && !attacking)
 {
 	if(global.character == pChar.knight)
@@ -142,6 +144,17 @@ if(!moving && !attacking && !instance_exists(objSlash))
 		sprite_index = sprArcher;
 	}
 	else
+	{
+		sprite_index = sprMage;
+	}
+}
+if(attacking)
+{
+	if(global.character == pChar.archer)
+	{
+		sprite_index = sprArcher;
+	}
+	else if(global.character == pChar.mage)
 	{
 		sprite_index = sprMage;
 	}
