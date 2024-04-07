@@ -1,17 +1,18 @@
 {
   "$GMObject":"",
-  "%Name":"objWall",
-  "eventList":[
-    {"$GMEvent":"","%Name":"","collisionObjectId":{"name":"objPlayer","path":"objects/objPlayer/objPlayer.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"objBox",
+  "eventList":[],
   "managed":true,
-  "name":"objWall",
+  "name":"objBox",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
     "path":"folders/Objects.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"objInnerWall",
+    "path":"objects/objInnerWall/objInnerWall.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -28,10 +29,10 @@
   "properties":[],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
-  "solid":true,
+  "solid":false,
   "spriteId":{
-    "name":"SprWall",
-    "path":"sprites/SprWall/SprWall.yy",
+    "name":"sprBox",
+    "path":"sprites/sprBox/sprBox.yy",
   },
   "spriteMaskId":null,
   "visible":true,

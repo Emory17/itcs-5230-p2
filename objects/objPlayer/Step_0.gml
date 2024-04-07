@@ -7,26 +7,26 @@ if(comboCooldown > 0)
 if(!attacking)
 {
 	//Up
-	if(keyboard_check(ord("W")) and !instance_place(x, y-mspeed, objWall))
+	if(keyboard_check(ord("W")) and !instance_place(x, y-mspeed, objOuterWall))
 	{
 		vchange += -mspeed
 	}
 	
 	//Down
-	if(keyboard_check(ord("S")) and !instance_place(x, y+mspeed, objWall))
+	if(keyboard_check(ord("S")) and !instance_place(x, y+mspeed, objOuterWall))
 	{
 		vchange += mspeed
 	}
 	
 	//Left
-	if(keyboard_check(ord("A")) and !instance_place(x-mspeed, y, objWall))
+	if(keyboard_check(ord("A")) and !instance_place(x-mspeed, y, objOuterWall))
 	{
 		hchange += -mspeed
 		image_xscale = -1
 	}
 	
 	//Right
-	if(keyboard_check(ord("D")) and !instance_place(x+mspeed, y, objWall))
+	if(keyboard_check(ord("D")) and !instance_place(x+mspeed, y, objOuterWall))
 	{
 		hchange += mspeed
 		image_xscale = 1
