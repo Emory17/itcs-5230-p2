@@ -1,7 +1,7 @@
 if(instance_exists(objPlayer))
 {
 	x = objPlayer.x
-	y = objPlayer.y
+	y = objPlayer.y + 5
 	image_angle = point_direction(x,y,mouse_x,mouse_y)
 
 	if((global.character == pChar.archer))

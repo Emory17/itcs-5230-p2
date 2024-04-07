@@ -9,8 +9,8 @@
   "name":"objBow",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"player",
+    "path":"folders/Objects/player.yy",
   },
   "parentObjectId":null,
   "persistent":false,

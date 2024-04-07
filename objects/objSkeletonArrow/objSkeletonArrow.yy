@@ -10,8 +10,8 @@
   "name":"objSkeletonArrow",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"enemy projectiles",
+    "path":"folders/Objects/enemies/enemy projectiles.yy",
   },
   "parentObjectId":null,
   "persistent":false,

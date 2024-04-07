@@ -4,4 +4,4 @@ direction = point_direction(x,y,mouse_x,mouse_y)
 image_angle = direction
 speed = pspeed
 
-alarm[0] = 60;
+alarm[0] = 50;

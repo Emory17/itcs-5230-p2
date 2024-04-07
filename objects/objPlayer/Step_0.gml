@@ -10,26 +10,33 @@ if(!attacking)
 	if(keyboard_check(ord("W")) and !instance_place(x, y-mspeed, objOuterWall))
 	{
 		vchange += -mspeed
+		moving = true;
 	}
 	
 	//Down
 	if(keyboard_check(ord("S")) and !instance_place(x, y+mspeed, objOuterWall))
 	{
 		vchange += mspeed
+		moving = true;
 	}
 	
 	//Left
 	if(keyboard_check(ord("A")) and !instance_place(x-mspeed, y, objOuterWall))
 	{
 		hchange += -mspeed
-		image_xscale = -1
+		moving = true;
 	}
 	
 	//Right
 	if(keyboard_check(ord("D")) and !instance_place(x+mspeed, y, objOuterWall))
 	{
 		hchange += mspeed
-		image_xscale = 1
+		moving = true;
+	}
+	
+	if(!keyboard_check(ord("D")) && !keyboard_check(ord("A")) && !keyboard_check(ord("S")) && !keyboard_check(ord("W")))
+	{
+		moving = false
 	}
 	
 	if(vchange != 0){
@@ -52,6 +59,16 @@ if(!attacking)
 	hchange = 0
 	
 }
+
+if(objPlayer.atkangle < 90 || objPlayer.atkangle > 270)
+{
+	image_xscale = 1
+}
+else
+{
+	image_xscale = -1
+}
+		
 if(mouse_check_button(mb_left) and canAttack){
 	
 	direction = atkangle;
@@ -79,6 +96,12 @@ if(mouse_check_button(mb_left) and canAttack){
 	
 }
 
+if(instance_exists(objSlash) && !moving )
+{
+	sprite_index = sprKnightSwordless;
+}
+
+
 if(global.character == pChar.archer)
 {
 	if(mouse_check_button(mb_left))
@@ -90,5 +113,36 @@ if(global.character == pChar.archer)
 	{
 		objBow.bowCharge = 0;
 		attacking = false;
+	}
+}
+
+if(moving && !attacking)
+{
+	if(global.character == pChar.knight)
+	{
+		sprite_index = sprKnightMove;
+	}
+	else if(global.character == pChar.archer)
+	{
+		sprite_index = sprArcherMoving;
+	}
+	else
+	{
+		sprite_index = sprMageMove;
+	}
+}
+if(!moving && !attacking && !instance_exists(objSlash))
+{
+	if(global.character == pChar.knight)
+	{
+		sprite_index = sprKnight;
+	}
+	else if(global.character == pChar.archer)
+	{
+		sprite_index = sprArcher;
+	}
+	else
+	{
+		sprite_index = sprMage;
 	}
 }
