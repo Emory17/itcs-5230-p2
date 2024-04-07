@@ -27,3 +27,5 @@ global.primaryUpgrade2 = false;
 global.secondaryUpgrade1 = false;
 //controls if player has mirror shield, boots of quickness or winter's embrace
 global.secondaryUpgrade2 = false;
+
+cleared = false
