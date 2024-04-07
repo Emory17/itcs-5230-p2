@@ -34,7 +34,7 @@
   "physicsStartAwake":true,
   "properties":[
     {"$GMObjectProperty":"","%Name":"pathName","filters":[],"listItems":[],"multiselect":false,"name":"pathName","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"pathBasic","varType":5,},
-    {"$GMObjectProperty":"","%Name":"enemyVision","filters":[],"listItems":[],"multiselect":false,"name":"enemyVision","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"500","varType":0,},
+    {"$GMObjectProperty":"","%Name":"enemyVision","filters":[],"listItems":[],"multiselect":false,"name":"enemyVision","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"250","varType":0,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
