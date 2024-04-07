@@ -4,7 +4,7 @@ if(instance_exists(objPlayer))
 {
 	if(distance_to_object(objPlayer) < enemyVision)
 	{
-		path_end()
+		//path_end()
 		if(objPlayer.x > x)
 		{
 			image_xscale = 1
@@ -16,8 +16,15 @@ if(instance_exists(objPlayer))
 		
 		if(instance_place(x+hsp, y, objInnerWall))
 		{
+			lastDirection = direction
 			
-			direction = point_direction(x, y, x, y + defaultSpeed)
+			unstuckSpeed = defaultSpeed
+			if(lastDirection < 359.9 and lastDirection > 270.1)
+			{
+				unstuckSpeed = defaultSpeed * -1 
+			}
+			
+			direction = point_direction(x, y, x, y + unstuckSpeed)
 			speed = defaultSpeed
 			if(instance_place(x, y-hsp, objInnerWall) or instance_place(x, y+hsp, objInnerWall))
 			{
@@ -28,34 +35,55 @@ if(instance_exists(objPlayer))
 		}
 		else if(instance_place(x-hsp, y, objInnerWall))
 		{
+			lastDirection = direction
 			
-			direction = point_direction(x, y, x, y + defaultSpeed)
+			unstuckSpeed = defaultSpeed
+			if(lastDirection < 269.9 and lastDirection > 180.1)
+			{
+				unstuckSpeed = defaultSpeed * -1 
+			}
+			
+			direction = point_direction(x, y, x, y + unstuckSpeed)
 			speed = defaultSpeed
 			if(instance_place(x, y-hsp, objInnerWall) or instance_place(x, y+hsp, objInnerWall))
 			{
-				direction = point_direction(x, y, x + defaultSpeed, y)
+				direction = point_direction(x, y, x + unstuckSpeed, y)
 				speed = defaultSpeed
 			}
 		}
 		else if(instance_place(x, y-hsp, objInnerWall))
 		{
+			lastDirection = direction
 			
-			direction = point_direction(x, y, x + defaultSpeed, y)
+			unstuckSpeed = defaultSpeed
+			if(lastDirection < 179.9 and lastDirection > 90.1)
+			{
+				unstuckSpeed = defaultSpeed * -1 
+			}
+			
+			direction = point_direction(x, y, x + unstuckSpeed, y)
 			speed = defaultSpeed
 			if(instance_place(x+hsp, y, objInnerWall) or instance_place(x-hsp, y, objInnerWall))
 			{
-				direction = point_direction(x, y, x, y + defaultSpeed)
+				direction = point_direction(x, y, x, y + unstuckSpeed)
 				speed = defaultSpeed
 			}
 		}
 		else if(instance_place(x, y+hsp, objInnerWall))
 		{
+			lastDirection = direction
 			
-			direction = point_direction(x, y, x + defaultSpeed, y)
+			unstuckSpeed = defaultSpeed
+			if(lastDirection < 269.9 and lastDirection > 179.9)
+			{
+				unstuckSpeed = defaultSpeed * -1 
+			}
+			
+			direction = point_direction(x, y, x + unstuckSpeed, y)
 			speed = defaultSpeed
 			if(instance_place(x+hsp, y, objInnerWall) or instance_place(x-hsp, y, objInnerWall))
 			{
-				direction = point_direction(x, y, x, y + defaultSpeed)
+				direction = point_direction(x, y, x, y + unstuckSpeed)
 				speed = defaultSpeed
 			}
 		}
@@ -63,7 +91,7 @@ if(instance_exists(objPlayer))
 		{
 			direction = point_direction(x,y,objPlayer.x, objPlayer.y)
 			speed = defaultSpeed
-			lastDirection = direction
+			
 			
 		}
 		
