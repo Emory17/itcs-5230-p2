@@ -4,12 +4,17 @@
   "eventList":[],
   "managed":true,
   "name":"objEnt",
-  "overriddenProperties":[],
+  "overriddenProperties":[
+    {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"objSkeleton","path":"objects/objSkeleton/objSkeleton.yy",},"propertyId":{"name":"protectileSpawn","path":"objects/objSkeleton/objSkeleton.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"objEntProtectile",},
+  ],
   "parent":{
     "name":"enemies",
     "path":"folders/Objects/enemies.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"objSkeleton",
+    "path":"objects/objSkeleton/objSkeleton.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

@@ -7,7 +7,7 @@ if(instance_exists(objPlayer) and canShoot == true)
 	{
 		canShoot = false
 		alarm[1]= 60
-		instance_create_layer(x, y, "Instances", objSkeletonArrow)
+		instance_create_layer(x, y, "Instances", protectileSpawn)
 	
 	}
 }
