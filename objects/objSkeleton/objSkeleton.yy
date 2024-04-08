@@ -33,6 +33,7 @@
   "properties":[
     {"$GMObjectProperty":"","%Name":"enemyVision","filters":[],"listItems":[],"multiselect":false,"name":"enemyVision","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"500","varType":0,},
     {"$GMObjectProperty":"","%Name":"protectileSpawn","filters":[],"listItems":[],"multiselect":false,"name":"protectileSpawn","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"objSkeletonArrow","varType":5,},
+    {"$GMObjectProperty":"","%Name":"shotFrequency","filters":[],"listItems":[],"multiselect":false,"name":"shotFrequency","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"60","varType":0,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

@@ -6,7 +6,7 @@ if(instance_exists(objPlayer) and canShoot == true)
 	if(distance_to_object(objPlayer) < enemyVision)
 	{
 		canShoot = false
-		alarm[1]= 60
+		alarm[1]= shotFrequency
 		instance_create_layer(x, y, "Instances", protectileSpawn)
 	
 	}
