@@ -1,12 +1,12 @@
 {
   "$GMObject":"",
-  "%Name":"objScythe",
+  "%Name":"objWarlockProjectile",
   "eventList":[
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"","%Name":"","collisionObjectId":{"name":"objPlayer","path":"objects/objPlayer/objPlayer.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"objScythe",
+  "name":"objWarlockProjectile",
   "overriddenProperties":[],
   "parent":{
     "name":"enemy projectiles",
@@ -27,14 +27,14 @@
   "physicsShapePoints":[],
   "physicsStartAwake":true,
   "properties":[
-    {"$GMObjectProperty":"","%Name":"attachedTo","filters":[],"listItems":[],"multiselect":false,"name":"attachedTo","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"objReaper","varType":5,},
+    {"$GMObjectProperty":"","%Name":"attachedToo","filters":[],"listItems":[],"multiselect":false,"name":"attachedToo","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"objWarlock","varType":5,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sprScythe",
-    "path":"sprites/sprScythe/sprScythe.yy",
+    "name":"sprWarlockProjectile",
+    "path":"sprites/sprWarlockProjectile/sprWarlockProjectile.yy",
   },
   "spriteMaskId":null,
   "visible":true,

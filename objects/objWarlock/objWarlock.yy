@@ -1,7 +1,11 @@
 {
   "$GMObject":"",
   "%Name":"objWarlock",
-  "eventList":[],
+  "eventList":[
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":3,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
   "name":"objWarlock",
   "overriddenProperties":[],
@@ -9,7 +13,10 @@
     "name":"enemies",
     "path":"folders/Objects/enemies.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"objVampire",
+    "path":"objects/objVampire/objVampire.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
