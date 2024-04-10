@@ -17,12 +17,12 @@ if(instance_exists(objPlayer))
 		image_index = 0
 	}
 
-	else if(bowCharge < (90 * (global.bowChargeMultiplier / 6)))
+	else if(bowCharge < (90 / (global.bowChargeMultiplier * 6)))
 	{
 		image_index = 1
 	}
 
-	else if(bowCharge < (90 * (global.bowChargeMultiplier / 6)))
+	else if(bowCharge < (90 / (global.bowChargeMultiplier * 6)))
 	{
 		//I screwed the way I wrote this code up I know it looks redundant
 		image_index = 2
@@ -35,7 +35,7 @@ if(instance_exists(objPlayer))
 	
 	}
 
-	else if(bowCharge < (90 * (global.bowChargeMultiplier / 3)))
+	else if(bowCharge < (90 / (global.bowChargeMultiplier * 3)))
 	{
 		image_index = 3
 		if(!mouse_check_button(mb_left))
@@ -45,7 +45,7 @@ if(instance_exists(objPlayer))
 		}
 	}
 
-	else if(bowCharge < (90 * (global.bowChargeMultiplier / 1.5)))
+	else if(bowCharge < (90 / (1.5 * global.bowChargeMultiplier)))
 	{
 		image_index = 4
 		if(!mouse_check_button(mb_left))
@@ -55,7 +55,7 @@ if(instance_exists(objPlayer))
 		}
 	}
 
-	else if(bowCharge > (90 * (global.bowChargeMultiplier / 1.2)))
+	else if(bowCharge > (90 / ( 1.2 * global.bowChargeMultiplier)))
 	{
 		image_index = 5 
 		//if(bowCharge = 76)

@@ -31,7 +31,7 @@
   "physicsStartAwake":true,
   "properties":[
     {"$GMObjectProperty":"","%Name":"pspeed","filters":[],"listItems":[],"multiselect":false,"name":"pspeed","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"8","varType":0,},
-    {"$GMObjectProperty":"","%Name":"fireballDamage","filters":[],"listItems":[],"multiselect":false,"name":"fireballDamage","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"15","varType":0,},
+    {"$GMObjectProperty":"","%Name":"fireballDamage","filters":[],"listItems":[],"multiselect":false,"name":"fireballDamage","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"15 * global.damageMultiplier","varType":0,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

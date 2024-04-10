@@ -10,7 +10,7 @@ if(!attacking || !global.character == pChar.knight)
 	if(keyboard_check(ord("W")) and !instance_place(x, y-mspeed, objOuterWall))
 	{
 		vchange += -mspeed
-		moving = true;
+		moving = true; 
 	}
 	
 	//Down
@@ -23,14 +23,13 @@ if(!attacking || !global.character == pChar.knight)
 	//Left
 	if(keyboard_check(ord("A")) and !instance_place(x-mspeed, y, objOuterWall))
 	{
-		hchange += -mspeed
-		moving = true;
+		hchange += -mspeed 
 	}
 	
 	//Right
 	if(keyboard_check(ord("D")) and !instance_place(x+mspeed, y, objOuterWall))
 	{
-		hchange += mspeed
+		hchange += mspeed 
 		moving = true;
 	}
 	

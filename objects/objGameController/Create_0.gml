@@ -6,10 +6,10 @@ enum pChar{
 
 
 //declare every varaible that can be changed
-global.maxHPMultiplier = 100
+global.maxHPMultiplier = 1
 global.damageMultiplier = 1;
 global.speedMultiplier = 1;
-global.critChanceMultiplier = 1;
+global.critChance = 5;
 
 global.knockbackMultiplier = 1;
 global.bowChargeMultiplier = 1;
@@ -18,6 +18,8 @@ global.maxManaMultiplier= 1;
 global.hasMoreHealing = false;
 global.critsHeal = false;
 global.enemiesExplode = false;
+global.bombDash = false;
+global.dashIFrames = false
 
 //controls if player has greatsword, stormarrow or spellcasting focus
 global.primaryUpgrade1 = false;

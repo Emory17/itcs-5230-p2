@@ -1,1 +1,0 @@
-isHurt = false;

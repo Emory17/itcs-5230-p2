@@ -1,5 +1,5 @@
 atkangle = point_direction(x,y,mouse_x,mouse_y)
-knockbackAmt = 6 * global.knockbackMultiplier
+
 
 
 if(global.primaryUpgrade1 = true)

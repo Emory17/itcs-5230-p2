@@ -1,4 +1,4 @@
-function damageEnemy(enemy, damage, object){
+function damageEnemy(enemy, damage, object, canCrit){
 	if(!instance_exists(enemy.hitobject))
 	{
 		enemy.hitobject = noone
@@ -7,6 +7,10 @@ function damageEnemy(enemy, damage, object){
 	if(enemy.hitobject == noone or enemy.hitobject != object)
 	{
 		//audio_play_sound(enemyHit,1,false);
+		if(canCrit && irandom(100) > (100 - global.critChance))
+		{
+			damage = round(damage * 1.5)
+		}
 		enemy.totalHealth -= damage
 		enemy.hitobject = object
 		enemy.isHurt = true;
