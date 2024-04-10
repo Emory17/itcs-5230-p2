@@ -1,0 +1,1 @@
+decayTime = 60

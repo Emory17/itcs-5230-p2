@@ -79,6 +79,8 @@ if(mouse_check_button(mb_left) and canAttack){
 		//slash object turns speed and attacking back to zero and false respectivly
 		speed = 5
 		attacking = true
+		//audio_play_sound(playerSwordSwing,1,false)
+		
 		canAttack = false
 		alarm[1] = atkcooldown
 		instance_create_layer(x + (dcos(atkangle) * 110), y - (dsin(atkangle) * 110), "Instances", atkObj)
@@ -86,10 +88,13 @@ if(mouse_check_button(mb_left) and canAttack){
 	
 	if(global.character == pChar.mage)
 	{
-		
-		attacking = true
-		canAttack = false
-		objWand.image_speed = 1.5
+		if(mana >= 20)
+		{
+			attacking = true
+			canAttack = false
+			objWand.image_speed = 1.5
+			mana -= 20;
+		}
 		
 	}
 	
@@ -106,12 +111,15 @@ if(global.character == pChar.archer)
 {
 	if(mouse_check_button(mb_left))
 	{
+		//if(objBow.bowCharge == 1)
+			//audio_play_sound(playerBowDraw, 1, false)
 		objBow.bowCharge++
 		attacking = true
 		
 	}
 	else
 	{
+		audio_stop_sound(playerBowDraw)
 		objBow.bowCharge = 0;
 		attacking = false;
 	}

@@ -28,6 +28,7 @@ if(instance_exists(objPlayer))
 		image_index = 2
 		if(!mouse_check_button(mb_left))
 		{
+			//audio_play_sound(playerBowShoot, 1, false)
 			instance_create_layer(x + (dcos(image_angle) * 10), y - (dsin(image_angle) * 10), "Instances", objArrow)
 		}
 	
@@ -39,6 +40,7 @@ if(instance_exists(objPlayer))
 		image_index = 3
 		if(!mouse_check_button(mb_left))
 		{
+			//audio_play_sound(playerBowShoot, 1, false)
 			instance_create_layer(x + (dcos(image_angle) * 10), y - (dsin(image_angle) * 10), "Instances", objArrow)
 		}
 	}
@@ -48,13 +50,16 @@ if(instance_exists(objPlayer))
 		image_index = 4
 		if(!mouse_check_button(mb_left))
 		{
+			//audio_play_sound(playerBowShoot, 1, false)
 			instance_create_layer(x + (dcos(image_angle) * 10), y - (dsin(image_angle) * 10), "Instances", objArrow)
 		}
 	}
 
-	else
+	else if(bowCharge > (90 * (global.bowChargeMultiplier / 1.2)))
 	{
-		image_index = 5
+		image_index = 5 
+		//if(bowCharge = 76)
+			//audio_play_sound(playerBowCharge, 1, false)
 		if(!mouse_check_button(mb_left))
 		{
 			instance_create_layer(x + (dcos(image_angle) * 10), y - (dsin(image_angle) * 10), "Instances", objArrow, {

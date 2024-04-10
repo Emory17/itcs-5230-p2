@@ -2,10 +2,8 @@ atkangle = 0
 atkObj = objSlash
 comboCooldown = 0;
 attacking = false;
-mana = 100
 alarm[2] = 3
 moving = false;
-
 hchange = 0
 vchange = 0
 
