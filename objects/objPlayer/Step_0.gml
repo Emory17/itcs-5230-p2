@@ -4,7 +4,7 @@ atkangle = point_direction(x,y,mouse_x,mouse_y)
 if(comboCooldown > 0)
 	comboCooldown++;
 
-if(!attacking)
+if(!attacking || !global.character == pChar.knight)
 {
 	//Up
 	if(keyboard_check(ord("W")) and !instance_place(x, y-mspeed, objOuterWall))
@@ -96,7 +96,7 @@ if(mouse_check_button(mb_left) and canAttack){
 	
 }
 
-if(instance_exists(objSlash) && !moving )
+if(instance_exists(objSlash) && !moving)
 {
 	sprite_index = sprKnightSwordless;
 }
@@ -118,7 +118,7 @@ if(global.character == pChar.archer)
 }
 
 //this is mess but sprites are annoying
-if(moving && !attacking)
+if(moving)
 {
 	if(global.character == pChar.knight)
 	{
@@ -133,7 +133,7 @@ if(moving && !attacking)
 		sprite_index = sprMageMove;
 	}
 }
-if(!moving && !attacking && !instance_exists(objSlash))
+if(!moving && !instance_exists(objSlash))
 {
 	if(global.character == pChar.knight)
 	{
@@ -144,17 +144,6 @@ if(!moving && !attacking && !instance_exists(objSlash))
 		sprite_index = sprArcher;
 	}
 	else
-	{
-		sprite_index = sprMage;
-	}
-}
-if(attacking)
-{
-	if(global.character == pChar.archer)
-	{
-		sprite_index = sprArcher;
-	}
-	else if(global.character == pChar.mage)
 	{
 		sprite_index = sprMage;
 	}
