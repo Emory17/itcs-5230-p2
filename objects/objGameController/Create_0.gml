@@ -9,7 +9,7 @@ enum pChar{
 global.maxHPMultiplier = 1
 global.damageMultiplier = 1;
 global.speedMultiplier = 1;
-global.critChance = 5;
+global.critChance = 10;
 
 global.knockbackMultiplier = 1;
 global.bowChargeMultiplier = 1;

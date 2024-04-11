@@ -5,7 +5,7 @@ image_speed = 8
 image_angle = direction
 speed = pspeed
 atkangle = direction
-knockbackAmt = 10 * global.knockbackMultiplier
+knockbackAmt = 8 * global.knockbackMultiplier
 
 alarm[0] = 60;
 

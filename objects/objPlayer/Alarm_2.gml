@@ -3,4 +3,4 @@ if(mana > maxMana)
 {
 	mana = maxMana
 }
-alarm[2] = 4
+alarm[2] = 3

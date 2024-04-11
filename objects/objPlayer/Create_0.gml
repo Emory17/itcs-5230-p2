@@ -2,10 +2,16 @@ atkangle = 0
 atkObj = objSlash
 comboCooldown = 0;
 attacking = false;
-alarm[2] = 4
+alarm[2] = 3
 moving = false;
 hchange = 0
 vchange = 0
+dashing = false;
+dashingSpeed = mspeed * 2;
+canDash = false;
+alarm[4] = 5;
+lastSpeedX = 0;
+lastSpeedY = 0;
 
 alarm[1] = atkcooldown
 
@@ -29,3 +35,4 @@ else if(global.character == pChar.mage){
 
 instance_create_depth(x,y,-1,objBow)
 instance_create_depth(x,y,-1,objWand)
+instance_create_depth(x,y,0,objPointer)

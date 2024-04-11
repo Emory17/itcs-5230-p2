@@ -1,37 +1,46 @@
-atkangle = point_direction(x,y,mouse_x,mouse_y)
+atkangle = objPointer.direction
 
 //increments each step to keep track of if sword should slash up or down
 if(comboCooldown > 0)
 	comboCooldown++;
+	
+
+
 
 if(!attacking || !global.character == pChar.knight)
 {
 	//Up
-	if(keyboard_check(ord("W")) and !instance_place(x, y-mspeed, objOuterWall))
+	if(keyboard_check(ord("W")) and !instance_place(x, y-mspeed, objOuterWall) and !dashing)
 	{
 		vchange += -mspeed
 		moving = true; 
+		lastSpeedY = vchange
 	}
 	
 	//Down
-	if(keyboard_check(ord("S")) and !instance_place(x, y+mspeed, objOuterWall))
+	if(keyboard_check(ord("S")) and !instance_place(x, y+mspeed, objOuterWall) and !dashing)
 	{
 		vchange += mspeed
 		moving = true;
+		lastSpeedY = vchange
 	}
 	
 	//Left
-	if(keyboard_check(ord("A")) and !instance_place(x-mspeed, y, objOuterWall))
+	if(keyboard_check(ord("A")) and !instance_place(x-mspeed, y, objOuterWall) and !dashing)
 	{
 		hchange += -mspeed 
+		moving = true;
+		lastSpeedX = hchange
 	}
 	
 	//Right
-	if(keyboard_check(ord("D")) and !instance_place(x+mspeed, y, objOuterWall))
+	if(keyboard_check(ord("D")) and !instance_place(x+mspeed, y, objOuterWall) and !dashing)
 	{
 		hchange += mspeed 
 		moving = true;
+		lastSpeedX = hchange
 	}
+
 	
 	if(!keyboard_check(ord("D")) && !keyboard_check(ord("A")) && !keyboard_check(ord("S")) && !keyboard_check(ord("W")))
 	{
@@ -54,6 +63,7 @@ if(!attacking || !global.character == pChar.knight)
 		x += hchange
 	}
 	
+	
 	vchange = 0
 	hchange = 0
 	
@@ -68,7 +78,7 @@ else
 	image_xscale = -1
 }
 		
-if(mouse_check_button(mb_left) and canAttack){
+if(mouse_check_button(mb_left) and canAttack and !dashing){
 	
 	direction = atkangle;
 	
@@ -85,7 +95,7 @@ if(mouse_check_button(mb_left) and canAttack){
 		instance_create_layer(x + (dcos(atkangle) * 110), y - (dsin(atkangle) * 110), "Instances", atkObj)
 	}
 	
-	if(global.character == pChar.mage)
+	if(global.character == pChar.mage and !dashing)
 	{
 		if(mana >= 20)
 		{
@@ -106,7 +116,7 @@ if(instance_exists(objSlash) && !moving)
 }
 
 
-if(global.character == pChar.archer)
+if(global.character == pChar.archer && !dashing)
 {
 	if(mouse_check_button(mb_left))
 	{
@@ -124,7 +134,7 @@ if(global.character == pChar.archer)
 	}
 }
 
-//this is mess but sprites are annoying
+//this is a mess but sprites are annoying
 if(moving)
 {
 	if(global.character == pChar.knight)
@@ -155,3 +165,55 @@ if(!moving && !instance_exists(objSlash))
 		sprite_index = sprMage;
 	}
 }
+
+if(keyboard_check(vk_space) && !attacking && canDash)
+{
+	canDash = false;
+	moving = false //this is necessary trust me
+	dashing = true;
+	bowCharge = 0;
+	alarm[3] = dashCooldown
+}
+
+
+if(dashing && dashDecay > 0)
+{
+	if(dashDecay = 19.5)
+	{
+		lastSpeedX = lastSpeedX * 6
+		lastSpeedY = lastSpeedY * 6
+	}
+
+	dashDecay--
+	dashDecelerate += .25;
+	lastSpeedX += (dashDecelerate * -sign(lastSpeedX))
+	lastSpeedY += (dashDecelerate * -sign(lastSpeedY))
+	x += lastSpeedX
+	y += lastSpeedY
+	instance_create_depth(x,y,1,objPlayerAfterImage)
+}
+
+if (dashDecay <= 0  && dashing)
+{
+	dashing = false;
+	dashDecay = 19.5
+	canAttack = true
+	dashDecelerate = .25;
+}
+
+if(!keyboard_check(ord("A")) &&  !keyboard_check(ord("D")) && !dashing)
+	{
+		lastSpeedX = 0
+	}
+	
+if(!keyboard_check(ord("W")) &&  !keyboard_check(ord("S")) && !dashing)
+	{
+		lastSpeedY = 0
+	}
+
+if(!keyboard_check(ord("W")) &&  !keyboard_check(ord("S")) &&
+!keyboard_check(ord("A")) &&  !keyboard_check(ord("D")) && !dashing)
+	{
+		lastSpeedX = 0
+		lastSpeedY = 0
+	}

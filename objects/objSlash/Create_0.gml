@@ -1,18 +1,16 @@
-atkangle = point_direction(x,y,mouse_x,mouse_y)
+atkangle = objPointer.direction
 
 
 
-if(global.primaryUpgrade1 = true)
-	sizeModifier = 1
-else
-	sizeModifier = 0
+
+sizeModifier = 0
 
 
 image_xscale = 2.5 + sizeModifier
 
 if(objPlayer.comboCooldown > 60 || objPlayer.comboCooldown = 0)
 {
-	if(atkangle < 90 || atkangle > 270)
+	if(atkangle <= 90 || atkangle >= 270)
 	{
 		image_yscale = 3 + sizeModifier
 	}
@@ -24,7 +22,7 @@ if(objPlayer.comboCooldown > 60 || objPlayer.comboCooldown = 0)
 }
 else
 {
-	if(atkangle < 90 || atkangle > 270)
+	if(atkangle <= 90 || atkangle >= 270)
 	{
 		image_yscale = -3 - sizeModifier
 	}

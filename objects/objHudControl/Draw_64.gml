@@ -14,4 +14,6 @@ if(global.character == pChar.mage)
 
 draw_text(view_get_xport(0) + 120, view_get_yport(0) + 25, string(objPlayer.totalHealth) + " / " + string(objPlayer.maxHP))
 
-//draw_sprite_ext(sprCurrentPower, powerUpSprite , view_get_xport(0) + 400, view_get_yport(0) + 130, 1.5, 1.5, 0, c_white, 1)
+//I use this to test values sometimes
+draw_text(view_get_xport(0) + 120, view_get_yport(0) + 85, string(objPlayer.dashDecay) + " " + string(objPlayer.dashing) + " " + string(objPlayer.canDash))
+draw_text(view_get_xport(0) + 120, view_get_yport(0) + 105, string(objPlayer.lastSpeedX) + " " + string(objPlayer.lastSpeedY))
