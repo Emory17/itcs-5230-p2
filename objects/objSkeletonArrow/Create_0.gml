@@ -4,6 +4,7 @@ speedX = 0
 speedY = 0
 placeHolderX = objPlayer.x 
 placeHolderY = objPlayer.y
+blocked = false;
 //((350 mod objPlayer.y) == 0)
 //((350 mod objPlayer.x) == 0)
 //((850 mod objPlayer.y) == 0)

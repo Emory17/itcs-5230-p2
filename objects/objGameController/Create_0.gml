@@ -30,4 +30,9 @@ global.secondaryUpgrade1 = false;
 //controls if player has mirror shield, boots of quickness or winter's embrace
 global.secondaryUpgrade2 = false;
 
+global.enemyDamageMultiplier = 1
+global.enemyHealthMultiplier = 1
+
+global.currentStage = 1
+
 cleared = false

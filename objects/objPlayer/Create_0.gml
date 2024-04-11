@@ -12,6 +12,7 @@ canDash = false;
 alarm[4] = 5;
 lastSpeedX = 0;
 lastSpeedY = 0;
+shieldUp = false;
 
 alarm[1] = atkcooldown
 
@@ -36,3 +37,4 @@ else if(global.character == pChar.mage){
 instance_create_depth(x,y,-1,objBow)
 instance_create_depth(x,y,-1,objWand)
 instance_create_depth(x,y,0,objPointer)
+instance_create_depth(x,y,0,objShield)

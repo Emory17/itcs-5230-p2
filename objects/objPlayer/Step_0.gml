@@ -14,7 +14,7 @@ if(!attacking || !global.character == pChar.knight)
 	{
 		vchange += -mspeed
 		moving = true; 
-		lastSpeedY = vchange
+		lastSpeedY = -5
 	}
 	
 	//Down
@@ -22,7 +22,7 @@ if(!attacking || !global.character == pChar.knight)
 	{
 		vchange += mspeed
 		moving = true;
-		lastSpeedY = vchange
+		lastSpeedY = 5
 	}
 	
 	//Left
@@ -30,7 +30,7 @@ if(!attacking || !global.character == pChar.knight)
 	{
 		hchange += -mspeed 
 		moving = true;
-		lastSpeedX = hchange
+		lastSpeedX = -5
 	}
 	
 	//Right
@@ -38,7 +38,7 @@ if(!attacking || !global.character == pChar.knight)
 	{
 		hchange += mspeed 
 		moving = true;
-		lastSpeedX = hchange
+		lastSpeedX = 5
 	}
 
 	
@@ -115,6 +115,11 @@ if(instance_exists(objSlash) && !moving)
 	sprite_index = sprKnightSwordless;
 }
 
+if(shieldUp && !moving)
+{
+	sprite_index = sprKnightShieldLess;
+}
+
 
 if(global.character == pChar.archer && !dashing)
 {
@@ -150,7 +155,7 @@ if(moving)
 		sprite_index = sprMageMove;
 	}
 }
-if(!moving && !instance_exists(objSlash))
+if(!moving && !instance_exists(objSlash) && !shieldUp)
 {
 	if(global.character == pChar.knight)
 	{
@@ -178,10 +183,24 @@ if(keyboard_check(vk_space) && !attacking && canDash)
 
 if(dashing && dashDecay > 0)
 {
-	if(dashDecay = 19.5)
+	if(dashDecay = 10)
 	{
 		lastSpeedX = lastSpeedX * 6
 		lastSpeedY = lastSpeedY * 6
+	}
+	
+	if(lastSpeedY != 0){
+		if(lastSpeedX != 0){
+			lastSpeedY *= sqrt(.9)
+		}
+		
+	}
+	
+	if(lastSpeedX != 0){
+		if(lastSpeedY != 0){
+			lastSpeedX *= sqrt(.9)
+		}
+		
 	}
 
 	dashDecay--
@@ -191,12 +210,14 @@ if(dashing && dashDecay > 0)
 	x += lastSpeedX
 	y += lastSpeedY
 	instance_create_depth(x,y,1,objPlayerAfterImage)
+	if(dashDecay = 1)
+	instance_create_depth(x-30,y-40, -2, objDashBar)
 }
 
 if (dashDecay <= 0  && dashing)
 {
 	dashing = false;
-	dashDecay = 19.5
+	dashDecay = 10
 	canAttack = true
 	dashDecelerate = .25;
 }
@@ -217,3 +238,19 @@ if(!keyboard_check(ord("W")) &&  !keyboard_check(ord("S")) &&
 		lastSpeedX = 0
 		lastSpeedY = 0
 	}
+
+
+if(mouse_check_button(mb_right) and !attacking and !dashing and global.character == pChar.knight and canAttack)
+{
+	
+	shieldUp = true;
+	canAttack = false
+	attacking = true;
+	moving = false
+}
+else if (!mouse_check_button(mb_right) and global.character == pChar.knight && shieldUp = true)
+{
+	shieldUp = false;
+	canAttack = true
+	attacking = false;
+}

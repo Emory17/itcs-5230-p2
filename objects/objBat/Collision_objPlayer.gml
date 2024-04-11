@@ -1,3 +1,3 @@
-damagePlayer(10)
+damagePlayer(round(10 * global.enemyDamageMultiplier))
 x = xprevious
 y = yprevious
