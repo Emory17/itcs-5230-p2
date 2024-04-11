@@ -95,7 +95,7 @@ if(mouse_check_button(mb_left) and canAttack and !dashing){
 		instance_create_layer(x + (dcos(atkangle) * 110), y - (dsin(atkangle) * 110), "Instances", atkObj)
 	}
 	
-	if(global.character == pChar.mage and !dashing)
+	if(global.character == pChar.mage)
 	{
 		if(mana >= 20)
 		{
@@ -254,3 +254,32 @@ else if (!mouse_check_button(mb_right) and global.character == pChar.knight && s
 	canAttack = true
 	attacking = false;
 }
+ 
+if(mouse_check_button(mb_right) and !dashing && !attacking){
+	
+	if(global.character == pChar.archer && canGust)
+	{
+		canGust = false
+		windCharge = 0
+		objBow.bowCharge = 0;
+		alarm[1] = gustCooldown;
+		instance_create_layer(x + (dcos(atkangle) * 50), y - (dsin(atkangle) * 50), "Instances", objWindGust)
+	}
+	
+	if(global.character == pChar.mage and !attacking)
+	{
+		if(mana >= 20)
+		{
+			attacking = true
+			canAttack = false
+			objWand.image_speed = 1.5
+			mana -= 20;
+		}
+		
+	}
+	
+	
+}
+
+if(!canGust)
+	windCharge++

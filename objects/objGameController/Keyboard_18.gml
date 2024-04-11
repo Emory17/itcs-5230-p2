@@ -33,7 +33,7 @@ if(keyboard_check_pressed(ord("O")))
 	global.character = pChar.archer
 	
 	if(instance_exists(objPlayer)){
-		objPlayer.sprite_index = sprArcher
+		objPlayer.sprite_index = sprWindCharge
 		objPlayer.atkObj = objArrow
 	}
 }

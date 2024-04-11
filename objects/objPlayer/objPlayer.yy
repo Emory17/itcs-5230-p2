@@ -46,6 +46,7 @@
     {"$GMObjectProperty":"","%Name":"dashCooldown","filters":[],"listItems":[],"multiselect":false,"name":"dashCooldown","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"80","varType":0,},
     {"$GMObjectProperty":"","%Name":"dashDecay","filters":[],"listItems":[],"multiselect":false,"name":"dashDecay","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"10","varType":0,},
     {"$GMObjectProperty":"","%Name":"dashDecelerate","filters":[],"listItems":[],"multiselect":false,"name":"dashDecelerate","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":0,},
+    {"$GMObjectProperty":"","%Name":"gustCooldown","filters":[],"listItems":[],"multiselect":false,"name":"gustCooldown","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"90","varType":0,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

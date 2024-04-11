@@ -13,6 +13,8 @@ alarm[4] = 5;
 lastSpeedX = 0;
 lastSpeedY = 0;
 shieldUp = false;
+canGust = true;
+windCharge = 0
 
 alarm[1] = atkcooldown
 
