@@ -9,15 +9,15 @@ if(instance_exists(objPlayer) and canShoot == true and canTeleport = false)
 			if(instance_exists(objWarlockProjectile))
 			{
 			
-				if(iterator < 91)
+				if(iterator < 181)
 				{
-					if(iterator == 30 or iterator == 60 or iterator == 90)
+					if(iterator == 120 or iterator == 150 or iterator == 180)
 					{
 						instance_create_layer(x, y, "Instances", protectileSpawn)
 					}
 					iterator++
 				}
-				if(iterator == 91)
+				if(iterator == 181)
 				{
 					iterator = 30
 					canShoot = false
@@ -38,7 +38,7 @@ if(instance_exists(objPlayer) and canShoot == true and canTeleport = false)
 		}
 		else
 		{
-			alarm[3] = 120
+			alarm[3] = 210
 		}	
 }
 

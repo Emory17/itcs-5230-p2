@@ -1,8 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
+timeTillDestroy = 0
 
-/// @description Insert description here
-// You can write your code in this editor
 /*
 speedX = 0
 speedY = 0

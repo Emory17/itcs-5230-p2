@@ -7,6 +7,7 @@
   "overriddenProperties":[
     {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"objSkeleton","path":"objects/objSkeleton/objSkeleton.yy",},"propertyId":{"name":"protectileSpawn","path":"objects/objSkeleton/objSkeleton.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"objEntProtectile",},
     {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"objBat","path":"objects/objBat/objBat.yy",},"propertyId":{"name":"totalHealth","path":"objects/objBat/objBat.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"60 * global.enemyHealthMultiplier ",},
+    {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"objSkeleton","path":"objects/objSkeleton/objSkeleton.yy",},"propertyId":{"name":"shotFrequency","path":"objects/objSkeleton/objSkeleton.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"180",},
   ],
   "parent":{
     "name":"enemies",
