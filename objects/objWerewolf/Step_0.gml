@@ -6,7 +6,6 @@ if(instance_exists(objPlayer))
 {
 	if(distance_to_object(objPlayer) < enemyVision)
 	{
-		path_end()
 		if(objPlayer.x > x)
 		{
 			image_xscale = 1
@@ -15,53 +14,54 @@ if(instance_exists(objPlayer))
 		{
 			image_xscale = -1
 		}
-		directionToPlayer = point_direction(x, y, objPlayer.x, objPlayer.y)
-		
-		if(isChargingLeft = false and isChargingRight = false and isChargingDown = false)
+		if(canCharge)
 		{
-			if(objPlayer.y < objWerewolf.y and objPlayer.x < objWerewolf.x)//up
+			directionToPlayer = point_direction(x, y, objPlayer.x, objPlayer.y)
+			canCharge = false
+			show_debug_message(directionToPlayer)
+			
+			if(directionToPlayer >= 45 and directionToPlayer <= 135)//up
 			{
-				isChargingUp = true
+				path_end()
 				image_angle = 90
-				objWerewolf.y -= hsp
-				alarm[3] = 180
-			}
-		}
-		
-		if(isChargingLeft = false and isChargingRight = false and isChargingUp = false)
-		{
-			if(objPlayer.y > objWerewolf.y and objPlayer.x > objWerewolf.x)//down
-			{
-				isChargingDown = true
-				image_angle = 270
-				objWerewolf.y += hsp
-				alarm[4] = 180
-			}
-		}
-		
-		if(isChargingDown = false and isChargingRight = false and isChargingUp = false)
-		{
-			if(objPlayer.x < objWerewolf.x)//left
-			{
-				isChargingLeft = true
-				image_xscale = -1
-				objWerewolf.x -= hsp
+				direction = point_direction(x, y, x, y - defaultSpeed)
+				speed = defaultSpeed * 3
 				alarm[1] = 180
 			}
-		}
-		
-		if(isChargingDown = false and isChargingDown = false and isChargingUp = false)
-		{
-			if(objPlayer.x > objWerewolf.x)//right
+			else if(directionToPlayer >= 225 and directionToPlayer <= 315)//down
 			{
-				isChargingRight = true
-				objWerewolf.x += hsp
-				alarm[2] = 180
+				
+				path_end()
+				image_angle = 270
+				direction = point_direction(x, y, x, y + defaultSpeed)
+				speed = defaultSpeed * 3
+				alarm[1] = 180
 			}
+			else if(directionToPlayer >= 135 and directionToPlayer <= 225)//left
+			{
+				path_end()
+				image_xscale = -1
+				direction = point_direction(x, y, x - defaultSpeed, y)
+				speed = defaultSpeed * 3
+				alarm[1] = 180
+			}
+			else// if(directionToPlayer >= 315 and directionToPlayer <= 45)//right
+			{
+				path_end()
+				direction = point_direction(x, y, x + defaultSpeed, y)
+				speed = defaultSpeed * 3
+				alarm[1] = 180
+			}
+			
+			
 		}
 	
 	}
-
+	if(canCharge = true and distance_to_object(objPlayer) > enemyVision)
+	{
+		direction = point_direction(x, y, objPlayer.x, objPlayer.y)
+		speed = defaultSpeed
+	}
 }
 
 alarm[0] = 180
@@ -71,3 +71,48 @@ if(knockedBack)
 	x += (dcos(hitAngle) * (knockbackPerTick))
 	y += -(dsin(hitAngle) * (knockbackPerTick))
 }
+
+
+/*
+if(canCharge)
+		{
+			directionToPlayer = point_direction(x, y, objPlayer.x, objPlayer.y)
+			canCharge = false
+			show_debug_message(directionToPlayer)
+			
+			if(directionToPlayer >= 45 and directionToPlayer <= 135)//up
+			{
+				path_end()
+				image_angle = 90
+				direction = point_direction(x, y, x, y - defaultSpeed)
+				speed = defaultSpeed * 3
+				alarm[1] = 180
+			}
+			else if(directionToPlayer >= 225 and directionToPlayer <= 315)//down
+			{
+				
+				path_end()
+				image_angle = 270
+				direction = point_direction(x, y, x, y + defaultSpeed)
+				speed = defaultSpeed * 3
+				alarm[1] = 180
+			}
+			else if(directionToPlayer >= 135 and directionToPlayer <= 225)//left
+			{
+				path_end()
+				image_xscale = -1
+				direction = point_direction(x, y, x - defaultSpeed, y)
+				speed = defaultSpeed * 3
+				alarm[1] = 180
+			}
+			else// if(directionToPlayer >= 315 and directionToPlayer <= 45)//right
+			{
+				path_end()
+				direction = point_direction(x, y, x + defaultSpeed, y)
+				speed = defaultSpeed * 3
+				alarm[1] = 180
+			}
+			
+			
+		}
+*/

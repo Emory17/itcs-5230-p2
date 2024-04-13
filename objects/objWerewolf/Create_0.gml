@@ -4,8 +4,5 @@
 // Inherit the parent event
 event_inherited();
 path_start(pathName, hsp, path_action_restart, false)
-isChargingLeft = false
-isChargingRight = false
-isChargingUp = false
-isChargingDown = false
+canCharge = true
 directionToPlayer = 0
