@@ -28,7 +28,7 @@
   "origin":4,
   "parent":{
     "name":"enemies",
-    "path":"folders/Sounds/Sprites/enemies.yy",
+    "path":"folders/Sprites/enemies.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

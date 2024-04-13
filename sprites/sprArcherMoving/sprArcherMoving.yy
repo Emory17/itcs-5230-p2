@@ -29,7 +29,7 @@
   "origin":4,
   "parent":{
     "name":"player appearence",
-    "path":"folders/Sounds/Sprites/player/player appearence.yy",
+    "path":"folders/Sprites/player/player appearence.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
