@@ -14,16 +14,6 @@ if(instance_exists(objPlayer))
 		image_xscale = -1
 	}
 	
-	if(invincible)
-	{
-		alarm[1] = 90
-	}
-	if(!invincible)
-	{
-		
-		alarm[2]= 60
-	}
-	
 	
 	direction = point_direction(x,y,objPlayer.x, objPlayer.y)
 	speed = defaultSpeed

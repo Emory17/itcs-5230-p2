@@ -26,7 +26,7 @@
   "origin":0,
   "parent":{
     "name":"effects",
-    "path":"folders/Sounds/Sprites/player/effects.yy",
+    "path":"folders/Sprites/player/effects.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

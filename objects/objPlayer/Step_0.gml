@@ -268,12 +268,14 @@ if(mouse_check_button(mb_right) and !dashing && !attacking){
 	
 	if(global.character == pChar.mage and !attacking)
 	{
-		if(mana >= 20)
+		if(mana >= 80)
 		{
 			attacking = true
 			canAttack = false
 			objWand.image_speed = 1.5
-			mana -= 20;
+			mana -= 80;
+			objWand.iceSpell = true;
+			objWand.sprite_index = sprWandIce
 		}
 		
 	}

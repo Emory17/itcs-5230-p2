@@ -2,7 +2,7 @@ if(global.character == pChar.knight){
 	sprite_index = sprKnight
 }
 else if(global.character == pChar.archer){
-	sprite_index = sprWindCharge
+	sprite_index = sprArcher
 }
 else if(global.character == pChar.mage){
 	sprite_index = sprMage

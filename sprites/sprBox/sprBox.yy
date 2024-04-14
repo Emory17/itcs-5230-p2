@@ -1,7 +1,7 @@
 {
   "$GMSprite":"",
   "%Name":"sprBox",
-  "bboxMode":0,
+  "bboxMode":2,
   "bbox_bottom":63,
   "bbox_left":0,
   "bbox_right":63,
@@ -26,7 +26,7 @@
   "origin":4,
   "parent":{
     "name":"Sprites",
-    "path":"folders/Sounds/Sprites.yy",
+    "path":"folders/Sprites.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

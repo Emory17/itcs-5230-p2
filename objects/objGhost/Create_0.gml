@@ -3,4 +3,8 @@
 
 // Inherit the parent event
 event_inherited();
+image_speed = 0;
+
+alarm[2] = tangibleTime
+
 
