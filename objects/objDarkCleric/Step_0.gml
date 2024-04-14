@@ -24,8 +24,9 @@ if(instance_exists(objPlayer) and canShoot == true)
 			   instance_id[i].object_index == objVampire or instance_id[i].object_index == objWarlock or 
 			   instance_id[i].object_index == objWerewolf or instance_id[i].object_index == objZombie)
 			   {
-				   var enemyUnit = object_get_name(instance_id[i].object_index)
-				   enemyUnit.totalHealth += healAmount
+				   
+				   //var enemyUnit = object_get_name(instance_id[i].object_index)
+				   //enemyUnit.totalHealth += healAmount
 			   }
 		}
 	}
