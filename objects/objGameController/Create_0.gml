@@ -22,7 +22,7 @@ global.bombDash = false;
 global.dashIFrames = false
 
 //controls if player has greatsword, stormarrow or spellcasting focus
-global.primaryUpgrade1 = false;
+global.primaryUpgrade1 = true; //false
 //controls if player has tripower blade, magic tipped arrows or death seeking flame
 global.primaryUpgrade2 = false;
 //controls if player has shield of bashing, trick bomb or cone of cold
@@ -36,5 +36,6 @@ global.enemyHealthMultiplier = 1
 global.currentStage = 1
 
 cleared = false
+global.currentLevelIndex = 0
 
 global.levelArray = []

@@ -93,6 +93,8 @@ if(mouse_check_button(mb_left) and canAttack and !dashing){
 		canAttack = false
 		alarm[1] = atkcooldown
 		instance_create_layer(x + (dcos(atkangle) * 110), y - (dsin(atkangle) * 110), "Instances", atkObj)
+		if(global.primaryUpgrade1)
+			instance_create_layer(x + (dcos(atkangle) * 80), y - (dsin(atkangle) * 80), "Instances", objSwordBeam)
 	}
 	
 	if(global.character == pChar.mage)

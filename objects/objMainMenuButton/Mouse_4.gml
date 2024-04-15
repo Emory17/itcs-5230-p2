@@ -9,7 +9,7 @@ if(position_meeting(mouse_x,mouse_y,id)){
 		show_debug_message(global.levelArray[0])
 	}
 	else if(value = "archer"){
-		global.character = pChar.archer
+		global.character = pChar.archer 
 		randomize()
 		global.levelArray = [irandom_range(0, 4), irandom_range(0, 4), irandom_range(0, 4), 
 							 irandom_range(0, 4), irandom_range(0, 4), irandom_range(5, 9),

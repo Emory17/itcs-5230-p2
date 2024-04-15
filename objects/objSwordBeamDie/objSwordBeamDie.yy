@@ -1,15 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"objDoor",
+  "%Name":"objSwordBeamDie",
   "eventList":[
-    {"$GMEvent":"","%Name":"","collisionObjectId":{"name":"objPlayer","path":"objects/objPlayer/objPlayer.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":7,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"objDoor",
+  "name":"objSwordBeamDie",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"player",
+    "path":"folders/Objects/player.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -30,8 +30,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sprDoor",
-    "path":"sprites/sprDoor/sprDoor.yy",
+    "name":"sprSwordBeamDie",
+    "path":"sprites/sprSwordBeamDie/sprSwordBeamDie.yy",
   },
   "spriteMaskId":null,
   "visible":true,

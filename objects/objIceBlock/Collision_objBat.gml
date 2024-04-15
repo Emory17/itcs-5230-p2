@@ -10,3 +10,5 @@ if(freezeTime = currentFreezeTime)
 	instance_destroy()
 }
 
+if(unfreeze = true)
+	other.frozen = false;

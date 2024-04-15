@@ -15,5 +15,5 @@ if(global.character == pChar.mage)
 draw_text(view_get_xport(0) + 120, view_get_yport(0) + 25, string(objPlayer.totalHealth) + " / " + string(objPlayer.maxHP))
 
 //I use this to test values sometimes
-draw_text(view_get_xport(0) + 120, view_get_yport(0) + 85, string(objPlayer.dashDecay) + " " + string(objPlayer.dashing) + " " + string(objPlayer.canDash))
-draw_text(view_get_xport(0) + 120, view_get_yport(0) + 105, string(objPlayer.lastSpeedX) + " " + string(objPlayer.lastSpeedY))
+draw_text(view_get_xport(0) + 120, view_get_yport(0) + 85, string(global.currentLevelIndex))
+
