@@ -5,9 +5,16 @@ if(instance_exists(objPlayer) and canShoot == true)
 	
 	if(distance_to_object(objPlayer) < attackRange)
 	{
+		
+		instance_create_layer(x, y, "Instances", objShockwave,
+		{
+			attachedToEnemy : self.id
+		})
 		canShoot = false
-		alarm[1]= shotFrequency
-		instance_create_layer(x, y, "Instances", protectileSpawn)
+		alarm[1] = shotFrequency
+		alarm[3] = persistTime
+		
+		
 	
 	}
 	if(canHeal = true)
@@ -23,10 +30,8 @@ if(instance_exists(objPlayer) and canShoot == true)
 			   instance_id[i].object_index == objSkeleton or instance_id[i].object_index == objSkeletonVanguard or 
 			   instance_id[i].object_index == objVampire or instance_id[i].object_index == objWarlock or 
 			   instance_id[i].object_index == objWerewolf or instance_id[i].object_index == objZombie)
-			   {
-				   
-				   //var enemyUnit = object_get_name(instance_id[i].object_index)
-				   //enemyUnit.totalHealth += healAmount
+			   { 
+				   instance_id[i].object_index.totalHealth += healAmount
 			   }
 		}
 	}
