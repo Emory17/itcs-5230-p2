@@ -36,3 +36,5 @@ global.enemyHealthMultiplier = 1
 global.currentStage = 1
 
 cleared = false
+
+global.levelArray = []
