@@ -14,7 +14,9 @@ lastSpeedX = 0;
 lastSpeedY = 0;
 shieldUp = false;
 canGust = true;
-windCharge = 0
+windCharge = 0;
+rage = 0
+alarm[5] = rageDecayRate
 
 alarm[1] = atkcooldown
 

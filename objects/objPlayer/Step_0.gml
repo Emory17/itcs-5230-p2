@@ -289,3 +289,5 @@ if(!canGust)
 	windCharge++
 
 
+if(rage < 0)
+	rage = 0

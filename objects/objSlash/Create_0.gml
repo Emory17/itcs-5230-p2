@@ -39,3 +39,21 @@ image_speed = 1.5
 
 alarm[0] = atime
 alarm[1] = 5
+
+if(global.primaryUpgrade2)
+	{
+		if(objPlayer.rage > 100)
+		{
+			rageLevel = 2
+			sprite_index = sprSlashSuperRage
+			swordDamage = 20 * global.damageMultiplier
+		}
+		else if(objPlayer.rage > 50)
+		{
+			rageLevel = 1
+			sprite_index = sprSlashRage
+			swordDamage = 20 * global.damageMultiplier
+		}
+	}
+	
+	

@@ -34,6 +34,7 @@
     {"$GMObjectProperty":"","%Name":"atime","filters":[],"listItems":[],"multiselect":false,"name":"atime","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"23","varType":0,},
     {"$GMObjectProperty":"","%Name":"swordDamage","filters":[],"listItems":[],"multiselect":false,"name":"swordDamage","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"15 * global.damageMultiplier","varType":0,},
     {"$GMObjectProperty":"","%Name":"knockbackAmt","filters":[],"listItems":[],"multiselect":false,"name":"knockbackAmt","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"8 * global.knockbackMultiplier","varType":0,},
+    {"$GMObjectProperty":"","%Name":"rageLevel","filters":[],"listItems":[],"multiselect":false,"name":"rageLevel","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":0,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

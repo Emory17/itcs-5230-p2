@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"damageEnemySecondary",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"damageEnemySecondary",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

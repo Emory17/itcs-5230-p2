@@ -67,5 +67,12 @@ if(instance_exists(objPlayer))
 			})
 		}
 	}
-
+	else if(bowCharge > 0)
+	{
+		if(!mouse_check_button(mb_left))
+		{
+			//audio_play_sound(playerBowShoot, 1, false)
+			instance_create_layer(x + (dcos(image_angle) * 10), y - (dsin(image_angle) * 10), "Instances", objArrow)
+		}
+	}
 }
