@@ -1,4 +1,5 @@
-if((other.hitobject == noone or other.hitobject != self) && global.primaryUpgrade2 && other.lightningOrigin < 1)
-{
-	other.alarm[11] = 20
-}
+other.hitAngle = atkangle
+other.knockbackPerTick = knockbackAmt;
+
+if(dischargeTime % 15 == 0)
+	damageEnemySecondary(other, dischargeDamage, self, false)

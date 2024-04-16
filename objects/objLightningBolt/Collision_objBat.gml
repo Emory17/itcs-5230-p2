@@ -1,5 +1,7 @@
-//other.x = startingX
-//other.y = startingY
+other.x = startingX
+other.y = startingY
+other.hitAngle = atkangle
+other.knockbackPerTick = knockbackAmt;
 
-if(origin)
-	other.lightningOrigin = 90
+if(other.lightningOrigin)
+	willDischarge = true;

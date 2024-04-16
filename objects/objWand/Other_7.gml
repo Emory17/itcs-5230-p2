@@ -5,6 +5,7 @@ if(instance_exists(objPlayer) && !iceSpell)
 	image_speed = 0
 	objPlayer.canAttack = true;
 	objPlayer.attacking = false;
+	alarm[0] = 5
 }
 
 if(instance_exists(objPlayer) && iceSpell)

@@ -116,4 +116,3 @@ if(canCharge)
 			
 		}
 */
-lightningOrigin--
