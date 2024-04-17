@@ -1,10 +1,10 @@
 atkangle = objPointer.direction
+dashFrame++
 
 //increments each step to keep track of if sword should slash up or down
 if(comboCooldown > 0)
 	comboCooldown++;
 	
-
 
 
 if(!attacking || !global.character == pChar.knight)
@@ -175,6 +175,7 @@ if(!moving && !instance_exists(objSlash) && !shieldUp)
 
 if(keyboard_check(vk_space) && !attacking && canDash)
 {
+	dashFrame = 0
 	canDash = false;
 	moving = false //this is necessary trust me
 	dashing = true;
@@ -211,7 +212,7 @@ if(dashing && dashDecay > 0)
 	lastSpeedY += (dashDecelerate * -sign(lastSpeedY))
 	x += lastSpeedX
 	y += lastSpeedY
-	instance_create_depth(x,y,1,objPlayerAfterImage)
+	instance_create_depth(x,y,2,objPlayerAfterImage)
 	if(dashDecay = 1)
 	instance_create_depth(x-30,y-40, -2, objDashBar)
 }
@@ -291,3 +292,17 @@ if(!canGust)
 
 if(rage < 0)
 	rage = 0
+
+if(dashFrame > dashIframesStart && dashFrame < dashIframesEnd && global.dashIFrames)
+{
+	invincible = true;
+	image_alpha = .4
+	
+}
+if(dashFrame == dashIframesEnd && global.dashIFrames)
+{
+	invincible = false
+	image_alpha = 1
+	
+}
+

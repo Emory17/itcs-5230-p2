@@ -1,5 +1,16 @@
 global.currentLevelIndex++
 
+global.persistentHealth = objPlayer.totalHealth
+
+if(global.hasMoreHealing)
+{
+	global.persistentHealth += round((100 * global.maxHPMultiplier) * .2)
+}
+else
+{
+	global.persistentHealth += round((100 * global.maxHPMultiplier) * .1)
+}
+
 if(global.currentLevelIndex <= 4)
 {
 	if(global.levelArray[global.currentLevelIndex] == 0)
@@ -50,4 +61,6 @@ else
 {
 	room_goto(WinScreen)
 }
+
+
 

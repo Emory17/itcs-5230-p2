@@ -15,11 +15,11 @@ global.knockbackMultiplier = 1;
 global.bowChargeMultiplier = 1;
 global.maxManaMultiplier= 1;
 
-global.hasMoreHealing = false;
+global.hasMoreHealing = true;
 global.critsHeal = false;
 global.enemiesExplode = false;
-global.bombDash = false;
-global.dashIFrames = false
+global.bombDash = true;
+global.dashIFrames = true
 
 //controls if player has greatsword, stormarrow or spellcasting focus
 global.primaryUpgrade1 = true; //false
@@ -31,7 +31,7 @@ global.secondaryUpgrade1 = false;
 global.secondaryUpgrade2 = false;
 
 global.enemyDamageMultiplier = 1
-global.enemyHealthMultiplier = 10
+global.enemyHealthMultiplier = 1
 
 global.currentStage = 1
 
@@ -39,3 +39,5 @@ cleared = false
 global.currentLevelIndex = 0
 
 global.levelArray = []
+
+global.persistentHealth = 100
