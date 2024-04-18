@@ -1,5 +1,9 @@
 atkangle = objPointer.direction
 dashFrame++
+if(totalHealth > maxHP)
+{
+	totalHealth = maxHP
+}
 
 //increments each step to keep track of if sword should slash up or down
 if(comboCooldown > 0)
@@ -306,3 +310,33 @@ if(dashFrame == dashIframesEnd && global.dashIFrames)
 	
 }
 
+if(shieldUp && keyboard_check(vk_space) && canDash && global.secondaryUpgrade1 && !bashing)
+{
+	attacking = true
+	bashing = true
+	canDash = false;
+	moving = false 
+	direction = atkangle;
+	speed = 15
+	bashTime = 1
+	alarm[3] = dashCooldown
+	instance_create_depth(x,y,0,objShieldBash)
+}
+
+if(bashing)
+{
+	shieldUp = true;
+	instance_create_depth(x,y,2,objPlayerAfterImage)
+	bashTime++
+}
+
+if(bashTime >= 15)
+{
+	attacking = true
+	bashing = false
+	canDash = false;
+	direction = atkangle;
+	speed = 0
+	bashTime = 0
+	instance_create_depth(x-30,y-40, -2, objDashBar)
+}

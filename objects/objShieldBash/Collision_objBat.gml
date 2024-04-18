@@ -1,4 +1,4 @@
 other.hitAngle = atkangle
 other.knockbackPerTick = knockbackAmt;
 
-damageEnemyTertiary(other, bombDamage, self, true)
+damageEnemy(other, bashDamage, self, true)

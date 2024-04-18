@@ -4,20 +4,10 @@ if(!objPlayer.bashing)
 	image_angle = atkangle
 }
 
-if(objPlayer.shieldUp)
-{
-	visible = true
-}
-else
-{
-	visible = false
-}
-
-
 if(instance_exists(objPlayer))
 	{
-	x = objPointer.x + (dcos(atkangle) * 70)
-	y = objPointer.y - (dsin(atkangle) * 70)
+	x = objPointer.x + (dcos(atkangle) * 72)
+	y = objPointer.y - (dsin(atkangle) * 72)
 	}
 	
 if(atkangle <= 90 || atkangle >= 270)
@@ -28,12 +18,8 @@ if(atkangle <= 90 || atkangle >= 270)
 	{
 		image_yscale = -1.5
 	}
-	
-if(objPlayer.bashing)
+
+if(!objPlayer.bashing)
 {
-	knockbackAmt = 20
-}
-else
-{
-	knockbackAmt = 10
+	instance_destroy()
 }

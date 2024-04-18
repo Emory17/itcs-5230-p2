@@ -17,5 +17,5 @@ draw_text(view_get_xport(0) + 120, view_get_yport(0) + 25, string(objPlayer.tota
 //I use this to test values sometimes
 draw_text(view_get_xport(0) + 120, view_get_yport(0) + 85, "Rage: " + string(objPlayer.rage))
 
-draw_text(view_get_xport(0) + 120, view_get_yport(0) + 105, string(objPlayer.invincible))
+draw_text(view_get_xport(0) + 120, view_get_yport(0) + 105, string(objPlayer.canDash))
 

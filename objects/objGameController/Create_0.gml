@@ -16,8 +16,8 @@ global.bowChargeMultiplier = 1;
 global.maxManaMultiplier= 1;
 
 global.hasMoreHealing = true;
-global.critsHeal = false;
-global.enemiesExplode = false;
+global.critsHeal = true;
+global.enemyDeathrattle = true;
 global.bombDash = true;
 global.dashIFrames = true
 
@@ -26,9 +26,9 @@ global.primaryUpgrade1 = true; //false
 //controls if player has tripower blade, magic tipped arrows or death seeking flame
 global.primaryUpgrade2 = true; //false
 //controls if player has shield of bashing, trick bomb or cone of cold
-global.secondaryUpgrade1 = false;
+global.secondaryUpgrade1 = true;
 //controls if player has mirror shield, boots of quickness or winter's embrace
-global.secondaryUpgrade2 = false;
+global.secondaryUpgrade2 = true;
 
 global.enemyDamageMultiplier = 1
 global.enemyHealthMultiplier = 1

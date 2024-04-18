@@ -2,6 +2,7 @@ if(other.frozen)
 {
 other.x = startingX
 other.y = startingY
+other.image_index = 0
 }
 
 if(freezeTime = currentFreezeTime)

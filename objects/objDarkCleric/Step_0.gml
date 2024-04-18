@@ -5,11 +5,13 @@ if(instance_exists(objPlayer) and canShoot == true)
 	
 	if(distance_to_object(objPlayer) < attackRange)
 	{
-		
-		instance_create_layer(x, y, "Instances", objShockwave,
+		if(!frozen)
 		{
+			instance_create_layer(x, y, "Instances", objShockwave,
+			{
 			attachedToEnemy : self.id
-		})
+			})
+		}
 		canShoot = false
 		alarm[1] = shotFrequency
 		alarm[3] = persistTime

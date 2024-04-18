@@ -13,7 +13,10 @@ if(instance_exists(objPlayer) and canShoot == true and canTeleport = false)
 				{
 					if(iterator == 120 or iterator == 150 or iterator == 180)
 					{
-						instance_create_layer(x, y, "Instances", protectileSpawn)
+						if(!frozen)
+						{
+							instance_create_layer(x, y, "Instances", protectileSpawn)
+						}
 					}
 					iterator++
 				}

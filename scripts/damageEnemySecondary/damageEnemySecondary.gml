@@ -14,6 +14,14 @@ function damageEnemySecondary(enemy, damage, object, canCrit){
 		{
 			didCrit = true;
 			damage = round(damage * 1.5)
+				if(global.critsHeal)
+				{
+				objPlayer.totalHealth += 2
+				instance_create_depth(objPlayer.x,objPlayer.y,-3,objDamageNumber, 
+						{damagePopUp: 2,
+				heal: true
+					})
+				}
 		}
 		enemy.totalHealth -= damage
 		enemy.hitobject2 = object

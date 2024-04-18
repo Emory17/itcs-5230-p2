@@ -1,0 +1,47 @@
+{
+  "$GMObject":"",
+  "%Name":"objShieldBash",
+  "eventList":[
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"","%Name":"","collisionObjectId":{"name":"objBat","path":"objects/objBat/objBat.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"","%Name":"","collisionObjectId":{"name":"objGhost","path":"objects/objGhost/objGhost.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
+  "managed":true,
+  "name":"objShieldBash",
+  "overriddenProperties":[
+    {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"objShield","path":"objects/objShield/objShield.yy",},"propertyId":{"name":"knockbackAmt","path":"objects/objShield/objShield.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"35 * global.knockbackMultiplier",},
+  ],
+  "parent":{
+    "name":"player",
+    "path":"folders/Objects/player.yy",
+  },
+  "parentObjectId":{
+    "name":"objShield",
+    "path":"objects/objShield/objShield.yy",
+  },
+  "persistent":false,
+  "physicsAngularDamping":0.1,
+  "physicsDensity":0.5,
+  "physicsFriction":0.2,
+  "physicsGroup":1,
+  "physicsKinematic":false,
+  "physicsLinearDamping":0.1,
+  "physicsObject":false,
+  "physicsRestitution":0.1,
+  "physicsSensor":false,
+  "physicsShape":1,
+  "physicsShapePoints":[],
+  "physicsStartAwake":true,
+  "properties":[
+    {"$GMObjectProperty":"","%Name":"bashDamage","filters":[],"listItems":[],"multiselect":false,"name":"bashDamage","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"20 * global.damageMultiplier","varType":0,},
+  ],
+  "resourceType":"GMObject",
+  "resourceVersion":"2.0",
+  "solid":false,
+  "spriteId":{
+    "name":"sprShield",
+    "path":"sprites/sprShield/sprShield.yy",
+  },
+  "spriteMaskId":null,
+  "visible":false,
+}

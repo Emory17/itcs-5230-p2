@@ -7,7 +7,10 @@ if(instance_exists(objPlayer) and canShoot == true)
 	{
 		canShoot = false
 		alarm[1]= shotFrequency
-		instance_create_layer(x, y, "Instances", protectileSpawn)
+		if(!frozen)
+		{
+			instance_create_layer(x, y, "Instances", protectileSpawn)
+		}
 	
 	}
 }

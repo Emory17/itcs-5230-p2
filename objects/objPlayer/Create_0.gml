@@ -8,14 +8,15 @@ hchange = 0
 vchange = 0
 dashing = false;
 dashingSpeed = mspeed * 2;
-canDash = false;
-alarm[4] = 5;
+canDash = true;
 lastSpeedX = 0;
 lastSpeedY = 0;
 shieldUp = false;
 canGust = true;
 windCharge = 0;
 rage = 0
+bashTime = 0
+bashing = false
 alarm[5] = rageDecayRate
 
 alarm[1] = atkcooldown
