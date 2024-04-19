@@ -37,7 +37,7 @@
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
-  "solid":false,
+  "solid":true,
   "spriteId":{
     "name":"sprIceBlock",
     "path":"sprites/sprIceBlock/sprIceBlock.yy",
