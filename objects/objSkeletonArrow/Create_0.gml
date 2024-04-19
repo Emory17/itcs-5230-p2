@@ -2,6 +2,7 @@
 // You can write your code in this editor
 speedX = 0
 speedY = 0
+image_speed = 0
 placeHolderX = objPlayer.x 
 placeHolderY = objPlayer.y
 blocked = false;
