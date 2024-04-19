@@ -107,6 +107,7 @@
     {"name":"playerBowCharge","order":3,"path":"sounds/playerBowCharge/playerBowCharge.yy",},
     {"name":"playerBowDraw","order":1,"path":"sounds/playerBowDraw/playerBowDraw.yy",},
     {"name":"playerBowShoot","order":2,"path":"sounds/playerBowShoot/playerBowShoot.yy",},
+    {"name":"castle","order":3,"path":"sounds/castle/castle.yy",},
     {"name":"cutsceneMoon","order":9,"path":"sprites/cutsceneMoon/cutsceneMoon.yy",},
     {"name":"cutsceneTree","order":2,"path":"sprites/cutsceneTree/cutsceneTree.yy",},
     {"name":"sprArcher","order":9,"path":"sprites/sprArcher/sprArcher.yy",},

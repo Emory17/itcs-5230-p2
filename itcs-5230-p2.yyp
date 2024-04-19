@@ -135,6 +135,7 @@
     {"id":{"name":"playerBowDraw","path":"sounds/playerBowDraw/playerBowDraw.yy",},},
     {"id":{"name":"playerBowShoot","path":"sounds/playerBowShoot/playerBowShoot.yy",},},
     {"id":{"name":"playerSwordSwing","path":"sounds/playerSwordSwing/playerSwordSwing.yy",},},
+    {"id":{"name":"castle","path":"sounds/castle/castle.yy",},},
     {"id":{"name":"title_screen","path":"sounds/title_screen/title_screen.yy",},},
     {"id":{"name":"cutsceneMoon","path":"sprites/cutsceneMoon/cutsceneMoon.yy",},},
     {"id":{"name":"cutsceneTree","path":"sprites/cutsceneTree/cutsceneTree.yy",},},
