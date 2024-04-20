@@ -10,7 +10,7 @@ function applyPowerUp(pval){
 	    break;
 
 	    case 2:
-	        global.critChance *= 1.1
+	        global.critChance += 1.1
 	    break;
 		
 		case 3:
@@ -76,5 +76,28 @@ function applyPowerUp(pval){
 		case 18:
 			global.secondaryUpgrade2 = true
 		break;
+		
+		case 19:
+			global.bombDash = true;
+		break;
+		
+		case 20:
+			global.dashIframes = true;
+		break;
+		
+		case 21:
+			global.critsHeal = true;
+		break;
+		
+		case 22:
+			global.hasMoreHealing = true;
+		break;
+		
+		case 23:
+			global.enemyDeathrattle = true;
+		break;
+		
+		
+			
 	}
 }

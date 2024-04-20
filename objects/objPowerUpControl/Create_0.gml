@@ -3,14 +3,18 @@ picons = [sprAttackIcon,sprHealthIcon,sprCritIcon,sprSpeedIcon,
 		sprP1KnightIcon,sprP1ArcherIcon,sprP1MageIcon,
 		sprP2KnightIcon,sprP2ArcherIcon,sprP2MageIcon,
 		sprS1KnightIcon,sprS1ArcherIcon,sprS1MageIcon,
-		sprS2KnightIcon,sprS2ArcherIcon,sprS2MageIcon]
+		sprS2KnightIcon,sprS2ArcherIcon,sprS2MageIcon, 
+		sprBombDashIcon, sprDashIframesIcon, 
+		sprCritsHealIcon, sprMoreHealIcon, sprDeathrattleIcon]
 
 ptext = ["Increase Attack","Increase Health","Increase Crit Rate","Increase Speed",
 		"Increase Knockback","Increase Bow Charge","Increase Max Mana",
-		"Greatsword","Storm Arrow","Spellcasting Focus",
-		"Tripower","Magic Arrow","Seeking Flame",
-		"Shield Bash","Trick Bomb","Cone of Cold",
-		"Mirror Shield","Boots of Quickness","Winter's Embrace"]
+		"Tripower Beam","Storm Arrow","Spellcasting Focus",
+		"Helmet of Rage","Magic Arrow","Seeking Flame",
+		"Shield Bash","Thunderous Gale","Cone of Cold",
+		"Mirror Shield","Wall of Wind","Winter's Embrace", 
+		"Trick Bomb", "Boots of Quickness",
+		"Dagger of Lifesteal", "Light's Blessing", "Staff of Blight"]
 
 pnum = array_length(picons) - 1
 
@@ -133,6 +137,17 @@ for(i = 0; i < 3; i++){
 				}
 			}
 		}
+		
+		if(pvals[i] == 19 && global.bombDash)
+			rvalid = false;
+		if(pvals[i] == 20 && global.dashIframes)
+			rvalid = false;
+		if(pvals[i] == 21 && global.critsHeal)
+			rvalid = false;
+		if(pvals[i] == 22 && global.hasMoreHealing)
+			rvalid = false;
+		if(pvals[i] == 23 && global.enemyDeathrattle)
+			rvalid = false;
 		
 		if(rvalid){
 			for(j = i - 1; j >= 0; j--)

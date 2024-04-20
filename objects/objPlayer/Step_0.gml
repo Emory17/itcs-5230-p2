@@ -107,7 +107,7 @@ if(mouse_check_button(mb_left) and canAttack and !dashing){
 		{
 			attacking = true
 			canAttack = false
-			objWand.image_speed = 1.5
+			objWand.image_speed = 2
 			mana -= 20;
 		}
 		
@@ -279,7 +279,7 @@ if(mouse_check_button(mb_right) and !dashing && !attacking){
 		{
 			attacking = true
 			canAttack = false
-			objWand.image_speed = 1.5
+			objWand.image_speed = 2
 			mana -= 80;
 			objWand.iceSpell = true;
 			objWand.sprite_index = sprWandIce
@@ -297,13 +297,13 @@ if(!canGust)
 if(rage < 0)
 	rage = 0
 
-if(dashFrame > dashIframesStart && dashFrame < dashIframesEnd && global.dashIFrames)
+if(dashFrame > dashIframesStart && dashFrame < dashIframesEnd && global.dashIframes)
 {
 	invincible = true;
 	image_alpha = .4
 	
 }
-if(dashFrame == dashIframesEnd && global.dashIFrames)
+if(dashFrame == dashIframesEnd && global.dashIframes)
 {
 	invincible = false
 	image_alpha = 1

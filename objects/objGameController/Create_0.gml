@@ -15,11 +15,11 @@ global.knockbackMultiplier = 1;
 global.bowChargeMultiplier = 1;
 global.maxManaMultiplier= 1;
 
-global.hasMoreHealing = true;
-global.critsHeal = true;
-global.enemyDeathrattle = true;
-global.bombDash = true;
-global.dashIFrames = true
+global.hasMoreHealing = false;
+global.critsHeal = false;
+global.enemyDeathrattle = false;
+global.bombDash = false;
+global.dashIframes = false
 
 //controls if player has greatsword, stormarrow or spellcasting focus
 global.primaryUpgrade1 = false; //false
