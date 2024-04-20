@@ -43,6 +43,7 @@
     {"$GMObjectProperty":"","%Name":"frozen","filters":[],"listItems":[],"multiselect":false,"name":"frozen","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":3,},
     {"$GMObjectProperty":"","%Name":"lightningOrigin","filters":[],"listItems":[],"multiselect":false,"name":"lightningOrigin","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":3,},
     {"$GMObjectProperty":"","%Name":"maxHealth","filters":[],"listItems":[],"multiselect":false,"name":"maxHealth","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"30 * global.enemyHealthMultiplier ","varType":0,},
+    {"$GMObjectProperty":"","%Name":"points","filters":[],"listItems":[],"multiselect":false,"name":"points","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"10","varType":0,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

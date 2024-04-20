@@ -10,3 +10,4 @@ if(global.enemyDeathrattle)
 	}
 	
 }
+objPlayer.totalScore += points

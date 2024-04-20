@@ -19,3 +19,5 @@ draw_text(view_get_xport(0) + 120, view_get_yport(0) + 85, "Rage: " + string(obj
 
 draw_text(view_get_xport(0) + 120, view_get_yport(0) + 105, string(objPlayer.canDash))
 
+draw_text(view_get_xport(0) + 120, view_get_yport(0) + 125, "Score: " + string(objPlayer.totalScore))
+
