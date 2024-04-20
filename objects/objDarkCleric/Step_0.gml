@@ -23,18 +23,24 @@ if(instance_exists(objPlayer) and canShoot == true)
 	{
 		canHeal = false
 		alarm[2] = 180
-		
 		for(var i = 0; i < instance_count; i++)
 		{
-			if(instance_id[i].object_index == objBat or instance_id[i].object_index == objDarkCleric or 
+			if(instance_exists(instance_id[i].object_index))
+			{
+				if(instance_id[i].object_index == objBat or instance_id[i].object_index == objDarkCleric or 
 			   instance_id[i].object_index == objEnt or instance_id[i].object_index == objGhost or 
 			   instance_id[i].object_index == objGolem or instance_id[i].object_index == objReaper or 
 			   instance_id[i].object_index == objSkeleton or instance_id[i].object_index == objSkeletonVanguard or 
 			   instance_id[i].object_index == objVampire or instance_id[i].object_index == objWarlock or 
 			   instance_id[i].object_index == objWerewolf or instance_id[i].object_index == objZombie)
 			   { 
-				   instance_id[i].object_index.totalHealth += healAmount
+				   if(instance_id[i].object_index.totalHealth < instance_id[i].object_index.maxHealth)
+				   {
+					   instance_id[i].object_index.totalHealth += healAmount
+				   }
 			   }
+			}
+			
 		}
 	}
 }
