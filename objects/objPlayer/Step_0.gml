@@ -14,7 +14,7 @@ if(comboCooldown > 0)
 if(!attacking || !global.character == pChar.knight)
 {
 	//Up
-	if(keyboard_check(ord("W")) and !instance_place(x, y-mspeed, objOuterWall) and !dashing)
+	if(keyboard_check(ord("W")) and !instance_place(x, y-mspeed, objOuterWall) and !instance_place(x, y-mspeed, objInnerWall)and !dashing)
 	{
 		vchange += -mspeed
 		moving = true; 
@@ -22,7 +22,7 @@ if(!attacking || !global.character == pChar.knight)
 	}
 	
 	//Down
-	if(keyboard_check(ord("S")) and !instance_place(x, y+mspeed, objOuterWall) and !dashing)
+	if(keyboard_check(ord("S")) and !instance_place(x, y+mspeed, objOuterWall) and !instance_place(x, y+mspeed, objInnerWall) and !dashing)
 	{
 		vchange += mspeed
 		moving = true;
@@ -30,7 +30,7 @@ if(!attacking || !global.character == pChar.knight)
 	}
 	
 	//Left
-	if(keyboard_check(ord("A")) and !instance_place(x-mspeed, y, objOuterWall) and !dashing)
+	if(keyboard_check(ord("A")) and !instance_place(x-mspeed, y, objOuterWall) and !instance_place(x-mspeed, y, objInnerWall) and !dashing)
 	{
 		hchange += -mspeed 
 		moving = true;
@@ -38,7 +38,7 @@ if(!attacking || !global.character == pChar.knight)
 	}
 	
 	//Right
-	if(keyboard_check(ord("D")) and !instance_place(x+mspeed, y, objOuterWall) and !dashing)
+	if(keyboard_check(ord("D")) and !instance_place(x+mspeed, y, objOuterWall) and !instance_place(x+mspeed, y, objInnerWall) and !dashing)
 	{
 		hchange += mspeed 
 		moving = true;

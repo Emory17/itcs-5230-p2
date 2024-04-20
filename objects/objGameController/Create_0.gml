@@ -22,13 +22,13 @@ global.bombDash = true;
 global.dashIFrames = true
 
 //controls if player has greatsword, stormarrow or spellcasting focus
-global.primaryUpgrade1 = true; //false
+global.primaryUpgrade1 = false; //false
 //controls if player has tripower blade, magic tipped arrows or death seeking flame
-global.primaryUpgrade2 = true; //false
+global.primaryUpgrade2 = false; //false
 //controls if player has shield of bashing, trick bomb or cone of cold
-global.secondaryUpgrade1 = true;
+global.secondaryUpgrade1 = false;
 //controls if player has mirror shield, boots of quickness or winter's embrace
-global.secondaryUpgrade2 = true;
+global.secondaryUpgrade2 = false;
 
 global.enemyDamageMultiplier = 1
 global.enemyHealthMultiplier = 1

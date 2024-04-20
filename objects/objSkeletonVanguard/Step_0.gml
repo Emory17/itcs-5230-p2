@@ -100,7 +100,7 @@ if(instance_exists(objPlayer))
 	{
 		canShoot = false
 		alarm[1]= 120
-		if(!frozenn)
+		if(!frozen)
 		{
 			instance_create_layer(x, y, "Instances", protectileSpawn)
 		}
