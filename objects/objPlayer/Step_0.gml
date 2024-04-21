@@ -263,33 +263,17 @@ else if (!mouse_check_button(mb_right) and global.character == pChar.knight && s
 }
  
 if(mouse_check_button(mb_right) and !dashing && !attacking){
-	
-	if(global.character == pChar.archer && canGust)
-	{
-		canGust = false
-		windCharge = 0
-		objBow.bowCharge = 0;
-		alarm[1] = gustCooldown;
-		instance_create_layer(x + (dcos(atkangle) * 50), y - (dsin(atkangle) * 50), "Instances", objWindGust,
-		{direction: atkangle})
-		
-		if(global.secondaryUpgrade2)
-		{
-			instance_create_layer(x + (dcos(atkangle) * 50), y - (dsin(atkangle) * 50), "Instances", objWindGust, 
-			{direction: atkangle + 20})
-			instance_create_layer(x + (dcos(atkangle) * 50), y - (dsin(atkangle) * 50), "Instances", objWindGust, 
-			{direction: atkangle - 20})
-		}
-	}
+	if(canGust)
+		superWindCharge++
 	
 	if(global.character == pChar.mage and !attacking)
 	{
-		if(mana >= 80)
+		if(mana >= (global.secondaryUpgrade2 ? 65 : 80))
 		{
 			attacking = true
 			canAttack = false
 			objWand.image_speed = 2
-			mana -= 80;
+			mana -= (global.secondaryUpgrade2 ? 65 : 80);
 			objWand.iceSpell = true;
 			objWand.sprite_index = sprWandIce
 		}
@@ -360,4 +344,37 @@ if(shieldUp and mouse_check_button(mb_left) and mouse_check_button(mb_right))
 		objShield.mirrorCharge = 0
 	}
 
+}
+
+if(!mouse_check_button(mb_right) and !dashing and !attacking)
+{
+	if(global.character == pChar.archer && canGust && superWindCharge > 0)
+	{
+		canGust = false
+		windCharge = 0
+		objBow.bowCharge = 0;
+		alarm[1] = gustCooldown;
+		
+		
+		if(superWindCharge < 90 || !global.secondaryUpgrade1)
+		{
+			instance_create_layer(x + (dcos(atkangle) * 50), y - (dsin(atkangle) * 50), "Instances", objWindGust,
+			{direction: atkangle})
+			
+			if(global.secondaryUpgrade2)
+			{
+				instance_create_layer(x + (dcos(atkangle) * 50), y - (dsin(atkangle) * 50), "Instances", objWindGust, 
+				{direction: atkangle + 20})
+				instance_create_layer(x + (dcos(atkangle) * 50), y - (dsin(atkangle) * 50), "Instances", objWindGust, 
+				{direction: atkangle - 20})
+			}
+		}
+		else if (superWindCharge >= 90 && global.secondaryUpgrade1)
+		{
+			instance_create_layer(x + (dcos(atkangle) * 50), y - (dsin(atkangle) * 50), "Instances", objWindGust,
+			{direction: atkangle,
+			bigWind : true})
+		}
+		superWindCharge = 0
+	}
 }

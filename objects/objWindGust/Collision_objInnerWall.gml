@@ -1,1 +1,5 @@
-instance_destroy()
+if(!bigWind)
+{
+	instance_destroy()
+}
+

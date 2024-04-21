@@ -33,7 +33,7 @@
   "physicsShapePoints":[],
   "physicsStartAwake":true,
   "properties":[
-    {"$GMObjectProperty":"","%Name":"bashDamage","filters":[],"listItems":[],"multiselect":false,"name":"bashDamage","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"20 * global.damageMultiplier","varType":0,},
+    {"$GMObjectProperty":"","%Name":"bashDamage","filters":[],"listItems":[],"multiselect":false,"name":"bashDamage","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"round(20 * global.damageMultiplier)","varType":0,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

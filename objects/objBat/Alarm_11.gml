@@ -1,7 +1,7 @@
 instance_create_depth(x,y,-2,objLightningBolt)
-totalHealth -= objLightningBolt.lightningDamage
+totalHealth -= round(objLightningBolt.lightningDamage)
 isHurt = true;
 alarm[9] = 15
 instance_create_depth(x,y,-3,objDamageNumber, 
-		{damagePopUp: objLightningBolt.lightningDamage,
+		{damagePopUp: round(objLightningBolt.lightningDamage),
 		})

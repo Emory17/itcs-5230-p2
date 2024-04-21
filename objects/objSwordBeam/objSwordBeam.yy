@@ -12,7 +12,7 @@
   "name":"objSwordBeam",
   "overriddenProperties":[
     {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"objFireball","path":"objects/objFireball/objFireball.yy",},"propertyId":{"name":"pspeed","path":"objects/objFireball/objFireball.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"12",},
-    {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"objFireball","path":"objects/objFireball/objFireball.yy",},"propertyId":{"name":"fireballDamage","path":"objects/objFireball/objFireball.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"8 * global.damageMultiplier",},
+    {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"objFireball","path":"objects/objFireball/objFireball.yy",},"propertyId":{"name":"fireballDamage","path":"objects/objFireball/objFireball.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"round(8 * global.damageMultiplier)",},
   ],
   "parent":{
     "name":"player",

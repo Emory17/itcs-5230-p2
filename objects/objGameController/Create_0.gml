@@ -21,14 +21,14 @@ global.enemyDeathrattle = false;
 global.bombDash = false;
 global.dashIframes = false;
 
-//controls if player has greatsword, stormarrow or spellcasting focus
+//controls if player has tripower blade, stormarrow or spellcasting focus
 global.primaryUpgrade1 = false; 
-//controls if player has tripower blade, magic tipped arrows or death seeking flame
+//controls if player has helmet of rage, magic tipped arrows or death seeking flame
 global.primaryUpgrade2 = false; 
-//controls if player has shield of bashing, trick bomb or cone of cold
+//controls if player has shield of bashing, thunderous gale or Icicle Barrage
 global.secondaryUpgrade1 = false;
-//controls if player has mirror shield, boots of quickness or winter's embrace
-global.secondaryUpgrade2 = true;
+//controls if player has mirror shield, wall of wind or winter's embrace
+global.secondaryUpgrade2 = false;
 
 global.enemyDamageMultiplier = 1
 global.enemyHealthMultiplier = 1

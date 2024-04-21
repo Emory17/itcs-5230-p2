@@ -17,4 +17,6 @@ if(instance_exists(objPlayer) && iceSpell)
 	objPlayer.attacking = false;
 	sprite_index = sprWand
 	iceSpell = false
+	if(global.secondaryUpgrade1)
+		instance_create_depth(x, y, 0, objIcicleOrigin, {icicleAngle: objPlayer.atkangle})
 }

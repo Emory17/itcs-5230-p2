@@ -14,7 +14,7 @@ if(global.primaryUpgrade2)
 {
 	if(objPlayer.rage > 100)
 		{
-			fireballDamage = 10 * global.damageMultiplier
+			fireballDamage = round(10 * global.damageMultiplier)
 			image_index = 1
 		}
 	}

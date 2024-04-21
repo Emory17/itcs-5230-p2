@@ -5,3 +5,6 @@ if(global.secondaryUpgrade2)
 
 if(speed < 0)
 	speed = 0
+
+
+bigWindTime++

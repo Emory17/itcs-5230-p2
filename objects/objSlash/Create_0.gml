@@ -46,13 +46,13 @@ if(global.primaryUpgrade2)
 		{
 			rageLevel = 2
 			sprite_index = sprSlashSuperRage
-			swordDamage = 20 * global.damageMultiplier
+			swordDamage = round(20 * global.damageMultiplier)
 		}
 		else if(objPlayer.rage > 50)
 		{
 			rageLevel = 1
 			sprite_index = sprSlashRage
-			swordDamage = 20 * global.damageMultiplier
+			swordDamage = round(20 * global.damageMultiplier)
 		}
 	}
 	

@@ -1,4 +1,6 @@
 other.hitAngle = atkangle
 other.knockbackPerTick = knockbackAmt;
-
-damageEnemyTertiary(other, deathrattleDamage, self, true)
+if(other.frozen && global.primaryUpgrade2)
+	damageEnemyTertiary(other, round(deathrattleDamage * 1.5), self, true)
+else
+	damageEnemyTertiary(other, deathrattleDamage, self, true)

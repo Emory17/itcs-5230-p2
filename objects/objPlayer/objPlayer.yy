@@ -52,6 +52,7 @@
     {"$GMObjectProperty":"","%Name":"dashIframesStart","filters":[],"listItems":[],"multiselect":false,"name":"dashIframesStart","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":0,},
     {"$GMObjectProperty":"","%Name":"dashIframesEnd","filters":[],"listItems":[],"multiselect":false,"name":"dashIframesEnd","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"12","varType":0,},
     {"$GMObjectProperty":"","%Name":"dashFrame","filters":[],"listItems":[],"multiselect":false,"name":"dashFrame","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":0,},
+    {"$GMObjectProperty":"","%Name":"superWindCharge","filters":[],"listItems":[],"multiselect":false,"name":"superWindCharge","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":0,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

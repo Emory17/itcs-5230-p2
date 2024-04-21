@@ -8,7 +8,7 @@
   "name":"objShieldBeam",
   "overriddenProperties":[
     {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"objFireball","path":"objects/objFireball/objFireball.yy",},"propertyId":{"name":"pspeed","path":"objects/objFireball/objFireball.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"18",},
-    {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"objFireball","path":"objects/objFireball/objFireball.yy",},"propertyId":{"name":"fireballDamage","path":"objects/objFireball/objFireball.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"(15 * chargePower) * global.damageMultiplier",},
+    {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"objFireball","path":"objects/objFireball/objFireball.yy",},"propertyId":{"name":"fireballDamage","path":"objects/objFireball/objFireball.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"round((15 * chargePower) * global.damageMultiplier)",},
   ],
   "parent":{
     "name":"player",
