@@ -37,3 +37,9 @@ else
 {
 	knockbackAmt = 10
 }
+
+if(mirrorCharge > 3)
+	mirrorCharge = 3
+	
+if(chargeAnimation = true)
+	image_speed = 1

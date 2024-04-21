@@ -270,7 +270,16 @@ if(mouse_check_button(mb_right) and !dashing && !attacking){
 		windCharge = 0
 		objBow.bowCharge = 0;
 		alarm[1] = gustCooldown;
-		instance_create_layer(x + (dcos(atkangle) * 50), y - (dsin(atkangle) * 50), "Instances", objWindGust)
+		instance_create_layer(x + (dcos(atkangle) * 50), y - (dsin(atkangle) * 50), "Instances", objWindGust,
+		{direction: atkangle})
+		
+		if(global.secondaryUpgrade2)
+		{
+			instance_create_layer(x + (dcos(atkangle) * 50), y - (dsin(atkangle) * 50), "Instances", objWindGust, 
+			{direction: atkangle + 20})
+			instance_create_layer(x + (dcos(atkangle) * 50), y - (dsin(atkangle) * 50), "Instances", objWindGust, 
+			{direction: atkangle - 20})
+		}
 	}
 	
 	if(global.character == pChar.mage and !attacking)
@@ -339,4 +348,16 @@ if(bashTime >= 15)
 	speed = 0
 	bashTime = 0
 	instance_create_depth(x-30,y-40, -2, objDashBar)
+}
+
+if(shieldUp and mouse_check_button(mb_left) and mouse_check_button(mb_right))
+{
+	if(objShield.mirrorCharge >= 1 && global.secondaryUpgrade2)
+	{
+		instance_create_depth(objShield.x, objShield.y, -1, objShieldBeam,
+		{direction: objShield.direction,
+		chargePower : objShield.mirrorCharge})
+		objShield.mirrorCharge = 0
+	}
+
 }

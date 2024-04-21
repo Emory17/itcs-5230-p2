@@ -6,7 +6,7 @@ enum pChar{
 
 
 //declare every varaible that can be changed
-global.maxHPMultiplier = 1
+global.maxHPMultiplier = 1;
 global.damageMultiplier = 1;
 global.speedMultiplier = 1;
 global.critChance = 10;
@@ -19,16 +19,16 @@ global.hasMoreHealing = false;
 global.critsHeal = false;
 global.enemyDeathrattle = false;
 global.bombDash = false;
-global.dashIframes = false
+global.dashIframes = false;
 
 //controls if player has greatsword, stormarrow or spellcasting focus
-global.primaryUpgrade1 = false; //false
+global.primaryUpgrade1 = false; 
 //controls if player has tripower blade, magic tipped arrows or death seeking flame
-global.primaryUpgrade2 = false; //false
+global.primaryUpgrade2 = false; 
 //controls if player has shield of bashing, trick bomb or cone of cold
 global.secondaryUpgrade1 = false;
 //controls if player has mirror shield, boots of quickness or winter's embrace
-global.secondaryUpgrade2 = false;
+global.secondaryUpgrade2 = true;
 
 global.enemyDamageMultiplier = 1
 global.enemyHealthMultiplier = 1

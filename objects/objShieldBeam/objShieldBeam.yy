@@ -1,0 +1,46 @@
+{
+  "$GMObject":"",
+  "%Name":"objShieldBeam",
+  "eventList":[
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
+  "managed":true,
+  "name":"objShieldBeam",
+  "overriddenProperties":[
+    {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"objFireball","path":"objects/objFireball/objFireball.yy",},"propertyId":{"name":"pspeed","path":"objects/objFireball/objFireball.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"18",},
+    {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"objFireball","path":"objects/objFireball/objFireball.yy",},"propertyId":{"name":"fireballDamage","path":"objects/objFireball/objFireball.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"(15 * chargePower) * global.damageMultiplier",},
+  ],
+  "parent":{
+    "name":"player",
+    "path":"folders/Objects/player.yy",
+  },
+  "parentObjectId":{
+    "name":"objSwordBeam",
+    "path":"objects/objSwordBeam/objSwordBeam.yy",
+  },
+  "persistent":false,
+  "physicsAngularDamping":0.1,
+  "physicsDensity":0.5,
+  "physicsFriction":0.2,
+  "physicsGroup":1,
+  "physicsKinematic":false,
+  "physicsLinearDamping":0.1,
+  "physicsObject":false,
+  "physicsRestitution":0.1,
+  "physicsSensor":false,
+  "physicsShape":1,
+  "physicsShapePoints":[],
+  "physicsStartAwake":true,
+  "properties":[
+    {"$GMObjectProperty":"","%Name":"chargePower","filters":[],"listItems":[],"multiselect":false,"name":"chargePower","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":0,},
+  ],
+  "resourceType":"GMObject",
+  "resourceVersion":"2.0",
+  "solid":false,
+  "spriteId":{
+    "name":"sprShieldBeam",
+    "path":"sprites/sprShieldBeam/sprShieldBeam.yy",
+  },
+  "spriteMaskId":null,
+  "visible":true,
+}
