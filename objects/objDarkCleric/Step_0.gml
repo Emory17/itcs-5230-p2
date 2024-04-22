@@ -22,7 +22,7 @@ if(instance_exists(objPlayer) and canShoot == true)
 	if(canHeal = true)
 	{
 		canHeal = false
-		alarm[2] = 5000
+		alarm[2] = 180
 		for(var i = 0; i < instance_count; i++)
 		{
 			if(instance_id[i].object_index == objBat or  instance_id[i].object_index == objEnt or 
