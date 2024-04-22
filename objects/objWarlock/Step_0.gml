@@ -51,8 +51,6 @@ if(canTeleport = true)
 	canShoot = false
 	randomX = irandom_range(125, 1825)
 	randomY = irandom_range(95, 990)
-	show_debug_message(randomX)
-	show_debug_message(randomY)
 	x = randomX
 	y = randomY
 	//select a random x and y within the room 

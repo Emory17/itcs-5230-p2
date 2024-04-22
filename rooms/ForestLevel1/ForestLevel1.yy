@@ -31,6 +31,7 @@
     {"name":"inst_6E3304F8","path":"rooms/ForestLevel1/ForestLevel1.yy",},
     {"name":"inst_DE0A7DB","path":"rooms/ForestLevel1/ForestLevel1.yy",},
     {"name":"inst_1539A9A8","path":"rooms/ForestLevel1/ForestLevel1.yy",},
+    {"name":"inst_3C48C736","path":"rooms/ForestLevel1/ForestLevel1.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -60,6 +61,7 @@
         {"$GMRInstance":"","%Name":"inst_6E3304F8","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_6E3304F8","objectId":{"name":"objWerewolf","path":"objects/objWerewolf/objWerewolf.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":128.0,"y":128.0,},
         {"$GMRInstance":"","%Name":"inst_DE0A7DB","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_DE0A7DB","objectId":{"name":"objInnerWall","path":"objects/objInnerWall/objInnerWall.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1568.0,"y":672.0,},
         {"$GMRInstance":"","%Name":"inst_1539A9A8","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_1539A9A8","objectId":{"name":"objInnerWall","path":"objects/objInnerWall/objInnerWall.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1504.0,"y":672.0,},
+        {"$GMRInstance":"","%Name":"inst_3C48C736","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_3C48C736","objectId":{"name":"objDarkCleric","path":"objects/objDarkCleric/objDarkCleric.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1600.0,"y":768.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRTileLayer":"","%Name":"Tiles_2","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Tiles_2","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":68,"SerialiseWidth":120,"TileCompressedData":[
           -124,-2147483648,8,16,17,18,19,20,21,22,23,-112,-2147483648,8,32,33,34,35,36,37,38,39,-112,-2147483648,

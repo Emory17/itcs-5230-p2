@@ -5,3 +5,4 @@
 event_inherited();
 canHeal= true
 iterator = 0
+currentEnemies = []

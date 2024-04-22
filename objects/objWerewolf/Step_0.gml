@@ -18,7 +18,6 @@ if(instance_exists(objPlayer))
 		{
 			directionToPlayer = point_direction(x, y, objPlayer.x, objPlayer.y)
 			canCharge = false
-			show_debug_message(directionToPlayer)
 			
 			if(directionToPlayer >= 45 and directionToPlayer <= 135)//up
 			{
