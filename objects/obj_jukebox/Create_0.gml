@@ -5,14 +5,17 @@
 // global volume control
 global.masterVolume = 1;
 global.musicVolume = 1;
-// info for song we're playing
 
-songInstance = noone;
-songAsset = noone;
-targetSongAsset = noone;
+// info for song we're playing, and trying to play
+
+songInstance = noone; // the song currently playing
+songAsset = noone; // which song to create an instance of
+targetSongAsset = noone; //what it will swap the song to
+
+
 endFadeOutTime = 0; //how long to fade song out
-startFadeInTime = 120; //how long to fade in new song
-fadeInInstVol = 1
+startFadeInTime = 0; //how long to fade in new song
+fadeInInstVol = 1;
 
 //stopping music that is not playing
 
@@ -20,7 +23,5 @@ fadeOutInst = array_create(0); //audio instances to fade out
 fadeOutInstVol = array_create(0); //volumes of each individual audio instance
 fadeOutInstTime = array_create(0); //how fast the fadeout should happen
 
-//_______________
 
-songInstance = title_screen;
-audio_play_sound(songInstance, 1, true);
+
