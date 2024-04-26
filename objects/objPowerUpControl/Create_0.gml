@@ -16,138 +16,109 @@ ptext = ["Increase Attack","Increase Health","Increase Crit Rate","Increase Spee
 		"Trick Bomb", "Boots of Quickness",
 		"Dagger of Lifesteal", "Light's Blessing", "Staff of Blight"]
 
-pnum = array_length(picons) - 1
+pnum = array_length(picons)
 
+prands = [0,1,2,3]
+array_resize(prands,15)
+plen = 4
+
+for(i = 0; i < pnum; i++){
+	if(global.character == pChar.knight){
+		prands[plen] = 4
+		plen++
+		
+		if(!global.primaryUpgrade1){
+			prands[plen] = 7
+			plen++
+		}
+		if(!global.primaryUpgrade2){
+			prands[plen] = 10
+			plen++
+		}
+		if(!global.secondaryUpgrade1){
+			prands[plen] = 13
+			plen++
+		}
+		if(!global.secondaryUpgrade2){
+			prands[plen] = 16
+			plen++
+		}
+	}
+	else if(global.character == pChar.archer){
+		prands[plen] = 5
+		plen++
+		
+		if(!global.primaryUpgrade1){
+			prands[plen] = 8
+			plen++
+		}
+		if(!global.primaryUpgrade2){
+			prands[plen] = 11
+			plen++
+		}
+		if(!global.secondaryUpgrade1){
+			prands[plen] = 14
+			plen++
+		}
+		if(!global.secondaryUpgrade2){
+			prands[plen] = 17
+			plen++
+		}
+	}
+	else if(global.character == pChar.mage){
+		prands[plen] = 6
+		plen++
+		
+		if(!global.primaryUpgrade1){
+			prands[plen] = 9
+			plen++
+		}
+		if(!global.primaryUpgrade2){
+			prands[plen] = 12
+			plen++
+		}
+		if(!global.secondaryUpgrade1){
+			prands[plen] = 15
+			plen++
+		}
+		if(!global.secondaryUpgrade2){
+			prands[plen] = 18
+			plen++
+		}
+	}
+	
+	if(!global.bombDash){
+			prands[plen] = 19
+			plen++
+	}
+	if(!global.dashIframes){
+			prands[plen] = 20
+			plen++
+	}
+	if(!global.critsHeal){
+			prands[plen] = 21
+			plen++
+	}
+	if(!global.hasMoreHealing){
+			prands[plen] = 22
+			plen++
+	}
+	if(!global.enemyDeathrattle){
+			prands[plen] = 23
+			plen++
+	}
+}
+
+plen -= 1
 pvals = [0,1,2]
 
 for(i = 0; i < 3; i++){
 	rvalid = false
 	while(!rvalid){
-		pvals[i] = irandom(pnum)
+		pvals[i] = prands[irandom(plen)]
 	
 		//Validate Value
 		rvalid = true
-		
-		//Normalize Character Stat Boosts
-		if(pvals[i] == 4 || pvals[i] == 5 || pvals[i] == 6)
-		{
-			switch(global.character){
-				case pChar.knight:
-					pvals[i] = 4
-				break;
-				
-				case pChar.archer:
-					pvals[i] = 5
-				break;
-				
-				case pChar.mage:
-					pvals[i] = 6
-				break;
-			}
-		}
-	
-		//Normalize Character Primary 1
-		if(pvals[i] == 7 || pvals[i] == 8 || pvals[i] == 9)
-		{
-			if(global.primaryUpgrade1){
-				rvalid = false;
-			}
-			else{
-				switch(global.character){
-					case pChar.knight:
-						pvals[i] = 7
-					break;
-				
-					case pChar.archer:
-						pvals[i] = 8
-					break;
-				
-					case pChar.mage:
-						pvals[i] = 9
-					break;
-				}
-			}
-		}
-		
-		//Normalize Character Primary 2
-		if(pvals[i] == 10 || pvals[i] == 11 || pvals[i] == 12)
-		{
-			if(global.primaryUpgrade2){
-				rvalid = false;
-			}
-			else{
-				switch(global.character){
-					case pChar.knight:
-						pvals[i] = 10
-					break;
-				
-					case pChar.archer:
-						pvals[i] = 11
-					break;
-				
-					case pChar.mage:
-						pvals[i] = 12
-					break;
-				}
-			}
-		}
-		
-		//Normalize Character Secondary 1
-		if(pvals[i] == 13 || pvals[i] == 14 || pvals[i] == 15)
-		{
-			if(global.secondaryUpgrade1){
-				rvalid = false;
-			}
-			else{
-				switch(global.character){
-					case pChar.knight:
-						pvals[i] = 13
-					break;
-				
-					case pChar.archer:
-						pvals[i] = 14
-					break;
-				
-					case pChar.mage:
-						pvals[i] = 15
-					break;
-				}
-			}
-		}
-		
-		//Normalize Character Secondary 2
-		if(pvals[i] == 16 || pvals[i] == 17 || pvals[i] == 18)
-		{
-			if(global.secondaryUpgrade2){
-				rvalid = false;
-			}
-			else{
-				switch(global.character){
-					case pChar.knight:
-						pvals[i] = 16
-					break;
-				
-					case pChar.archer:
-						pvals[i] = 17
-					break;
-				
-					case pChar.mage:
-						pvals[i] = 18
-					break;
-				}
-			}
-		}
-		
-		if(pvals[i] == 19 && global.bombDash)
-			rvalid = false;
-		if(pvals[i] == 20 && global.dashIframes)
-			rvalid = false;
-		if(pvals[i] == 21 && global.critsHeal)
-			rvalid = false;
-		if(pvals[i] == 22 && global.hasMoreHealing)
-			rvalid = false;
-		if(pvals[i] == 23 && global.enemyDeathrattle)
-			rvalid = false;
 		
 		if(rvalid){
 			for(j = i - 1; j >= 0; j--)
