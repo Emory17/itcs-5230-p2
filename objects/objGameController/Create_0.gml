@@ -28,7 +28,7 @@ global.primaryUpgrade2 = false;
 //controls if player has shield of bashing, thunderous gale or Icicle Barrage
 global.secondaryUpgrade1 = false;
 //controls if player has mirror shield, wall of wind or winter's embrace
-global.secondaryUpgrade2 = true;
+global.secondaryUpgrade2 = false;
 
 global.enemyDamageMultiplier = 1
 global.enemyHealthMultiplier = 1

@@ -41,5 +41,5 @@ else
 if(mirrorCharge > 3)
 	mirrorCharge = 3
 	
-if(chargeAnimation = true)
+if(chargeAnimation = true && global.secondaryUpgrade2)
 	image_speed = 1

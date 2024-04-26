@@ -19,3 +19,5 @@ if(global.secondaryUpgrade2)
 		draw_self()
 	
 }
+else
+	draw_self()

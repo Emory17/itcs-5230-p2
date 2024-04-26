@@ -6,7 +6,10 @@ function applyPowerUp(pval){
 	    break;
 
 	    case 1:
+			previousHP = global.maxHPMultiplier
 	        global.maxHPMultiplier *= 1.2
+			tempHP = global.maxHPMultiplier - previousHP
+			global.persistentHealth += tempHP
 	    break;
 
 	    case 2:

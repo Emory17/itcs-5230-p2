@@ -4,3 +4,4 @@
 // Inherit the parent event
 event_inherited();
 canShoot = true
+image_speed = 0

@@ -4,6 +4,7 @@ if(instance_exists(objPlayer))
 {
 	if(distance_to_object(objPlayer) < enemyVision)
 	{
+		image_speed = .5
 		//path_end()
 		if(objPlayer.x > x)
 		{
@@ -96,6 +97,8 @@ if(instance_exists(objPlayer))
 		}
 		
 	}
+	else
+		image_speed = 0
 }
 alarm[0] = 180
 
