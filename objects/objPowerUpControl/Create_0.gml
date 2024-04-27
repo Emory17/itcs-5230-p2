@@ -16,99 +16,93 @@ ptext = ["Increase Attack","Increase Health","Increase Crit Rate","Increase Spee
 		"Trick Bomb", "Boots of Quickness",
 		"Dagger of Lifesteal", "Light's Blessing", "Staff of Blight"]
 
-pnum = array_length(picons)
-
 prands = [0,1,2,3]
-array_resize(prands,15)
+
 plen = 4
 
-for(i = 0; i < pnum; i++){
-	if(global.character == pChar.knight){
-		prands[plen] = 4
-		plen++
+if(global.character == pChar.knight){
+	prands[plen] = 4
+	plen++
 		
-		if(!global.primaryUpgrade1){
-			prands[plen] = 7
-			plen++
-		}
-		if(!global.primaryUpgrade2){
-			prands[plen] = 10
-			plen++
-		}
-		if(!global.secondaryUpgrade1){
-			prands[plen] = 13
-			plen++
-		}
-		if(!global.secondaryUpgrade2){
-			prands[plen] = 16
-			plen++
-		}
-	}
-	else if(global.character == pChar.archer){
-		prands[plen] = 5
+	if(!global.primaryUpgrade1){
+		prands[plen] = 7
 		plen++
-		
-		if(!global.primaryUpgrade1){
-			prands[plen] = 8
-			plen++
-		}
-		if(!global.primaryUpgrade2){
-			prands[plen] = 11
-			plen++
-		}
-		if(!global.secondaryUpgrade1){
-			prands[plen] = 14
-			plen++
-		}
-		if(!global.secondaryUpgrade2){
-			prands[plen] = 17
-			plen++
-		}
 	}
-	else if(global.character == pChar.mage){
-		prands[plen] = 6
+	if(!global.primaryUpgrade2){
+		prands[plen] = 10
 		plen++
+	}
+	if(!global.secondaryUpgrade1){
+		prands[plen] = 13
+		plen++
+	}
+	if(!global.secondaryUpgrade2){
+		prands[plen] = 16
+		plen++
+	}
+}
+else if(global.character == pChar.archer){
+	prands[plen] = 5
+	plen++
 		
-		if(!global.primaryUpgrade1){
-			prands[plen] = 9
-			plen++
-		}
-		if(!global.primaryUpgrade2){
-			prands[plen] = 12
-			plen++
-		}
-		if(!global.secondaryUpgrade1){
-			prands[plen] = 15
-			plen++
-		}
-		if(!global.secondaryUpgrade2){
-			prands[plen] = 18
-			plen++
-		}
+	if(!global.primaryUpgrade1){
+		prands[plen] = 8
+		plen++
 	}
+	if(!global.primaryUpgrade2){
+		prands[plen] = 11
+		plen++
+	}
+	if(!global.secondaryUpgrade1){
+		prands[plen] = 14
+		plen++
+	}
+	if(!global.secondaryUpgrade2){
+		prands[plen] = 17
+		plen++
+	}
+}
+else if(global.character == pChar.mage){
+	prands[plen] = 6
+	plen++
+		
+	if(!global.primaryUpgrade1){
+		prands[plen] = 9
+		plen++
+	}
+	if(!global.primaryUpgrade2){
+		prands[plen] = 12
+		plen++
+	}
+	if(!global.secondaryUpgrade1){
+		prands[plen] = 15
+		plen++
+	}
+	if(!global.secondaryUpgrade2){
+		prands[plen] = 18
+		plen++
+	}
+}
 	
-	if(!global.bombDash){
-			prands[plen] = 19
-			plen++
-	}
-	if(!global.dashIframes){
-			prands[plen] = 20
-			plen++
-	}
-	if(!global.critsHeal){
-			prands[plen] = 21
-			plen++
-	}
-	if(!global.hasMoreHealing){
-			prands[plen] = 22
-			plen++
-	}
-	if(!global.enemyDeathrattle){
-			prands[plen] = 23
-			plen++
-	}
-	
-	
+if(!global.bombDash){
+		prands[plen] = 19
+		plen++
+}
+if(!global.dashIframes){
+		prands[plen] = 20
+		plen++
+}
+if(!global.critsHeal){
+		prands[plen] = 21
+		plen++
+}
+if(!global.hasMoreHealing){
+		prands[plen] = 22
+		plen++
+}
+if(!global.enemyDeathrattle){
+		prands[plen] = 23
+		plen++
 }
 
 plen -= 1
