@@ -5,11 +5,12 @@ if room == TitleScreen
 setSongInGame(title_screen, 0, 10);
 }
 
-if(room == CutsceneRoom || room == ForestLevel1 || room == ForestLevel2)
+if(room == CutsceneRoom || room == PowerUpScreen)
 	setSongInGame(lesserforest, 20, 20);
 
 
-if (room == ForestLevel3 || room == ForestLevel4 || room == ForestLevel5)
+if (room == ForestLevel3 || room == ForestLevel1 || room = ForestLevel2 ||
+	room == ForestLevel4 || room == ForestLevel5)
 	setSongInGame(forestcombat, 20, 10);
 
 

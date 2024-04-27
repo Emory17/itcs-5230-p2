@@ -9,9 +9,9 @@ picons = [sprAttackIcon,sprHealthIcon,sprCritIcon,sprSpeedIcon,
 
 ptext = ["Increase Attack","Increase Health","Increase Crit Rate","Increase Speed",
 		"Increase Knockback","Increase Bow Charge","Increase Max Mana",
-		"Tripower Beam","Storm Arrow","Spellcasting Focus",
-		"Helmet of Rage","Magic Arrow","Seeking Flame",
-		"Shield Bash","Thunderous Gale","Cone of Cold",
+		"Tripower Beam","Magic Arrow","Spellcasting Focus",
+		"Helmet of Rage","Storm Arrow","Seeking Flame",
+		"Shield Bash","Thunderous Gale","Icicle Barrage",
 		"Mirror Shield","Wall of Wind","Winter's Embrace", 
 		"Trick Bomb", "Boots of Quickness",
 		"Dagger of Lifesteal", "Light's Blessing", "Staff of Blight"]
@@ -107,6 +107,8 @@ for(i = 0; i < pnum; i++){
 			prands[plen] = 23
 			plen++
 	}
+	
+	
 }
 
 plen -= 1
