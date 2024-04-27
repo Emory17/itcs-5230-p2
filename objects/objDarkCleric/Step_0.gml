@@ -23,7 +23,25 @@ if(instance_exists(objPlayer) and canShoot == true)
 	{
 		canHeal = false
 		alarm[2] = 180
-		for(var i = 0; i < instance_count; i++)
+		alarm[4]= 1
+		if(!frozen)
+		{
+			instance_create_layer(x, y, "Instances", objHealDiameter,
+			{
+				attachedToCorrectEnemy : self.id
+			})
+		}
+	}
+}
+alarm[0] = 180
+
+if(knockedBack)
+{
+	x += (dcos(hitAngle) * (knockbackPerTick))
+	y += -(dsin(hitAngle) * (knockbackPerTick))
+}
+/*
+for(var i = 0; i < instance_count; i++)
 		{
 			if(instance_id[i].object_index == objBat or  instance_id[i].object_index == objEnt or 
 			   instance_id[i].object_index == objGhost or instance_id[i].object_index == objGolem or 
@@ -54,7 +72,7 @@ if(instance_exists(objPlayer) and canShoot == true)
 			{}
 			
 		}
-		/*show_debug_message(currentEnemies)
+		show_debug_message(currentEnemies)
 		var totalEnemies = array_length(currentEnemies)
 		for(var j = 0; j < totalEnemies; j++)
 		{
@@ -77,12 +95,3 @@ if(instance_exists(objPlayer) and canShoot == true)
 				}
 			}
 		}*/
-	}
-}
-alarm[0] = 180
-
-if(knockedBack)
-{
-	x += (dcos(hitAngle) * (knockbackPerTick))
-	y += -(dsin(hitAngle) * (knockbackPerTick))
-}
