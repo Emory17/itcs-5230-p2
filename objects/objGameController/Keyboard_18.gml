@@ -45,6 +45,279 @@ if(instance_exists(objPlayer))
 	}
 }
 
+//Give power ups to player
+if(instance_exists(objPlayer))
+{
+	if(global.character == pChar.knight)
+	{
+		///all classes
+		if(keyboard_check_pressed(ord("K")))
+		{
+			applyPowerUp(0)
+		}
+		if(keyboard_check_pressed(ord("L")))
+		{
+			applyPowerUp(1)
+		}
+		if(keyboard_check_pressed(ord("M")))
+		{
+			applyPowerUp(2)
+		}
+		if(keyboard_check_pressed(ord("N")))
+		{
+			applyPowerUp(3)
+		}
+		if(keyboard_check_pressed(ord("T")))
+		{
+			applyPowerUp(4)
+		}
+		if(keyboard_check_pressed(ord("U")))
+		{
+			if(global.bombDash = false)
+			{
+				applyPowerUp(19)
+			}
+		}
+		if(keyboard_check_pressed(ord("V")))
+		{
+			if(global.dashIframes = false)
+			{
+				applyPowerUp(20)
+			}
+		}
+		if(keyboard_check_pressed(ord("X")))
+		{
+			if(global.critsHeal = false)
+			{
+				applyPowerUp(21)
+			}
+		}
+		if(keyboard_check_pressed(ord("Y")))
+		{
+			if(global.hasMoreHealing = false)
+			{
+				applyPowerUp(22)
+			}
+		}
+		if(keyboard_check_pressed(ord("Z")))
+		{
+			if(global.enemyDeathrattle = false)
+			{
+				applyPowerUp(23)
+			}
+		}
+		
+		//class specific
+		if(keyboard_check_pressed(ord("B")))
+		{
+			if(global.primaryUpgrade1 = false)
+			{
+				applyPowerUp(7)
+			}
+		}
+		if(keyboard_check_pressed(ord("C")))
+		{
+			if(global.primaryUpgrade2 = false)
+			{
+				applyPowerUp(10)
+			}
+		}
+		if(keyboard_check_pressed(ord("E")))
+		{
+			if(global.secondaryUpgrade1 = false)
+			{
+				applyPowerUp(13)
+			}
+		}
+		if(keyboard_check_pressed(ord("Q")))
+		{
+			if(global.secondaryUpgrade2 = false)
+			{
+				applyPowerUp(16)
+			}
+		}
+
+	}
+	if(global.character == pChar.archer)
+	{
+		///all classes
+		if(keyboard_check_pressed(ord("K")))
+		{
+			applyPowerUp(0)
+		}
+		if(keyboard_check_pressed(ord("L")))
+		{
+			applyPowerUp(1)
+		}
+		if(keyboard_check_pressed(ord("M")))
+		{
+			applyPowerUp(2)
+		}
+		if(keyboard_check_pressed(ord("N")))
+		{
+			applyPowerUp(3)
+		}
+		if(keyboard_check_pressed(ord("T")))
+		{
+			applyPowerUp(5)
+		}
+		if(keyboard_check_pressed(ord("U")))
+		{
+			if(global.bombDash = false)
+			{
+				applyPowerUp(19)
+			}
+		}
+		if(keyboard_check_pressed(ord("V")))
+		{
+			if(global.dashIframes = false)
+			{
+				applyPowerUp(20)
+			}
+		}
+		if(keyboard_check_pressed(ord("X")))
+		{
+			if(global.critsHeal = false)
+			{
+				applyPowerUp(21)
+			}
+		}
+		if(keyboard_check_pressed(ord("Y")))
+		{
+			if(global.hasMoreHealing = false)
+			{
+				applyPowerUp(22)
+			}
+		}
+		if(keyboard_check_pressed(ord("Z")))
+		{
+			if(global.enemyDeathrattle = false)
+			{
+				applyPowerUp(23)
+			}
+		}
+		
+		//class specific
+		if(keyboard_check_pressed(ord("B")))
+		{
+			if(global.primaryUpgrade1 = false)
+			{
+				applyPowerUp(8)
+			}
+		}
+		if(keyboard_check_pressed(ord("C")))
+		{
+			if(global.primaryUpgrade2 = false)
+			{
+				applyPowerUp(11)
+			}
+		}
+		if(keyboard_check_pressed(ord("E")))
+		{
+			if(global.secondaryUpgrade1 = false)
+			{
+				applyPowerUp(14)
+			}
+		}
+		if(keyboard_check_pressed(ord("Q")))
+		{
+			if(global.secondaryUpgrade2 = false)
+			{
+				applyPowerUp(17)
+			}
+		}
+	}
+	if(global.character == pChar.mage)
+	{
+		///all classes
+		if(keyboard_check_pressed(ord("K")))
+		{
+			applyPowerUp(0)
+		}
+		if(keyboard_check_pressed(ord("L")))
+		{
+			applyPowerUp(1)
+		}
+		if(keyboard_check_pressed(ord("M")))
+		{
+			applyPowerUp(2)
+		}
+		if(keyboard_check_pressed(ord("N")))
+		{
+			applyPowerUp(3)
+		}
+		if(keyboard_check_pressed(ord("T")))
+		{
+			applyPowerUp(6)
+		}
+		if(keyboard_check_pressed(ord("U")))
+		{
+			if(global.bombDash = false)
+			{
+				applyPowerUp(19)
+			}
+		}
+		if(keyboard_check_pressed(ord("V")))
+		{
+			if(global.dashIframes = false)
+			{
+				applyPowerUp(20)
+			}
+		}
+		if(keyboard_check_pressed(ord("X")))
+		{
+			if(global.critsHeal = false)
+			{
+				applyPowerUp(21)
+			}
+		}
+		if(keyboard_check_pressed(ord("Y")))
+		{
+			if(global.hasMoreHealing = false)
+			{
+				applyPowerUp(22)
+			}
+		}
+		if(keyboard_check_pressed(ord("Z")))
+		{
+			if(global.enemyDeathrattle = false)
+			{
+				applyPowerUp(23)
+			}
+		}
+		
+		//class specific
+		if(keyboard_check_pressed(ord("B")))
+		{
+			if(global.primaryUpgrade1 = false)
+			{
+				applyPowerUp(9)
+			}
+		}
+		if(keyboard_check_pressed(ord("C")))
+		{
+			if(global.primaryUpgrade2 = false)
+			{
+				applyPowerUp(12)
+			}
+		}
+		if(keyboard_check_pressed(ord("E")))
+		{
+			if(global.secondaryUpgrade1 = false)
+			{
+				applyPowerUp(15)
+			}
+		}
+		if(keyboard_check_pressed(ord("Q")))
+		{
+			if(global.secondaryUpgrade2 = false)
+			{
+				applyPowerUp(18)
+			}
+		}
+	}
+}
+
 //Restart
 
 //room restart
