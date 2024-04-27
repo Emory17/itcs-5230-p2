@@ -40,8 +40,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sprArrow",
-    "path":"sprites/sprArrow/sprArrow.yy",
+    "name":"sprSkeletonArrow",
+    "path":"sprites/sprSkeletonArrow/sprSkeletonArrow.yy",
   },
   "spriteMaskId":null,
   "visible":true,

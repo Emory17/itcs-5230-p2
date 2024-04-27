@@ -104,6 +104,6 @@ alarm[0] = 180
 
 if(knockedBack)
 {
-	x += (dcos(hitAngle) * (knockbackPerTick))
-	y += -(dsin(hitAngle) * (knockbackPerTick))
+	x += (dcos(hitAngle) * (knockbackPerTick / 2))
+	y += -(dsin(hitAngle) * (knockbackPerTick / 2))
 }
