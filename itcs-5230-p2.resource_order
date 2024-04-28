@@ -112,6 +112,7 @@
     {"name":"damageEnemy","order":1,"path":"scripts/damageEnemy/damageEnemy.yy",},
     {"name":"damageEnemySecondary","order":2,"path":"scripts/damageEnemySecondary/damageEnemySecondary.yy",},
     {"name":"damageEnemyTertiary","order":3,"path":"scripts/damageEnemyTertiary/damageEnemyTertiary.yy",},
+    {"name":"enemySpawner","order":6,"path":"scripts/enemySpawner/enemySpawner.yy",},
     {"name":"scrMusic","order":5,"path":"scripts/scrMusic/scrMusic.yy",},
     {"name":"shdrRed","order":1,"path":"shaders/shdrRed/shdrRed.yy",},
     {"name":"castle","order":3,"path":"sounds/castle/castle.yy",},

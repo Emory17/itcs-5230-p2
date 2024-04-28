@@ -138,6 +138,7 @@
     {"id":{"name":"damageEnemySecondary","path":"scripts/damageEnemySecondary/damageEnemySecondary.yy",},},
     {"id":{"name":"damageEnemyTertiary","path":"scripts/damageEnemyTertiary/damageEnemyTertiary.yy",},},
     {"id":{"name":"damagePlayer","path":"scripts/damagePlayer/damagePlayer.yy",},},
+    {"id":{"name":"enemySpawner","path":"scripts/enemySpawner/enemySpawner.yy",},},
     {"id":{"name":"scrMusic","path":"scripts/scrMusic/scrMusic.yy",},},
     {"id":{"name":"shdrBW","path":"shaders/shdrBW/shdrBW.yy",},},
     {"id":{"name":"shdrRed","path":"shaders/shdrRed/shdrRed.yy",},},
