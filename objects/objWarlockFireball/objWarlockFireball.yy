@@ -33,14 +33,14 @@
   "physicsShapePoints":[],
   "physicsStartAwake":true,
   "properties":[
-    {"$GMObjectProperty":"","%Name":"defaultSpeed","filters":[],"listItems":[],"multiselect":false,"name":"defaultSpeed","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"2","varType":0,},
+    {"$GMObjectProperty":"","%Name":"defaultSpeed","filters":[],"listItems":[],"multiselect":false,"name":"defaultSpeed","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"5","varType":0,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sprFireball",
-    "path":"sprites/sprFireball/sprFireball.yy",
+    "name":"sprWarlockProjectileActive",
+    "path":"sprites/sprWarlockProjectileActive/sprWarlockProjectileActive.yy",
   },
   "spriteMaskId":null,
   "visible":true,

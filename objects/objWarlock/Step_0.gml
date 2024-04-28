@@ -15,33 +15,45 @@ if(instance_exists(objPlayer) and canShoot == true and canTeleport = false)
 					{
 						if(!frozen)
 						{
-							instance_create_layer(x, y, "Instances", protectileSpawn)
+							firing = true;
 						}
 					}
 					iterator++
 				}
 				if(iterator == 181)
 				{
-					iterator = 30
-					canShoot = false
-					canTeleport = true
+					iterator = 0
+					//canShoot = false
+					alarm[3] = 30
 					alarm[1]= shotFrequency
-					instance_destroy(objWarlockProjectile)
+					firing = true
 				}
 			}
 			else
 			{
-				instance_create_layer(x, y, "Instances", objWarlockProjectile,
+				instance_create_layer(x + (dcos(0) * 50) + 35, y - (dsin(0) * 50) + 50, "Instances", objWarlockProjectile,
 				{
 					attachedToo : self.id
 				})
-				canShoot = false
+				
+				instance_create_layer(x + (dcos(120) * 50) + 35, y - (dsin(120) * 50) + 50, "Instances", objWarlockProjectile,
+				{
+					attachedToo : self.id,
+					positionAngle : 120
+				})
+				
+				instance_create_layer(x + (dcos(240) * 50) + 35, y - (dsin(240) * 50) + 50, "Instances", objWarlockProjectile,
+				{
+					attachedToo : self.id,
+					positionAngle : 240
+				})
+				//canShoot = false
 				alarm[1]= shotFrequency
 			}
 		}
 		else
 		{
-			alarm[3] = 210
+			alarm[3] = 240
 		}	
 }
 
@@ -49,6 +61,7 @@ if(canTeleport = true)
 {
 	canTeleport = false
 	canShoot = false
+	firing = false
 	randomX = irandom_range(125, 1825)
 	randomY = irandom_range(95, 990)
 	x = randomX

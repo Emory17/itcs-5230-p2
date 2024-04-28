@@ -5,11 +5,7 @@ x += speedX
 y += speedY
 */
 timeTillDestroy++
-if(instance_exists(objPlayer))
-{
-	direction = point_direction(x,y,objPlayer.x, objPlayer.y)
-	speed = defaultSpeed
-}
+
 
 
 if(timeTillDestroy == 300)

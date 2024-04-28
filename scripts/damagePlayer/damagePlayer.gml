@@ -1,6 +1,7 @@
 function damagePlayer(damage){
 	if(!objPlayer.invincible){
 		objPlayer.invincible = true
+		damage = round(damage)
 		objPlayer.alarm[0] = objPlayer.iframes
 		//audio_play_sound(playerHit,1,false);
 		objPlayer.totalHealth -= damage

@@ -1,5 +1,8 @@
 applyPowerUp(pvalue)
 
+global.enemyDamageMultiplier *= 1.05
+global.enemyHealthMultiplier *= 1.1
+
 if(global.currentLevelIndex <= 4)
 {
 	if(global.levelArray[global.currentLevelIndex] == 0)

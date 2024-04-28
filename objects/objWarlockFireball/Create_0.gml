@@ -2,6 +2,13 @@
 // You can write your code in this editor
 timeTillDestroy = 0
 
+if(instance_exists(objPlayer))
+{
+	direction = point_direction(x,y,objPlayer.x, objPlayer.y)
+	speed = defaultSpeed
+	image_angle = direction
+}
+
 /*
 speedX = 0
 speedY = 0
