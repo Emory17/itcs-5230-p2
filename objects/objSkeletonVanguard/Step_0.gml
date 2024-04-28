@@ -4,14 +4,15 @@ if(instance_exists(objPlayer))
 {
 	if(distance_to_object(objPlayer) <= enemyVision)
 	{
+		image_speed = 1
 		//path_end()
 		if(objPlayer.x > x)
 		{
-			image_xscale = 1
+			image_xscale = -4
 		}
 		else
 		{
-			image_xscale = -1
+			image_xscale = 4
 		}
 		
 		if(instance_place(x+hsp, y, objInnerWall))
@@ -99,21 +100,24 @@ if(instance_exists(objPlayer))
 	else if((distance_to_object(objPlayer) < enemyVision + 200) and canShoot == true)
 	{
 		canShoot = false
-		alarm[1]= 120
-		if(!frozen)
-		{
-			instance_create_layer(x, y, "Instances", protectileSpawn)
-		}
+		throwing = true
+		throwingFrame = 0
+		alarm[1]= 16
+		alarm[2] = 140
 	}
 	else
 	{
-		
+		speed = 0
+		image_index = 0
+		image_speed = 0
 	}
 }
 alarm[0] = 180
 
 if(knockedBack)
 {
-	x += (dcos(hitAngle) * (knockbackPerTick))
-	y += -(dsin(hitAngle) * (knockbackPerTick))
+	x += (dcos(hitAngle) * (knockbackPerTick) / 2)
+	y += -(dsin(hitAngle) * (knockbackPerTick) / 2)
 }
+
+throwingFrame += .25

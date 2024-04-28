@@ -9,18 +9,26 @@ if(instance_exists(objPlayer) and canShoot == true)
 	{
 		if(iterator < 91)
 		{
-			if(iterator == 30 or iterator == 60 or iterator == 90)
+			if(iterator == 60)
+				image_speed = 1
+			if(iterator == 90)
 			{
 				if(!frozen)
 				{
-					instance_create_layer(x, y, "Instances", protectileSpawn)
+					instance_create_layer(x, y, "Instances", protectileSpawn, {
+						direction : direction})
+					instance_create_layer(x, y, "Instances", protectileSpawn, {
+						direction : direction + 20})
+					instance_create_layer(x, y, "Instances", protectileSpawn, {
+						direction : direction - 20})
+					alarm[2] = 30
 				}
 			}
 			iterator++
 		}
 		if(iterator == 91)
 		{
-			iterator = 30
+			iterator = 0
 			canShoot = false
 			alarm[1]= shotFrequency
 		}
@@ -36,3 +44,14 @@ if(knockedBack)
 	x += (dcos(hitAngle) * (knockbackPerTick))
 	y += -(dsin(hitAngle) * (knockbackPerTick))
 }
+
+if(image_index = 2)
+	image_speed = 0
+	
+direction = point_direction(x,y, objPlayer.x, objPlayer.y)
+	
+
+if(direction > 270 || direction < 90)
+	image_xscale = -1
+else
+	image_xscale = 1

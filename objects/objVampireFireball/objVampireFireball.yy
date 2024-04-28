@@ -6,6 +6,7 @@
     {"$GMEvent":"","%Name":"","collisionObjectId":{"name":"objWindGust","path":"objects/objWindGust/objWindGust.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"","%Name":"","collisionObjectId":{"name":"objBox","path":"objects/objBox/objBox.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"","%Name":"","collisionObjectId":{"name":"objIceSpell","path":"objects/objIceSpell/objIceSpell.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
   "name":"objVampireFireball",
@@ -36,8 +37,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sprFireball",
-    "path":"sprites/sprFireball/sprFireball.yy",
+    "name":"sprVampireFireball",
+    "path":"sprites/sprVampireFireball/sprVampireFireball.yy",
   },
   "spriteMaskId":null,
   "visible":true,

@@ -3,4 +3,9 @@
 
 // Inherit the parent event
 event_inherited();
-canShoot = true
+canShoot = false
+image_yscale = 4
+image_xscale = 4
+throwing = false
+throwingFrame = 0
+alarm[2] = 140

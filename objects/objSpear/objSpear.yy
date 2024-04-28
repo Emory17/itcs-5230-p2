@@ -35,8 +35,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sprFireball",
-    "path":"sprites/sprFireball/sprFireball.yy",
+    "name":"sprSkeletonVanguardSpear",
+    "path":"sprites/sprSkeletonVanguardSpear/sprSkeletonVanguardSpear.yy",
   },
   "spriteMaskId":null,
   "visible":true,

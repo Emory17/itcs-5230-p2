@@ -1,3 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
-canShoot = true
+throwing = false
+direction = point_direction(x,y,objPlayer.x, objPlayer.y)
+if(!frozen)
+{
+	instance_create_layer(x, y, "Instances", protectileSpawn, {direction: direction})
+}
