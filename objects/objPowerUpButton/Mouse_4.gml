@@ -61,5 +61,5 @@ else if(global.currentLevelIndex <= 9 and global.currentLevelIndex >= 5)
 }
 else
 {
-	room_goto(WinScreen)
+	room_goto(BossLevel)
 }

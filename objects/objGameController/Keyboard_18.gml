@@ -43,6 +43,10 @@ if(instance_exists(objPlayer))
 	{
 		room_goto(CastleLevel5)
 	}
+	if(keyboard_check_pressed(vk_rshift))
+	{
+		room_goto(BossLevel)
+	}
 }
 
 //Give power ups to player
@@ -364,6 +368,13 @@ if(keyboard_check_pressed(ord("P")))
 	if(instance_exists(objPlayer)){
 		objPlayer.sprite_index = sprMage
 		objPlayer.atkObj = objFireball
+	}
+}
+
+if(instance_exists(objPlayer))
+{
+	if(keyboard_check_pressed(vk_lshift)){
+		objPlayer.invincible = true
 	}
 }
 
