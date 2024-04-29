@@ -16,6 +16,8 @@ depth= -1
 
 if(instance_exists(attachedToo))
 {
+	if(attachedToo.canTeleport)
+	instance_destroy()
 	
 	if(attachedToo.firing && positionAngle == 272)
 		{
@@ -29,8 +31,8 @@ else
 	instance_destroy()
 }
 
-if(attachedToo.canTeleport)
-	instance_destroy()
+
+
 	
 if(positionAngle > 360)
 	positionAngle = 0
