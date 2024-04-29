@@ -378,5 +378,9 @@ if(instance_exists(objPlayer))
 	}
 }
 
+//kill all room enemies
+if(keyboard_check_pressed(vk_backspace)){
+		instance_destroy(objBat)
+	}
 
 

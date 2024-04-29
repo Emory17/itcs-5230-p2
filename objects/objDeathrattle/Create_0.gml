@@ -4,3 +4,4 @@ image_speed = 2
 alarm[0] = 20
 direction = atkangle
 speed = mspeed
+alarm[1] = 5

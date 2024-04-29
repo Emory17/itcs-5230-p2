@@ -4,6 +4,8 @@
   "eventList":[
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"","%Name":"","collisionObjectId":{"name":"objBox","path":"objects/objBox/objBox.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
   "name":"objShockwave",
@@ -28,6 +30,7 @@
   "physicsStartAwake":true,
   "properties":[
     {"$GMObjectProperty":"","%Name":"attachedToEnemy","filters":[],"listItems":[],"multiselect":false,"name":"attachedToEnemy","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":0,},
+    {"$GMObjectProperty":"","%Name":"currentSize","filters":[],"listItems":[],"multiselect":false,"name":"currentSize","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"-10","varType":0,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
@@ -37,5 +40,5 @@
     "path":"sprites/sprShockwave/sprShockwave.yy",
   },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }

@@ -8,3 +8,4 @@ if(!other.invincible)
 		damageEnemyTertiary(other, deathrattleDamage, self, true)
 	instance_destroy()
 }
+instance_destroy()

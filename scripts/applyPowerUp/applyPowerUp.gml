@@ -13,7 +13,7 @@ function applyPowerUp(pval){
 	    break;
 
 	    case 2:
-	        global.critChance += 1.1
+	        global.critChance += 15
 	    break;
 		
 		case 3:

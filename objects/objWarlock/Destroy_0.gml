@@ -1,3 +1,14 @@
-/// @description Insert description here
-// You can write your code in this editor
+angle = 0
+if(global.enemyDeathrattle)
+{
+	while(angle != 360)
+	{
+	angle += 45
+	instance_create_depth(x,y,0,objDeathrattle,
+		{atkangle: angle})
+	}
+	
+}
 objPlayer.totalScore += points
+instance_create_depth(x,y,2,objEnemyDeath, 
+{image_xscale : image_xscale, image_yscale: image_yscale})

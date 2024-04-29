@@ -7,6 +7,7 @@ if(instance_exists(objPlayer) and canShoot == true)
 	{
 		if(!frozen)
 		{
+			shockwaveFrames = 0
 			instance_create_layer(x, y, "Instances", objShockwave,
 			{
 			attachedToEnemy : self.id
@@ -22,6 +23,7 @@ if(instance_exists(objPlayer) and canShoot == true)
 	if(canHeal = true)
 	{
 		canHeal = false
+		alarm[0] = 60
 		alarm[2] = 180
 		alarm[4]= 1
 		if(!frozen)
@@ -33,13 +35,17 @@ if(instance_exists(objPlayer) and canShoot == true)
 		}
 	}
 }
-alarm[0] = 180
+
+visualHealDecay--
+
+shockwaveFrames += .5
 
 if(knockedBack)
 {
 	x += (dcos(hitAngle) * (knockbackPerTick))
 	y += -(dsin(hitAngle) * (knockbackPerTick))
 }
+
 /*
 for(var i = 0; i < instance_count; i++)
 		{

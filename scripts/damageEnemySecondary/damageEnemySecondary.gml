@@ -28,7 +28,7 @@ function damageEnemySecondary(enemy, damage, object, canCrit){
 		enemy.isHurt = true;
 		enemy.alarm[9] = 15
 		enemy.knockedBack = true
-		objPlayer.rage += 2
+		objPlayer.rage += 3
 		instance_create_depth(enemy.x,enemy.y,-3,objDamageNumber, 
 		{damagePopUp: damage,
 		 crit: didCrit,
