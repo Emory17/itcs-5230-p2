@@ -51,7 +51,7 @@ function enemySpawner(currentRoom)
 			}
 			
 			
-			pathEnemy = global.pathEnemies[irandom_range(0, 4)]
+			pathEnemy = global.pathEnemies[irandom_range(0, global.pathEnemyListLength)]
 			if(pathEnemy = objReaper)
 			{
 				randomX = 128
@@ -102,7 +102,7 @@ function enemySpawner(currentRoom)
 			}
 			
 			
-			nonPathEnemy = global.nonpathEnemies[irandom_range(0, 5)]
+			nonPathEnemy = global.nonpathEnemies[irandom_range(0, global.nonpathEnemyListLength)]
 			
 			x = randomX
 			y = randomY

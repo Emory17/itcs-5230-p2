@@ -1,4 +1,4 @@
-if(global.secondaryUpgrade2)
+if(global.secondaryUpgrade2 and !bigWind)
 	{
 		speed = speed - decelerate
 	}

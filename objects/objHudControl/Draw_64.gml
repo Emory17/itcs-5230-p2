@@ -19,5 +19,5 @@ draw_text(view_get_xport(0) + 120, view_get_yport(0) + 105, "Rage: " + string(ob
 
 draw_text(view_get_xport(0) + 120, view_get_yport(0) + 85, "Score: " + string(objPlayer.totalScore))
 
-draw_text(view_get_xport(0) + 120, view_get_yport(0) + 125, string(objPlayer.windCharge))
+draw_text(view_get_xport(0) + 120, view_get_yport(0) + 125, string(global.currentLevelIndex))
 

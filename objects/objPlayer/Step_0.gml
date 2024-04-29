@@ -92,19 +92,23 @@ if(mouse_check_button(mb_left) and canAttack and !dashing){
 		//slash object turns speed and attacking back to zero and false respectivly
 		speed = 5
 		attacking = true
-		//audio_play_sound(playerSwordSwing,1,false)
+		audio_play_sound(playerSwordSwing,1,false)
 		
 		canAttack = false
 		alarm[1] = atkcooldown
 		instance_create_layer(x + (dcos(atkangle) * 110), y - (dsin(atkangle) * 110), "Instances", atkObj)
 		if(global.primaryUpgrade1)
-			instance_create_layer(x + (dcos(atkangle) * 80), y - (dsin(atkangle) * 80), "Instances", objSwordBeam)
+			{
+				audio_play_sound(playerSwordBeam, 1, false)
+				instance_create_layer(x + (dcos(atkangle) * 80), y - (dsin(atkangle) * 80), "Instances", objSwordBeam)
+			}
 	}
 	
 	if(global.character == pChar.mage)
 	{
 		if(mana >= 20)
 		{
+			audio_play_sound(playerCast,1,false);
 			attacking = true
 			canAttack = false
 			objWand.image_speed = 2
@@ -131,8 +135,8 @@ if(global.character == pChar.archer && !dashing)
 {
 	if(mouse_check_button(mb_left))
 	{
-		//if(objBow.bowCharge == 1)
-			//audio_play_sound(playerBowDraw, 1, false)
+		if(objBow.bowCharge == 1)
+			audio_play_sound(playerBowDraw, 1, false)
 		objBow.bowCharge++
 		attacking = true
 		
@@ -185,6 +189,8 @@ if(keyboard_check(vk_space) && !attacking && canDash)
 	dashing = true;
 	bowCharge = 0;
 	alarm[3] = dashCooldown
+	if(lastSpeedX != 0 || lastSpeedY != 0)
+		audio_play_sound(playerDash,1,false);
 }
 
 
@@ -249,7 +255,7 @@ if(!keyboard_check(ord("W")) &&  !keyboard_check(ord("S")) &&
 
 if(mouse_check_button(mb_right) and !attacking and !dashing and global.character == pChar.knight and canAttack)
 {
-	
+	audio_play_sound(playerShieldEquip, 1, false)
 	shieldUp = true;
 	canAttack = false
 	attacking = true;
@@ -265,11 +271,14 @@ else if (!mouse_check_button(mb_right) and global.character == pChar.knight && s
 if(mouse_check_button(mb_right) and !dashing && !attacking){
 	if(canGust)
 		superWindCharge++
+	if(canGust and global.secondaryUpgrade1 and superWindCharge == 1)
+		audio_play_sound(bigWindCharge, 1, false)
 	
 	if(global.character == pChar.mage and !attacking)
 	{
 		if(mana >= (global.secondaryUpgrade2 ? 65 : 80))
 		{
+			audio_play_sound(playerCast,1,false);
 			attacking = true
 			canAttack = false
 			objWand.image_speed = 2
@@ -314,6 +323,7 @@ if(shieldUp && keyboard_check(vk_space) && canDash && global.secondaryUpgrade1 &
 	bashTime = 1
 	alarm[3] = dashCooldown
 	instance_create_depth(x,y,0,objShieldBash)
+	audio_play_sound(playerShieldBash, 1, false)
 }
 
 if(bashing)
@@ -338,6 +348,7 @@ if(shieldUp and mouse_check_button(mb_left) and mouse_check_button(mb_right))
 {
 	if(objShield.mirrorCharge >= 1 && global.secondaryUpgrade2)
 	{
+		audio_play_sound(playerShieldBeam, 1, false)
 		instance_create_depth(objShield.x, objShield.y, -1, objShieldBeam,
 		{direction: objShield.direction,
 		chargePower : objShield.mirrorCharge})
@@ -358,6 +369,8 @@ if(!mouse_check_button(mb_right) and !dashing and !attacking)
 		
 		if(superWindCharge < 90 || !global.secondaryUpgrade1)
 		{
+			audio_play_sound(playerWindGust, 1, false)
+			audio_stop_sound(bigWindCharge)
 			instance_create_layer(x + (dcos(atkangle) * 50), y - (dsin(atkangle) * 50), "Instances", objWindGust,
 			{direction: atkangle})
 			
@@ -374,6 +387,7 @@ if(!mouse_check_button(mb_right) and !dashing and !attacking)
 			instance_create_layer(x + (dcos(atkangle) * 50), y - (dsin(atkangle) * 50), "Instances", objWindGust,
 			{direction: atkangle,
 			bigWind : true})
+			audio_play_sound(playerBigWindGust,1,false)
 		}
 		superWindCharge = 0
 	}

@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"playerHitEnemy",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":0.103719,
+  "name":"playerHitEnemy",
+  "parent":{
+    "name":"player",
+    "path":"folders/Sounds/player.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"playerHitEnemy.wav",
+  "type":0,
+  "volume":1.0,
+}

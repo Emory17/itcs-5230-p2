@@ -42,5 +42,7 @@ global.levelArray = []
 
 global.persistentHealth = 100
 
-global.pathEnemies = [objGolem, objReaper, objSkeletonVanguard, objWerewolf, objZombie]
-global.nonpathEnemies = [objBat, objEnt, objGhost, objSkeleton, objVampire, objWarlock]//add objDarkCleric when fixed
+global.pathEnemyListLength = 3
+global.nonpathEnemyListLength = 4
+global.pathEnemies = [objGolem, objWerewolf, objZombie, objZombie]
+global.nonpathEnemies = [objBat, objSkeleton, objBat, objSkeleton, objEnt]

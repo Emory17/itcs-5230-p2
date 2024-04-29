@@ -11,7 +11,13 @@ else
 	global.persistentHealth += round((100 * global.maxHPMultiplier) * .2)
 }
 
+if(global.currentLevelIndex == 5)
+	{
+	global.pathEnemyListLength = 4
+	global.nonpathEnemyListLength = 8
+	global.pathEnemies = [objGolem, objWerewolf, objZombie, objSkeletonVanguard, objReaper]
+	global.nonpathEnemies = [objBat, objSkeleton, objGhost, objGhost, objEnt, objVampire, objVampire, objDarkCleric, objWarlock]
+	}
+	
 room_goto(PowerUpScreen)
-
-
 

@@ -1,6 +1,7 @@
 angle = 0
 if(global.enemyDeathrattle)
 {
+	audio_play_sound(playerDeathRattle, 1, false)
 	while(angle != 360)
 	{
 	angle += 45

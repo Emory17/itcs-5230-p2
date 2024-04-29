@@ -6,6 +6,7 @@ if(instance_exists(objPlayer) && !iceSpell)
 	objPlayer.canAttack = true;
 	objPlayer.attacking = false;
 	alarm[0] = 5
+	audio_play_sound(playerFireball,1,false);
 }
 
 if(instance_exists(objPlayer) && iceSpell)
@@ -19,4 +20,5 @@ if(instance_exists(objPlayer) && iceSpell)
 	iceSpell = false
 	if(global.secondaryUpgrade1)
 		instance_create_depth(x, y, 0, objIcicleOrigin, {icicleAngle: objPlayer.atkangle})
+	audio_play_sound(playerIceSpell,1,false);
 }

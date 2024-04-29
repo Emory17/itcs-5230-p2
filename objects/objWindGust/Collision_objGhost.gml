@@ -2,7 +2,7 @@ if(!other.invincible)
 {
 	other.hitAngle = atkangle
 	other.knockbackPerTick = knockbackAmt;
-	damageEnemy(other, 0, self, true)
+	damageEnemy(other, 0, self, false)
 	
 	if(bigWind)
 	{
@@ -18,5 +18,6 @@ if(!other.invincible)
 		instance_create_depth(x,y,-2,objDamageNumber, 
 			{damagePopUp: windDamage,
 			})
+		audio_play_sound(playerHitEnemy,1,false);
 	}
 }
