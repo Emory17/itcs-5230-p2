@@ -14,5 +14,5 @@ if (room == ForestLevel3 || room == ForestLevel1 || room = ForestLevel2 ||
 	setSongInGame(forestcombat, 20, 10);
 
 
-if (room == CastleLevel1 || room == CastleLevel2 || room == CastleLevel3)
+if (room == CastleLevel1 || room == CastleLevel2 || room == CastleLevel3 || room == CastleLevel4 || room == CastleLevel5)
 	setSongInGame(castle, 20, 20);
