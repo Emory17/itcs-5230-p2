@@ -13,7 +13,7 @@ if(charged)
  
  if(charged)
  {
-	arrowDamage = 30 * round(global.damageMultiplier)
+	arrowDamage = round(30 * global.damageMultiplier)
 	knockbackAmt = 10 * global.knockbackMultiplier
 	image_index = 1;
 	if(global.primaryUpgrade2)

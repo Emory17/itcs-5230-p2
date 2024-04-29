@@ -8,7 +8,7 @@ function applyPowerUp(pval){
 	    case 1:
 			previousHP = global.maxHPMultiplier
 	        global.maxHPMultiplier *= 1.2
-			tempHP = global.maxHPMultiplier - previousHP
+			tempHP = round(global.maxHPMultiplier - previousHP)
 			global.persistentHealth += tempHP
 	    break;
 
