@@ -18,7 +18,6 @@ if(instance_exists(objPlayer))
 	direction = point_direction(x,y,objPlayer.x, objPlayer.y)
 	speed = defaultSpeed
 }
-alarm[0] = 180
 
 if(knockedBack)
 {

@@ -38,7 +38,6 @@ if(instance_exists(objPlayer) and canShoot == true)
 
 	}
 }
-alarm[0] = 180
 
 if(knockedBack)
 {

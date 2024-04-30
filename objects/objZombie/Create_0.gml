@@ -7,4 +7,3 @@ path_start(pathName, hsp, path_action_restart, false)
 canWander = true
 image_yscale = 1.5
 image_xscale = 1.5
-alarm[0] = 200
