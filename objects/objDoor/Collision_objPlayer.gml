@@ -14,9 +14,9 @@ else
 if(global.currentLevelIndex == 5)
 	{
 	global.pathEnemyListLength = 4
-	global.nonpathEnemyListLength = 8
+	global.nonpathEnemyListLength = 7
 	global.pathEnemies = [objGolem, objWerewolf, objZombie, objSkeletonVanguard, objReaper]
-	global.nonpathEnemies = [objBat, objSkeleton, objGhost, objGhost, objEnt, objVampire, objVampire, objDarkCleric, objWarlock]
+	global.nonpathEnemies = [objBat, objSkeleton, objGhost, objGhost, objEnt, objVampire, objDarkCleric, objWarlock]
 	}
 	
 room_goto(PowerUpScreen)

@@ -14,41 +14,6 @@ function enemySpawner(currentRoom)
 		{
 			randomX = irandom_range(125, 1825)
 			randomY = irandom_range(95, 990)
-		
-		
-			//Collision with room objects logic
-			if(instance_exists(objBox))
-			{
-				while(objBox.x = randomX or objBox.y = randomY)
-				{
-					randomX = irandom_range(125, 1825)
-					randomY = irandom_range(95, 990)
-				}
-			}
-			if(instance_exists(objInnerWall))
-			{
-				while(objInnerWall.x = randomX or objInnerWall.y = randomY)
-				{
-					randomX = irandom_range(125, 1825)
-					randomY = irandom_range(95, 990)
-				}
-			}
-			if(instance_exists(objHole))
-			{
-				while(objHole.x = randomX or objHole.y = randomY)
-				{
-					randomX = irandom_range(125, 1825)
-					randomY = irandom_range(95, 990)
-				}
-			}
-			if(instance_exists(objOuterWall))
-			{
-				while(objOuterWall.x = randomX or objOuterWall.y = randomY)
-				{
-					randomX = irandom_range(125, 1825)
-					randomY = irandom_range(95, 990)
-				}
-			}
 			
 			
 			pathEnemy = global.pathEnemies[irandom_range(0, global.pathEnemyListLength)]
@@ -65,41 +30,6 @@ function enemySpawner(currentRoom)
 		{
 			randomX = irandom_range(125, 1825)
 			randomY = irandom_range(95, 990)
-			
-			
-			//Collision with room objects logic
-			if(instance_exists(objBox))
-			{
-				while(objBox.x = randomX or objBox.y = randomY)
-				{
-					randomX = irandom_range(125, 1825)
-					randomY = irandom_range(95, 990)
-				}
-			}
-			if(instance_exists(objInnerWall))
-			{
-				while(objInnerWall.x = randomX or objInnerWall.y = randomY)
-				{
-					randomX = irandom_range(125, 1825)
-					randomY = irandom_range(95, 990)
-				}
-			}
-			if(instance_exists(objHole))
-			{
-				while(objHole.x = randomX or objHole.y = randomY)
-				{
-					randomX = irandom_range(125, 1825)
-					randomY = irandom_range(95, 990)
-				}
-			}
-			if(instance_exists(objOuterWall))
-			{
-				while(objOuterWall.x = randomX or objOuterWall.y = randomY)
-				{
-					randomX = irandom_range(125, 1825)
-					randomY = irandom_range(95, 990)
-				}
-			}
 			
 			
 			nonPathEnemy = global.nonpathEnemies[irandom_range(0, global.nonpathEnemyListLength)]
