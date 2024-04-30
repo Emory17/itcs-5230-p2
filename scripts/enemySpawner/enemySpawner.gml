@@ -2,13 +2,19 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function enemySpawner(currentRoom)
 {
+	var extraEnemies;
 	var index = 0
 	var randomX
 	var randomY
 	var pathEnemy
 	var nonPathEnemy
 	
-	while(index != 5)
+	if(global.currentLevelIndex > 4)
+		extraEnemies = round(global.currentLevelIndex/2) - 1
+	else
+		extraEnemies = round(global.currentLevelIndex/2)
+	
+	while(index != 5 + extraEnemies)
 	{
 		if(index == 0)
 		{

@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"zombieCry",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":0,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":3.1232,
+  "name":"zombieCry",
+  "parent":{
+    "name":"Sounds",
+    "path":"folders/Sounds.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":5512,
+  "soundFile":"zombieCry.mp3",
+  "type":0,
+  "volume":0.77,
+}

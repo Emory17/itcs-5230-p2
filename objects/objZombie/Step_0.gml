@@ -15,6 +15,10 @@ if(instance_exists(objPlayer))
 		//}
 		if(canWander)
 		{
+			makeSound = irandom(2)
+			audio_stop_sound(zombieCry)
+			if(makeSound == 1)
+				audio_play_sound(zombieCry, false, 1)
 			canWander = false
 			image_speed = 0
 			alarm[1] = 180
@@ -26,6 +30,8 @@ if(instance_exists(objPlayer))
 			
 		
 	}
+	else
+		audio_stop_sound(zombieCry)
 
 }
 

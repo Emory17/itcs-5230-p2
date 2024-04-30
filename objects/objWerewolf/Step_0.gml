@@ -16,6 +16,10 @@ if(instance_exists(objPlayer))
 		//}
 		if(canCharge)
 		{
+			makeSound = irandom(2)
+			audio_stop_sound(werewolfGrowl)
+			if(makeSound == 1)
+				audio_play_sound(werewolfGrowl,1,false)
 			
 			directionToPlayer = point_direction(x, y, objPlayer.x, objPlayer.y)
 			canCharge = false

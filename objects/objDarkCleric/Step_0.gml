@@ -28,6 +28,7 @@ if(instance_exists(objPlayer) and canShoot == true)
 		alarm[4]= 1
 		if(!frozen)
 		{
+			audio_play_sound(ClericHeal, 1, false)
 			instance_create_layer(x, y, "Instances", objHealDiameter,
 			{
 				attachedToCorrectEnemy : self.id
@@ -39,6 +40,9 @@ if(instance_exists(objPlayer) and canShoot == true)
 visualHealDecay--
 
 shockwaveFrames += .5
+
+if(shockwaveFrames = 5)
+	audio_play_sound(clericshockwave, 1, false)
 
 if(knockedBack)
 {

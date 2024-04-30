@@ -4,6 +4,11 @@ if(instance_exists(objPlayer))
 {
 	if(distance_to_object(objPlayer) < enemyVision)
 	{
+		if(agro == false)
+		{
+			agro = true
+			alarm[0] = 27
+		}
 		image_speed = .5
 		//path_end()
 		if(objPlayer.x > x)
@@ -14,6 +19,8 @@ if(instance_exists(objPlayer))
 		{
 			image_xscale = -1
 		}
+		
+		
 		
 		if(instance_place(x+hsp, y, objInnerWall))
 		{
@@ -98,12 +105,17 @@ if(instance_exists(objPlayer))
 		
 	}
 	else
+	{
 		image_speed = 0
+		audio_stop_sound(bigEnemyThump)
+	}
 }
-alarm[0] = 180
+
 
 if(knockedBack)
 {
 	x += (dcos(hitAngle) * (knockbackPerTick / 2))
 	y += -(dsin(hitAngle) * (knockbackPerTick / 2))
 }
+
+

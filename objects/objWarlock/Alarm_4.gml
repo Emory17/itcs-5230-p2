@@ -1,5 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
+if(distance_to_object(objPlayer) < enemyVision)
+	audio_play_sound(warlockSummon, 1, false)
 instance_create_layer(x + (dcos(0) * 50), y - (dsin(0) * 50), "Instances", objWarlockProjectile,
 {
 	attachedToo : self.id

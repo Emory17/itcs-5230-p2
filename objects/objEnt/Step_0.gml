@@ -28,11 +28,11 @@ if(instance_exists(objPlayer) and canShoot == true)
 		canShoot = false
 		alarm[1]= shotFrequency
 		alarm[2] = shotFrequency - 70
+		alarm[0] = shotFrequency - 10
 		
 	
 	}
 }
-alarm[0] = 180
 
 if(knockedBack)
 {

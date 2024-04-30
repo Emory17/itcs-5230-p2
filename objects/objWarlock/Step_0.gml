@@ -17,6 +17,8 @@ if(instance_exists(objPlayer) and canShoot == true and canTeleport = false)
 
 if(canTeleport = true)
 {
+	if(distance_to_object(objPlayer) < enemyVision)
+		audio_play_sound(warlockTeleport, 1, false)
 	previousX = x
 	previousY = y
 	randomX = irandom_range(125, 1825)

@@ -16,6 +16,7 @@ if(bigWindTime % 5 = 0)
 	instance_create_depth(x,y,-2,objDamageNumber, 
 		{damagePopUp: windDamage,
 		})
+	audio_stop_sound(playerHitEnemy);
 	audio_play_sound(playerHitEnemy,1,false);
 }
 

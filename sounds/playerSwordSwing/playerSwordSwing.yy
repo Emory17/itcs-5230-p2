@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":0.285578,
+  "duration":0.475805,
   "name":"playerSwordSwing",
   "parent":{
     "name":"player",
@@ -21,5 +21,5 @@
   "sampleRate":44100,
   "soundFile":"playerSwordSwing.wav",
   "type":0,
-  "volume":1.0,
+  "volume":0.76,
 }

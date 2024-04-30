@@ -8,7 +8,9 @@
   ],
   "managed":true,
   "name":"objSpear",
-  "overriddenProperties":[],
+  "overriddenProperties":[
+    {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"objSkeletonArrow","path":"objects/objSkeletonArrow/objSkeletonArrow.yy",},"propertyId":{"name":"arrowSpeed","path":"objects/objSkeletonArrow/objSkeletonArrow.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"12",},
+  ],
   "parent":{
     "name":"enemy projectiles",
     "path":"folders/Objects/enemies/enemy projectiles.yy",

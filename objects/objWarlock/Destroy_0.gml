@@ -13,3 +13,4 @@ if(global.enemyDeathrattle)
 objPlayer.totalScore += points
 instance_create_depth(x,y,2,objEnemyDeath, 
 {image_xscale : image_xscale, image_yscale: image_yscale})
+audio_play_sound(enemyDie, 1, false)

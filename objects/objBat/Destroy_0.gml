@@ -1,4 +1,4 @@
-
+audio_play_sound(enemyDie, 1, false)
 angle = 0
 if(global.enemyDeathrattle)
 {

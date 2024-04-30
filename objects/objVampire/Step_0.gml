@@ -15,6 +15,7 @@ if(instance_exists(objPlayer) and canShoot == true)
 			{
 				if(!frozen)
 				{
+					audio_play_sound(vampireShot, 1, false)
 					instance_create_layer(x, y, "Instances", protectileSpawn, {
 						direction : direction})
 					instance_create_layer(x, y, "Instances", protectileSpawn, {

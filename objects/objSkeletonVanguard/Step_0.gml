@@ -4,6 +4,11 @@ if(instance_exists(objPlayer))
 {
 	if(distance_to_object(objPlayer) <= enemyVision)
 	{
+		if(agro == false and !throwing)
+		{
+			agro = true
+			alarm[0] = 20
+		}
 		image_speed = 1
 		//path_end()
 		if(objPlayer.x > x)
@@ -110,9 +115,9 @@ if(instance_exists(objPlayer))
 		speed = 0
 		image_index = 0
 		image_speed = 0
+		agro = false
 	}
 }
-alarm[0] = 180
 
 if(knockedBack)
 {

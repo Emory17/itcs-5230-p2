@@ -31,6 +31,7 @@ if(instance_exists(objPlayer) and canShoot == true)
 		alarm[2] = shotFrequency - 60
 		if(!frozen)
 		{
+			audio_play_sound(skeletonFire, 1, false)
 			instance_create_layer(x, y, "Instances", protectileSpawn, {direction: direction})
 		}
 	
