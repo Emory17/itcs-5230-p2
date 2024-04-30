@@ -1,0 +1,1 @@
+damagePlayer(round(10 * global.enemyDamageMultiplier))

@@ -8,7 +8,9 @@
   ],
   "managed":true,
   "name":"objNecrolichDirect",
-  "overriddenProperties":[],
+  "overriddenProperties":[
+    {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"objWarlockFireball","path":"objects/objWarlockFireball/objWarlockFireball.yy",},"propertyId":{"name":"defaultSpeed","path":"objects/objWarlockFireball/objWarlockFireball.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"10",},
+  ],
   "parent":{
     "name":"enemy projectiles",
     "path":"folders/Objects/enemies/enemy projectiles.yy",
