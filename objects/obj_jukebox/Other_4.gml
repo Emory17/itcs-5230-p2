@@ -24,3 +24,7 @@ setSongInGame(victory, 20, 20);
 if room == LoseScreen {
 setSongInGame(gameover, 20, 20);
 }
+
+if room == BossLevel {
+setSongInGame(boss, 20, 20);
+}

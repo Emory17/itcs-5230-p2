@@ -43,7 +43,7 @@ if(instance_exists(objPlayer))
 	{
 		room_goto(CastleLevel5)
 	}
-	if(keyboard_check_pressed(vk_rshift))
+	if(keyboard_check_pressed(vk_return))
 	{
 		room_goto(BossLevel)
 	}
