@@ -1,4 +1,5 @@
 applyPowerUp(pvalue)
+audio_play_sound(powerupGet, 1, false)
 
 global.enemyDamageMultiplier *= 1.05
 global.enemyHealthMultiplier *= 1.1

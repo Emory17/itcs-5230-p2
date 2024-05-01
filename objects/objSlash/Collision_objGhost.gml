@@ -15,4 +15,3 @@ if((other.hitobject == noone or other.hitobject != self) and rageLevel = 2)
 }
 damageEnemy(other, swordDamage, self, true)
 }
-instance_create_layer(x, y, "Instances", obj_hitspark);

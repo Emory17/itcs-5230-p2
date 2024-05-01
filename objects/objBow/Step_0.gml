@@ -79,3 +79,6 @@ if(instance_exists(objPlayer))
 		}
 	}
 }
+
+if(objPlayer.windCharge = 73)
+	audio_play_sound(gustRecharge, 1, false)

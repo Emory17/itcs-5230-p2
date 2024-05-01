@@ -3,6 +3,7 @@ image_yscale = 1
 image_speed = 6
 speed = pspeed
 atkangle = direction
+depth= 2
 
 if(bigWind)
 	alarm[0] = 80;
