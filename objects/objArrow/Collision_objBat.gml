@@ -1,5 +1,6 @@
 other.hitAngle = atkangle
 other.knockbackPerTick = knockbackAmt;
+instance_create_layer("Instances", )
 
 if((other.hitobject == noone or other.hitobject != self) && global.primaryUpgrade2)
 {
