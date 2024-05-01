@@ -1,5 +1,6 @@
 //Orbiting Fireballs
 
+audio_play_sound(warlockSummon, 1, false)
 nx = objNecrolich.x
 ny = objNecrolich.y
 

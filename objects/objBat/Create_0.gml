@@ -5,7 +5,8 @@ isHurt = false;
 knockedBack = false;
 lightning = false;
 
-while(place_meeting(x,y,objInnerWall) || place_meeting(x,y,objPlayer))
+while(place_meeting(x,y,objInnerWall) || place_meeting(x,y,objPlayer) 
+|| place_meeting(x,y,objHole) || place_meeting(x,y,objBox))
 {
 	x = irandom_range(125, 1825)
 	y = irandom_range(95, 990)

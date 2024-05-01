@@ -1,5 +1,5 @@
 //Diagonal Projectiles
-
+audio_play_sound(vampireShot, 1, false)
 nx = objNecrolich.x
 ny = objNecrolich.y
 

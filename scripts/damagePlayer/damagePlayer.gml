@@ -13,6 +13,7 @@ function damagePlayer(damage){
 		
 		if(objPlayer.totalHealth <= 0){
 			instance_destroy(objPlayer)
+			audio_play_sound(necrolichLaugh, 1, false)
 		}
 	}
 }

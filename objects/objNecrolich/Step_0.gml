@@ -20,3 +20,9 @@ if(knockedBack)
 	x += (dcos(hitAngle) * (knockbackPerTick/4))
 	y += -(dsin(hitAngle) * (knockbackPerTick/4))
 }
+
+
+if(sprite_index == sprNecrolichTeleport)
+	 image_speed = 3
+else
+	image_speed = 1
