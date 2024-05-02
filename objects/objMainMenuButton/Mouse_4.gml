@@ -21,6 +21,6 @@ else if(value = "archer"){
 else if(value = "mage"){
 	global.character = pChar.mage
 }
-room_goto(CutsceneRoom)
+room_goto(ControlScreen)
 	}
 }

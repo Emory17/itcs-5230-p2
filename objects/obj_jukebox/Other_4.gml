@@ -5,7 +5,7 @@ if room == TitleScreen
 setSongInGame(title_screen, 0, 10);
 }
 
-if(room == CutsceneRoom || room == PowerUpScreen)
+if(room == CutsceneRoom || room == PowerUpScreen || room == CutsceneRoom2)
 	setSongInGame(lesserforest, 20, 20);
 
 

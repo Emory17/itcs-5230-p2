@@ -1,0 +1,1 @@
+objDrawbridge.image_speed = 1

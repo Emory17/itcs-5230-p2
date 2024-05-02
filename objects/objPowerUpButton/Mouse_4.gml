@@ -4,7 +4,11 @@ audio_play_sound(powerupGet, 1, false)
 global.enemyDamageMultiplier *= 1.05
 global.enemyHealthMultiplier *= 1.1
 
-if(global.currentLevelIndex <= 4)
+if(global.currentLevelIndex == 5)
+{
+	room_goto(CutsceneRoom2)
+}
+else if(global.currentLevelIndex <= 4)
 {
 	if(global.levelArray[global.currentLevelIndex] == 0)
 	{
