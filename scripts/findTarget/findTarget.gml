@@ -32,7 +32,7 @@ function findTarget(){
 	}
 	
 	if(!found){
-		cdirect -= 75
+		cdirect += 75
 	}
 	
 	direction = cdirect
