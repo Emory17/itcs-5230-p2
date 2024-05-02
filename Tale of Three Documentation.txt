@@ -11,6 +11,13 @@ Licensing
 
 Bow Sprite, Fireball Sprite, Reticle Sprite, Slash Sprite, Wand Sprite, Archer Sprite, Archer Moving Sprite, Knight Sprite, Knight Moving Sprite, Knight Swordless Sprite, Mage Sprite, Mage Moving Sprite made by Ben Heidinger
 
-Shield Sprite made by Quintin Obey
+Shield Sprite, Skeleton Vanguard Sprite,  Vampire Sprite, made by Quintin Obey
 
 Arrow Sprite, EnemyArrow Sprite, and Door Sprite made by Emory Soper
+
+sprHitSpark
+pimen
+License
+Feel free to use in your projects as you like.
+
+
