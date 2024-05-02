@@ -17,7 +17,6 @@ windCharge = 0;
 rage = 0
 bashTime = 0
 bashing = false
-totalScore = 0
 alarm[5] = rageDecayRate
 alarm[4] = 90;
 

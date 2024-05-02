@@ -11,6 +11,6 @@ if(global.enemyDeathrattle)
 	}
 	
 }
-objPlayer.totalScore += points
+global.totalScore += points
 instance_create_depth(x,y,2,objEnemyDeath, 
 {image_xscale : image_xscale, image_yscale: image_yscale})

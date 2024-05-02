@@ -16,7 +16,7 @@ draw_text(view_get_xport(0) + 120, view_get_yport(0) + 35, string(objPlayer.tota
 
 draw_text(view_get_xport(0) + 120, view_get_yport(0) + 115, "Rage: " + string(objPlayer.rage))
 
-draw_text(view_get_xport(0) + 120, view_get_yport(0) + 95, "Score: " + string(objPlayer.totalScore))
+draw_text(view_get_xport(0) + 120, view_get_yport(0) + 95, "Score: " + string(global.totalScore))
 
 //draw_text(view_get_xport(0) + 120, view_get_yport(0) + 125, string(global.))
 

@@ -41,6 +41,7 @@ global.currentLevelIndex = 0
 global.levelArray = []
 
 global.persistentHealth = 100
+global.totalScore = 0
 
 global.pathEnemyListLength = 3
 global.nonpathEnemyListLength = 4
