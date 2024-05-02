@@ -8,7 +8,7 @@ function findTarget(){
 	cx = x
 	cy = y
 	
-	tint = 8
+	tint = 32
 	
 	if(instance_exists(objPlayer))
 	{

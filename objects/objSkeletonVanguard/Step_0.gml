@@ -20,7 +20,7 @@ if(instance_exists(objPlayer))
 			image_xscale = 4
 		}
 		
-		if(instance_place(x+hsp, y, objInnerWall) or instance_place(x+hsp, y, objOuterWall) or instance_place(x+hsp, y, objHole))
+		if(instance_place(x+hsp, y, objInnerWall) or instance_place(x+hsp, y, objHole))
 		{
 			lastDirection = direction
 			
@@ -30,10 +30,9 @@ if(instance_exists(objPlayer))
 				unstuckSpeed = defaultSpeed * -1 
 			}
 			
-			direction = point_direction(x, y, x, y + unstuckSpeed)
+			direction = point_direction(x, y, x, y - unstuckSpeed)
 			speed = defaultSpeed
 			if(instance_place(x, y-hsp, objInnerWall) or instance_place(x, y+hsp, objInnerWall)
-			or instance_place(x, y-hsp, objOuterWall) or instance_place(x, y+hsp, objOuterWall)
 			or instance_place(x, y-hsp, objHole) or instance_place(x, y+hsp, objHole))
 			{
 				direction = point_direction(x, y, x + defaultSpeed, y)
@@ -41,7 +40,7 @@ if(instance_exists(objPlayer))
 			}
 			
 		}
-		else if(instance_place(x-hsp, y, objInnerWall) or instance_place(x-hsp, y, objOuterWall)  or instance_place(x-hsp, y, objHole))
+		else if(instance_place(x-hsp, y, objInnerWall) or instance_place(x-hsp, y, objHole))
 		{
 			lastDirection = direction
 			
@@ -54,14 +53,13 @@ if(instance_exists(objPlayer))
 			direction = point_direction(x, y, x, y + unstuckSpeed)
 			speed = defaultSpeed
 			if(instance_place(x, y-hsp, objInnerWall) or instance_place(x, y+hsp, objInnerWall)
-			or instance_place(x, y-hsp, objOuterWall) or instance_place(x, y+hsp, objOuterWall)
 			or instance_place(x, y-hsp, objHole) or instance_place(x, y+hsp, objHole))
 			{
 				direction = point_direction(x, y, x + unstuckSpeed, y)
 				speed = defaultSpeed
 			}
 		}
-		else if(instance_place(x, y-hsp, objInnerWall) or instance_place(x, y-hsp, objOuterWall) or instance_place(x, y-hsp, objHole))
+		else if(instance_place(x, y-hsp, objInnerWall) or instance_place(x, y-hsp, objHole))
 		{
 			lastDirection = direction
 			
@@ -71,17 +69,16 @@ if(instance_exists(objPlayer))
 				unstuckSpeed = defaultSpeed * -1 
 			}
 			
-			direction = point_direction(x, y, x + unstuckSpeed, y)
+			direction = point_direction(x, y, x - unstuckSpeed, y)
 			speed = defaultSpeed
 			if(instance_place(x+hsp, y, objInnerWall) or instance_place(x-hsp, y, objInnerWall)
-			or instance_place(x+hsp, y, objOuterWall) or instance_place(x-hsp, y, objOuterWall)
 			or instance_place(x+hsp, y, objHole) or instance_place(x-hsp, y, objHole))
 			{
 				direction = point_direction(x, y, x, y + unstuckSpeed)
 				speed = defaultSpeed
 			}
 		}
-		else if(instance_place(x, y+hsp, objInnerWall) or instance_place(x, y+hsp, objOuterWall) or instance_place(x, y+hsp, objHole))
+		else if(instance_place(x, y+hsp, objInnerWall) or instance_place(x, y+hsp, objHole))
 		{
 			lastDirection = direction
 			
@@ -94,7 +91,6 @@ if(instance_exists(objPlayer))
 			direction = point_direction(x, y, x + unstuckSpeed, y)
 			speed = defaultSpeed
 			if(instance_place(x+hsp, y, objInnerWall) or instance_place(x-hsp, y, objInnerWall)
-			or instance_place(x+hsp, y, objOuterWall) or instance_place(x-hsp, y, objOuterWall)
 			or instance_place(x+hsp, y, objHole) or instance_place(x-hsp, y, objHole))
 			{
 				direction = point_direction(x, y, x, y + unstuckSpeed)
