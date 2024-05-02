@@ -1,6 +1,6 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-function enemySpawner(currentRoom)
+function enemySpawner()
 {
 	var extraEnemies;
 	var index = 0
@@ -8,6 +8,8 @@ function enemySpawner(currentRoom)
 	var randomY
 	var pathEnemy
 	var nonPathEnemy
+	var sx = 0
+	var sy = 0
 	
 	if(global.currentLevelIndex > 4)
 		extraEnemies = round(global.currentLevelIndex/2) - 1
@@ -27,9 +29,9 @@ function enemySpawner(currentRoom)
 				randomX = 128
 				randomY = 128
 			}
-			x = randomX
-			y = randomY
-			room_instance_add(currentRoom, x, y, pathEnemy)
+			sx = randomX
+			sy = randomY
+			instance_create_layer(sx,sy,"Instances",pathEnemy)
 		}
 		else
 		{
@@ -39,9 +41,9 @@ function enemySpawner(currentRoom)
 			
 			nonPathEnemy = global.nonpathEnemies[irandom_range(0, global.nonpathEnemyListLength)]
 			
-			x = randomX
-			y = randomY
-			room_instance_add(currentRoom, x, y, nonPathEnemy)
+			sx = randomX
+			sy = randomY
+			instance_create_layer(sx,sy,"Instances",nonPathEnemy)
 		}
 		index++
 	}
