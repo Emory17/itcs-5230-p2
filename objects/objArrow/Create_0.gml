@@ -19,3 +19,4 @@ if(charged)
 	if(global.primaryUpgrade2)
 		image_index = 2
  }
+ depth = 0

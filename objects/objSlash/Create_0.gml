@@ -1,6 +1,6 @@
 atkangle = objPointer.direction
 
-
+depth = -1
 
 
 sizeModifier = 0

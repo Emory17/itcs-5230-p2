@@ -7,6 +7,7 @@ function damageEnemy(enemy, damage, object, canCrit){
 	
 	if(enemy.hitobject == noone or enemy.hitobject != object)
 	{
+		audio_stop_sound(playerHitEnemy)
 		audio_play_sound(playerHitEnemy,1,false);
 		if(canCrit && irandom(100) > (100 - global.critChance))
 		{

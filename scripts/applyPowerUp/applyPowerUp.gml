@@ -17,7 +17,7 @@ function applyPowerUp(pval){
 	    break;
 		
 		case 3:
-	        global.speedMultiplier *= 1.1
+	        global.speedMultiplier *= 1.2
 	    break;
 		
 		case 4:

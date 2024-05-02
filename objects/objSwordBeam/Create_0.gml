@@ -7,7 +7,7 @@ image_index = 0
 speed = pspeed
 atkangle = direction
 knockbackAmt = 0 * global.knockbackMultiplier
-
+depth = -1
 alarm[0] = 30;
 
 if(global.primaryUpgrade2)

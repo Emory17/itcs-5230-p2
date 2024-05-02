@@ -10,3 +10,4 @@ image_angle = direction
 //((350 mod objPlayer.x) == 0)
 //((850 mod objPlayer.y) == 0)
 //((850 mod objPlayer.x) == 0)
+depth = 0

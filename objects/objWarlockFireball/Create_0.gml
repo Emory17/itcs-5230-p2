@@ -8,6 +8,7 @@ if(instance_exists(objPlayer))
 	speed = defaultSpeed
 	image_angle = direction
 }
+depth = 0
 
 /*
 speedX = 0

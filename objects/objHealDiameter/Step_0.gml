@@ -10,3 +10,4 @@ else
 {
 	instance_destroy()
 }
+depth = 0

@@ -15,6 +15,34 @@ ptext = ["Increase Attack","Increase Health","Increase Crit Rate","Increase Spee
 		"Mirror Shield","Wall of Wind","Winter's Embrace", 
 		"Trick Bomb", "Boots of Quickness",
 		"Dagger of Lifesteal", "Light's Blessing", "Staff of Blight"]
+	
+pLine1 = ["Increases Damage by 20%","Increases Health by 20% and heals you",
+		"Increases Critical Hit Rate by 10%","Increases Speed by 20%",
+		"Increases Knockback by 15%","20% faster bow charge","Increases Max Mana by 20%",
+		"Sword slashes fire piercing sword beams","Arrows pierce targets","Fire 3 Fireballs instead of 1",
+		"Build rage by slashing enemies and","Arrows strikes enemies with lightning after","Fireballs automatically seek enemies",
+		"Dash while shielding to perform a shield","Hold right click then release to ","Ice spell is followed up by a barrage",
+		"Absorb projectiles with you shield, then","Fire 3 wind gusts instead of 1 that","Ice spell costs 65 mana instead of 80.", 
+		"Leave behind a bomb when dashing", "Briefly become invincible while dashing",
+		"Critical hits heal you for a small amount", "Heal for 40% of max HP between rooms", "Enemies create damaging projectiles on "]
+
+pLine2 = ["","","","",
+		"","","",
+		"","","",
+		"blocking projectiles. More rage increases","a short delay. Charged shots create an","",
+		"bash attack, protecting you, knocking back","create a large tornado that sucks up","of damaging icicles 3 times",
+		"press left click while shielding to fire","sit in place and act as cover","Deal more damage to frozen enemies", 
+		"", "",
+		"", "instead of 20%", "death"]
+
+pLine3 = ["","","","",
+		"","","",
+		"","","",
+		"damage and very high rage heals you.","electric discharge AOE.","",
+		"enemies and dealing damage","enemies and deals damage","",
+		"a piercing blast of energy","","with any attack", 
+		"", "",
+		"", "", ""]
 
 prands = [0,1,2,3]
 
@@ -133,13 +161,22 @@ button0 = instance_create_layer(480,750,"Instances",objPowerUpButton)
 button0.pvalue = pvals[0]
 button0.picon = picons[pvals[0]]
 button0.textval = ptext[pvals[0]]
+button0.descriptionLine1 = pLine1[pvals[0]]
+button0.descriptionLine2 = pLine2[pvals[0]]
+button0.descriptionLine3 = pLine3[pvals[0]]
 
 button1 = instance_create_layer(960,750,"Instances",objPowerUpButton)
 button1.pvalue = pvals[1]
 button1.picon = picons[pvals[1]]
 button1.textval = ptext[pvals[1]]
+button1.descriptionLine1 = pLine1[pvals[1]]
+button1.descriptionLine2 = pLine2[pvals[1]]
+button1.descriptionLine3 = pLine3[pvals[1]]
 
 button2 = instance_create_layer(1440,750,"Instances",objPowerUpButton)
 button2.pvalue = pvals[2]
 button2.picon = picons[pvals[2]]
 button2.textval = ptext[pvals[2]]
+button2.descriptionLine1 = pLine1[pvals[2]]
+button2.descriptionLine2 = pLine2[pvals[2]]
+button2.descriptionLine3 = pLine3[pvals[2]]

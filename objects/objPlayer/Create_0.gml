@@ -19,6 +19,7 @@ bashTime = 0
 bashing = false
 totalScore = 0
 alarm[5] = rageDecayRate
+alarm[4] = 90;
 
 alarm[1] = atkcooldown
 

@@ -5,3 +5,4 @@ objCutsceneArcher.sprite_index = sprArcherMoving;
 objCutsceneKnight.sprite_index = sprKnightMove;
 objCutsceneMage.sprite_index = sprMageMove;
 objCutsceneBat.visible = false;
+objCutsceneNecrolich.hspeed = 6

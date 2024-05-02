@@ -8,14 +8,22 @@
   "instanceCreationOrder":[
     {"name":"inst_2C8AAE97","path":"rooms/PowerUpScreen/PowerUpScreen.yy",},
     {"name":"inst_7668968","path":"rooms/PowerUpScreen/PowerUpScreen.yy",},
+    {"name":"inst_265416D5","path":"rooms/PowerUpScreen/PowerUpScreen.yy",},
+    {"name":"inst_50DD6A4F","path":"rooms/PowerUpScreen/PowerUpScreen.yy",},
   ],
   "isDnd":false,
   "layers":[
     {"$GMRInstanceLayer":"","%Name":"Instances","depth":0,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"","%Name":"inst_2C8AAE97","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_2C8AAE97","objectId":{"name":"objTitle","path":"objects/objTitle/objTitle.yy",},"properties":[
-            {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"objTitle","path":"objects/objTitle/objTitle.yy",},"propertyId":{"name":"text","path":"objects/objTitle/objTitle.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Choose a Power Up",},
+            {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"objTitle","path":"objects/objTitle/objTitle.yy",},"propertyId":{"name":"text","path":"objects/objTitle/objTitle.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Choose an Upgrade",},
           ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":32.0,"y":0.0,},
         {"$GMRInstance":"","%Name":"inst_7668968","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_7668968","objectId":{"name":"objPowerUpControl","path":"objects/objPowerUpControl/objPowerUpControl.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":64.0,"y":0.0,},
+        {"$GMRInstance":"","%Name":"inst_265416D5","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_265416D5","objectId":{"name":"objMoreText","path":"objects/objMoreText/objMoreText.yy",},"properties":[
+            {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"objMoreText","path":"objects/objMoreText/objMoreText.yy",},"propertyId":{"name":"text","path":"objects/objMoreText/objMoreText.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"The Army of Necrolich grows stronger...",},
+          ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":992.0,"y":160.0,},
+        {"$GMRInstance":"","%Name":"inst_50DD6A4F","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_50DD6A4F","objectId":{"name":"objMoreText","path":"objects/objMoreText/objMoreText.yy",},"properties":[
+            {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"objMoreText","path":"objects/objMoreText/objMoreText.yy",},"propertyId":{"name":"text","path":"objects/objMoreText/objMoreText.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"...but so do you.",},
+          ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":960.0,"y":288.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRBackgroundLayer":"","%Name":"Background","animationFPS":15.0,"animationSpeedType":0,"colour":4278190080,"depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Background","properties":[],"resourceType":"GMRBackgroundLayer","resourceVersion":"2.0","spriteId":null,"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},
   ],

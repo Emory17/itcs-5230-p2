@@ -7,5 +7,3 @@ image_speed = 2;
 image_yscale = 1.5
 
 alarm[2] = tangibleTime
-
-

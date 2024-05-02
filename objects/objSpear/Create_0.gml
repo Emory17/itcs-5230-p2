@@ -12,3 +12,4 @@ image_yscale = 4
 //((850 mod objPlayer.x) == 0)
 speed = arrowSpeed
 image_angle = direction
+depth = 0

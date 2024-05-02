@@ -12,7 +12,7 @@ function enemySpawner()
 	var sy = 0
 	
 	if(global.currentLevelIndex > 4)
-		extraEnemies = round(global.currentLevelIndex) - 3
+		extraEnemies = round(global.currentLevelIndex) - 4
 	else
 		extraEnemies = round(global.currentLevelIndex)
 	

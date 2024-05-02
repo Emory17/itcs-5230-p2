@@ -7,7 +7,7 @@ if(invincible){
 draw_self()
 shader_reset()
 
-if(image_alpha = .4)
+if(image_alpha = .4 || startProtection)
 {
 	draw_sprite_ext(sprDashIframes, 0, x, y, 2, 2, 0, c_aqua,.5)
 }

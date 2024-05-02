@@ -1,0 +1,2 @@
+startProtection = false
+invincible = false

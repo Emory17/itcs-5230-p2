@@ -8,3 +8,4 @@ image_angle = direction
 
 alarm[0] = 40;
 
+depth = -2

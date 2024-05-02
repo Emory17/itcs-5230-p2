@@ -392,3 +392,8 @@ if(!mouse_check_button(mb_right) and !dashing and !attacking)
 		superWindCharge = 0
 	}
 }
+
+if(startProtection)
+{
+	invincible = true
+}

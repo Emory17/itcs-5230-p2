@@ -1,3 +1,4 @@
+audio_play_sound(powerupGet, 1, false)
 if(position_meeting(mouse_x,mouse_y,id)){
 	if(value = "knight"){
 		global.character = pChar.knight

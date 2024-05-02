@@ -7,3 +7,4 @@ knockbackAmt = 5 * global.knockbackMultiplier
 
 alarm[0] = 60;
 
+depth = 0

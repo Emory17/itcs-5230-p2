@@ -35,7 +35,7 @@
     {"$GMObjectProperty":"","%Name":"charged","filters":[],"listItems":[],"multiselect":false,"name":"charged","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":3,},
     {"$GMObjectProperty":"","%Name":"arrowDamage","filters":[],"listItems":[],"multiselect":false,"name":"arrowDamage","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"round(10 * global.damageMultiplier)","varType":0,},
     {"$GMObjectProperty":"","%Name":"knockbackAmt","filters":[],"listItems":[],"multiselect":false,"name":"knockbackAmt","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"3 * global.knockbackMultiplier","varType":0,},
-    {"$GMObjectProperty":"","%Name":"lightningTimer","filters":[],"listItems":[],"multiselect":false,"name":"lightningTimer","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"90 / ( 1.2 * global.bowChargeMultiplier) - 10","varType":0,},
+    {"$GMObjectProperty":"","%Name":"lightningTimer","filters":[],"listItems":[],"multiselect":false,"name":"lightningTimer","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"60 / ( 1.2 * global.bowChargeMultiplier) - 10","varType":0,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

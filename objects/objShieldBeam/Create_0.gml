@@ -11,3 +11,4 @@ fireballDamage = (15 * chargePower) * global.damageMultiplier
 
 alarm[0] = 30;
 
+depth = -1

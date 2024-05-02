@@ -9,3 +9,5 @@ else if(value == "archer"){
 else if(value == "mage"){
 	textval = "Mage"
 }
+
+image_speed = 0

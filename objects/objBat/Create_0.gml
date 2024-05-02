@@ -4,6 +4,7 @@ hitobject3 = noone
 isHurt = false;
 knockedBack = false;
 lightning = false;
+depth = 0
 
 while(place_meeting(x,y,objInnerWall) || place_meeting(x,y,objPlayer) 
 || place_meeting(x,y,objHole) || place_meeting(x,y,objBox))
