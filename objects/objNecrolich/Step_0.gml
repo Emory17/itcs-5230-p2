@@ -9,7 +9,7 @@ if(tpass2 && timeline_position > 540){
 	timeline_position = 0
 }
 
-if(timeline_position > 690){
+if(timeline_position >= 690){
 	tpass = true
 	tpass2 = true
 	timeline_position = 0

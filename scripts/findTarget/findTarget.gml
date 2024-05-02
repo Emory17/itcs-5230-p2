@@ -23,17 +23,16 @@ function findTarget(){
 	while(!place_meeting(cx,cy,objPlayer))
 	{
 		cx += dcos(cdirect) * tint
-		cy -= dcos(cdirect) * tint
-		if(place_meeting(cx,cy,objInnerWall) && !place_meeting(cx,cy,objBox))
+		cy -= dsin(cdirect) * tint
+		if(place_meeting(cx,cy,objInnerWall) || place_meeting(cx,cy,objHole))
 		{
 			found = false
 			break
 		}
 	}
 	
-	if(!found)
-	{
-		show_debug_message("Not Found")
+	if(!found){
+		cdirect -= 75
 	}
 	
 	direction = cdirect

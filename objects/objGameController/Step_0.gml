@@ -5,6 +5,6 @@ if(room == TestRoom or room == CastleLevel1 or room == CastleLevel2 or
 {
 	if(!cleared && !instance_exists(objBat)){
 		cleared = true
-		instance_create_layer(1792, 540, "Instances", objDoor)	
+		instance_create_layer(1750, 600, "Instances", objDoor)	
 	}
 }
