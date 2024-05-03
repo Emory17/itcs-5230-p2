@@ -275,7 +275,7 @@ else if (!mouse_check_button(mb_right) and global.character == pChar.knight && s
 if(mouse_check_button(mb_right) and !dashing && !attacking){
 	if(canGust)
 		superWindCharge++
-	if(canGust and global.secondaryUpgrade1 and superWindCharge == 1)
+	if(canGust and global.secondaryUpgrade1 and superWindCharge == 1 and global.character == pChar.archer)
 		audio_play_sound(bigWindCharge, 1, false)
 	
 	if(global.character == pChar.mage and !attacking)
