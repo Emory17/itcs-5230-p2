@@ -3,7 +3,7 @@
 
 // Inherit the parent event
 event_inherited();
-path_start(pathName, hsp, path_action_restart, false)
+path_start(pathName, hsp, path_action_reverse, false)
 canCharge = true
 directionToPlayer = 0
 image_yscale = 1.5

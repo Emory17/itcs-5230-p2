@@ -3,6 +3,6 @@
 
 // Inherit the parent event
 event_inherited();
-//path_start(pathName, hsp, path_action_restart, false)
+path_start(pathName, hsp, path_action_reverse, false)
 lastDirection = 0
 unstuckSpeed = 0

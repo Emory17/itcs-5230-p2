@@ -58,7 +58,7 @@ if(instance_exists(objPlayer))
 	else if(bowCharge > (90 / ( 1.2 * global.bowChargeMultiplier)))
 	{
 		image_index = 5 
-		if(bowCharge = 76)
+		if(bowCharge = round(90 / ( 1.2 * global.bowChargeMultiplier)) + 2)
 			audio_play_sound(playerBowCharge, 1, false)
 			
 		if(!mouse_check_button(mb_left))

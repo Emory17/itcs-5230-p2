@@ -14,6 +14,7 @@
     {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"objBat","path":"objects/objBat/objBat.yy",},"propertyId":{"name":"maxHealth","path":"objects/objBat/objBat.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"100 * global.enemyHealthMultiplier ",},
     {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"objBat","path":"objects/objBat/objBat.yy",},"propertyId":{"name":"points","path":"objects/objBat/objBat.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"80",},
     {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"objBat","path":"objects/objBat/objBat.yy",},"propertyId":{"name":"defaultSpeed","path":"objects/objBat/objBat.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"3",},
+    {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"objBat","path":"objects/objBat/objBat.yy",},"propertyId":{"name":"hsp","path":"objects/objBat/objBat.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"1",},
   ],
   "parent":{
     "name":"enemies",
