@@ -4,6 +4,7 @@ if(instance_exists(objPlayer))
 {
 	if(distance_to_object(objPlayer) < enemyVision)
 	{
+		path_end()
 		if(agro == false)
 		{
 			agro = true
