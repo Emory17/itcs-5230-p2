@@ -1,4 +1,5 @@
 applyPowerUp(pvalue)
+global.inventory[global.currentLevelIndex] = picon
 audio_play_sound(powerupGet, 1, false)
 
 global.enemyDamageMultiplier *= 1.03

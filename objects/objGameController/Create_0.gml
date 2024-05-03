@@ -43,6 +43,9 @@ global.levelArray = []
 global.persistentHealth = 100
 global.totalScore = 0
 
+global.inventory = [sprInventoryBlank, sprInventoryBlank, sprInventoryBlank, sprInventoryBlank, sprInventoryBlank,
+sprInventoryBlank, sprInventoryBlank, sprInventoryBlank, sprInventoryBlank, sprInventoryBlank, sprInventoryBlank]
+
 global.pathEnemyListLength = 3
 global.nonpathEnemyListLength = 4
 global.pathEnemies = [objGolem, objWerewolf, objZombie, objZombie]

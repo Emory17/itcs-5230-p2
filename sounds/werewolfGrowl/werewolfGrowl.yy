@@ -9,7 +9,7 @@
   "bitRate":16,
   "compression":0,
   "conversionMode":0,
-  "duration":2.4,
+  "duration":3.768,
   "name":"werewolfGrowl",
   "parent":{
     "name":"Sounds",
@@ -19,7 +19,7 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":5512,
-  "soundFile":"werewolfGrowl.wav",
+  "soundFile":"werewolfGrowl.mp3",
   "type":0,
-  "volume":1.0,
+  "volume":0.71,
 }
