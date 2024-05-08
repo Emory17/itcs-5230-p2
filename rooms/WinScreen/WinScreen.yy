@@ -8,6 +8,7 @@
   "instanceCreationOrder":[
     {"name":"inst_22028C75_1","path":"rooms/WinScreen/WinScreen.yy",},
     {"name":"inst_5A4939CF","path":"rooms/WinScreen/WinScreen.yy",},
+    {"name":"inst_7EB98D86","path":"rooms/WinScreen/WinScreen.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -22,6 +23,7 @@
             {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"objTitle","path":"objects/objTitle/objTitle.yy",},"propertyId":{"name":"text","path":"objects/objTitle/objTitle.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"You saved the kindgom!",},
           ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":32.0,"y":0.0,},
         {"$GMRInstance":"","%Name":"inst_5A4939CF","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_5A4939CF","objectId":{"name":"objRestartText","path":"objects/objRestartText/objRestartText.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":64.0,"y":0.0,},
+        {"$GMRInstance":"","%Name":"inst_7EB98D86","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_7EB98D86","objectId":{"name":"objCredits","path":"objects/objCredits/objCredits.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":288.0,"y":832.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRBackgroundLayer":"","%Name":"Background","animationFPS":2.0,"animationSpeedType":0,"colour":4294967295,"depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Background","properties":[],"resourceType":"GMRBackgroundLayer","resourceVersion":"2.0","spriteId":{"name":"sprFinalScreen","path":"sprites/sprFinalScreen/sprFinalScreen.yy",},"stretch":true,"userdefinedAnimFPS":true,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},
   ],
